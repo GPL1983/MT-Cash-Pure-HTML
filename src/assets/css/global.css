@@ -612,7 +612,12 @@ p {
 
 .dvFooter {
   flex-shrink: 0;
+  bottom: 0;
 }
+.z-index-2 {
+  z-index: 2 !important;
+}
+.dvFooter a {text-decoration: none;}
 /*=========[ STICKY FOOTER ]=========*/
 
 /*=========[ PERFECT CENTER WITHOUT CHANGING STICKY FOOTER CSS ]=========*/

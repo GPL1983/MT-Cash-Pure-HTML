@@ -2292,7 +2292,6 @@ select.form-control:focus {
 /*==[ -|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|- FILTER MOBILE -|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|- ]==*/
 
 /*=========[ DIFFERENT CLASS NAMES FOR PRODUCTLIST PAGES & PRODUCTDETAIL PAGES ]=========*/
-<<<<<<< Updated upstream
 .dvListPageGiftCards .img-container img,
 .dvListPageShopOffers .img-container img,
 /*.dvListPageLounges .img-container img,*/
@@ -2305,21 +2304,6 @@ select.form-control:focus {
 /*.dvProductDetailLounges .img-container img,*/
 .dvProductDetailGiftcards .img-container img,
 .dvProductDetailShop .img-container img {
-=======
-  .dvListPageGiftCards .img-container img,
-  .dvListPageShopOffers .img-container img,
-  /*.dvListPageLounges .img-container img,*/
-  .dvListPageMilesExchange .img-container img,
-  .dvListPageOffers .img-container img,
-  .dvListPageUtility .img-container img,
-  .dvListPageShopOffers .img-container img,
-  .dvListPageShopList .img-container img,
-  .dvProductDetailMilesExchange .img-container img,
-  /*.dvProductDetailLounges .img-container img,*/
-  .dvProductDetailGiftcards .img-container img,
-  .dvProductDetailShop .img-container img,
-  .dvProductCard .img-container img {
->>>>>>> Stashed changes
   object-fit: contain;
 }
 
@@ -2356,24 +2340,6 @@ select.form-control:focus {
 .dvRedemptionMenu ::-webkit-scrollbar-thumb {
   background: var(--redemptionmenu-scrollbar-thumb-bg);
 }
-<<<<<<< Updated upstream
-=======
-#collapseExample {
-  min-height: 150px; /* Adjust as needed */
-  overflow: hidden; /* Helps prevent content shifting */
-  transition: min-height 0.3s ease;
-}
-.dvRedemptionMenu  {display: block; margin: 0 auto;border: none;text-align: center;}
-/* accordion icons */
-.dvRedemptionMenu .arrow-icon {
- 
-  transition: transform 0.3s ease-in-out;
-}
-/* accordion rotate icons */
-.dvRedemptionMenu .collapsed .arrow-icon {
-  transform: rotate(180deg);
-}
->>>>>>> Stashed changes
 
 .dvRedemptionMenu a .imageBox {
   background-color: var(--redemptionmenu-imagebox-bg-colour);

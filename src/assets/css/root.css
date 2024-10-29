@@ -631,6 +631,7 @@
   --p-card-border-colour: var(--border-colour);
   --p-card-border-radius: var(--b-radius);
   --p-card-padding: 0rem;
+  --p-card-box-shadow:0 4px 8px rgba(0, 0, 0, 0.15);
   /*img-container*/
   --p-card-img-container-border-radius: 0;
   /*anchor*/

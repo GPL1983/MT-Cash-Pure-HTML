@@ -2167,8 +2167,7 @@ select.form-control:focus {
 .dvRedemptionMenu  {display: block; margin: 0 auto;border: none;text-align: center;}
 /* accordion icons */
 .dvRedemptionMenu .arrow-icon {
- 
-  transition: transform 0.3s ease-in-out;
+   transition: transform 0.3s ease-in-out;
 }
 /* accordion rotate icons */
 .dvRedemptionMenu .collapsed .arrow-icon {
@@ -2219,11 +2218,13 @@ select.form-control:focus {
 .dvProductCard .dvItem {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--p-card-border-colour);
+  border: 0px solid var(--p-card-border-colour);
   border-radius: var(--p-card-border-radius);
   height: 100%;
   padding: var(--p-card-padding);
   overflow: hidden; /*added to apply border-radius border effect*/
+  box-shadow: var(--p-card-box-shadow);
+  margin: 5px 5px 10px;
 }
 .dvProductCard .anchor {
   display: var(--p-card-anchor-display);

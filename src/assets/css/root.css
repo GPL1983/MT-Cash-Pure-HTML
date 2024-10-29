@@ -154,8 +154,8 @@
   /*imagebox*/
   --redemptionmenu-imagebox-bg-colour: var(--colour6);
   --redemptionmenu-imagebox-border-radius: 50%;
-  --redemptionmenu-imagebox-width: 80px;
-  --redemptionmenu-imagebox-height: 80px;
+  --redemptionmenu-imagebox-width: 69px;
+  --redemptionmenu-imagebox-height: 69px;
   --redemptionmenu-imagebox-img-width: 35px;
   --redemptionmenu-imagebox-img-height: 35px;
   --redemptionmenu-imagebox-box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 5px -2px, rgba(0, 0, 0, 0.3) 0px 0px 13px -2px;
@@ -167,7 +167,7 @@
   --redemptionmenu-imagebox-img-filter-active: brightness(0) invert(1);
   --redemptionmenu-imagebox-active-text-font-weight: bold;
   /*text*/
-  --redemptionmenu-imagebox-text-colour: var(--colour7);
+  --redemptionmenu-imagebox-text-colour: var(--colour6);
   --redemptionmenu-imagebox-text-font-family: var(--font-bold);
   --redemptionmenu-imagebox-text-font-size: 0.875rem;
   --redemptionmenu-imagebox-text-font-weight-hover: bold;
@@ -525,7 +525,7 @@
 
   /*==================[ SWIPER PAGINATION ]==================*/
   /* Both pagination and arrows cannot be displayed in the vertical center at the same time, so disable one of them. */
-  --display-swiper-pagination: none;
+  --display-swiper-pagination: block;
   /* swiper pagination */
   --pagination-bg: var(--colour6);
   --pagination-border: var(--colour1);
@@ -706,7 +706,11 @@
   --p-card-h3-text-colour: var(--colour7);
   --p-card-h3-padding: 0rem 1rem;
   /*points*/
+<<<<<<< Updated upstream
   --p-card-points-family: var(--font-bold);
+=======
+  --p-card-points-family: var(--font-medium);
+>>>>>>> Stashed changes
   --p-card-points-fontsize: 0.875rem;
   --p-card-points-text-colour: var(--colour1);
   /*button*/

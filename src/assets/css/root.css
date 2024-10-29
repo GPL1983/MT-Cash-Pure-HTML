@@ -130,10 +130,10 @@
   --redemptionmenu-imagebox-img-height: 35px;
   --redemptionmenu-imagebox-box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 5px -2px, rgba(0, 0, 0, 0.3) 0px 0px 13px -2px;
   /*image on hover*/
-  --redemptionmenu-imagebox-bg-colour-hover: var(--colour1);
+  --redemptionmenu-imagebox-bg-colour-hover: var(--colour4);
   --redemptionmenu-imagebox-img-filter-hover: brightness(0) invert(1);
   /*active*/
-  --redemptionmenu-imagebox-active-bg-colour: var(--colour1);
+  --redemptionmenu-imagebox-active-bg-colour: var(--colour4);
   --redemptionmenu-imagebox-img-filter-active: brightness(0) invert(1);
   --redemptionmenu-imagebox-active-text-font-weight: bold;
   /*text*/

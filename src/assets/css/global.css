@@ -2159,21 +2159,28 @@ select.form-control:focus {
 .dvRedemptionMenu ::-webkit-scrollbar-thumb {
   background: var(--redemptionmenu-scrollbar-thumb-bg);
 }
-#collapseExample {
-  min-height: 150px; /* Adjust as needed */
-  overflow: hidden; /* Helps prevent content shifting */
-  transition: min-height 0.3s ease;
-}
+ 
 .dvRedemptionMenu  {display: block; margin: 0 auto;border: none;text-align: center;}
 /* accordion icons */
 .dvRedemptionMenu .arrow-icon {
    transition: transform 0.3s ease-in-out;
+   position: absolute;
+   left: 0;
+   top: 0;
+}
+.dvRedemptionMenu .collapseBtn {
+  position: relative;
+  /* left: 50%; 
+  transform: translate(-50%, 0); */
 }
 /* accordion rotate icons */
 .dvRedemptionMenu .collapsed .arrow-icon {
   transform: rotate(180deg);
+
 }
 
+.dvRedemptionMenu .btn-two.focus, .btn-two:focus {border: none;}
+.dvRedemptionMenu .btn-two {border-color:unset;border: none;}
 .dvRedemptionMenu a .imageBox {
   background-color: var(--redemptionmenu-imagebox-bg-colour);
   border-radius: var(--redemptionmenu-imagebox-border-radius);

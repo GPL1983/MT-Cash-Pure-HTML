@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/assets/css/root.css" />
+    <link rel="stylesheet" href="src/assets/css/global.css" />
+    <link rel="stylesheet" href="src/assets/css/swiper.min.css" />
+  </head>
+
+  <body>
+    <div class="dvHeader pt-1 pb-1">
+      <div class="container-xl">
+        <div class="row justify-content-beween align-items-center">
+          <div class="col-auto order-lg-0 logo">
+            <img
+              class=""
+              src="/src/assets/images/home/logo/mt-cash-logo.svg"
+              alt=""
+            />
+          </div>
+          <div class="col-auto ms-auto ms-lg-0 order-lg-2">
+            <select class="form-control" name="" id="">
+              <option value="en">EN</option>
+              <option value="ar">AR</option>
+              <option value="fr">FR</option>
+            </select>
+          </div>
+          <div class="col-auto d-lg-none">
+            <button
+              class="btn border"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasBottom"
+            >
+              <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+          </div>
+          <div
+            class="offcanvas offcanvas-start bg-transparent- col-lg-auto order-lg-1 ms-lg-auto px-0 px-lg-3 border-lg-top-0"
+            tabindex="-1"
+            id="offcanvasBottom"
+          >
+            <!-- <div class="p-3-">
+              <div class="b-radius bg-colour6-"> -->
+            <div class="offcanvas-header d-lg-none pb-0">
+              <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5> -->
+              <button
+                type="button"
+                class="btn border btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body pt-0 p-lg-0">
+              <div class="row mx-lg-0 align-items-lg-center">
+                <div class="col-12 col-lg-auto">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                    href="#"
+                  >
+                    <img
+                      src="/src/assets/images/icons/menu-icons/profile.svg"
+                      alt=""
+                      class="d-lg-none"
+                    />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0">Profile</span>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-auto">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                    href="#"
+                  >
+                    <img
+                      src="/src/assets/images/icons/menu-icons/my-order.svg"
+                      alt=""
+                      class="d-lg-none"
+                    />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0">My Order</span>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-auto">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                    href="#"
+                  >
+                    <img
+                      src="/src/assets/images/icons/menu-icons/about.svg"
+                      alt=""
+                      class="d-lg-none"
+                    />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0"
+                      >About Program</span
+                    >
+                  </a>
+                </div>
+                <div class="col-12 col-lg-auto d-lg-none">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                    href="#"
+                  >
+                    <img
+                      src="/src/assets/images/icons/menu-icons/faqs.svg"
+                      alt=""
+                      class="d-lg-none"
+                    />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0">FAQs</span>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-auto d-lg-none">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                    href="#"
+                  >
+                    <img
+                      src="/src/assets/images/icons/menu-icons/terms-and-conditions.svg"
+                      alt=""
+                      class="d-lg-none"
+                    />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0"
+                      >Terms &amp; conditions</span
+                    >
+                  </a>
+                </div>
+                <div class="col-12 col-lg-auto d-lg-none">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                    href="#"
+                  >
+                    <img
+                      src="/src/assets/images/icons/menu-icons/booking-policy.svg"
+                      alt=""
+                      class="d-lg-none"
+                    />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0"
+                      >Booking Policy</span
+                    >
+                  </a>
+                </div>
+                <div class="col-12 col-lg-auto d-lg-none">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0"
+                    href="#"
+                  >
+                    <img
+                      src="/src/assets/images/icons/menu-icons/privacy-policy.svg"
+                      alt=""
+                      class="d-lg-none"
+                    />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0"
+                      >Privacy Policy</span
+                    >
+                  </a>
+                </div>
+                <div class="col-6 offset-3 col-lg-auto offset-lg-0 text-center">
+                  <button class="btn btn-one w-100">Login</button>
+                </div>
+              </div>
+            </div>
+            <!-- </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Redemption Menu Option -->
+    <div class="dvRedemptionMenu dvVcData bg-colour1 pt-3">
+      <div class="container-fluid">
+        <div
+          id="divRedemptionOptions"
+          class="row justify-content-md-center flex-nowrap flex-md-wrap scroll-hoz pt-md-5 pb-md-3"
+        >
+          <div class="col-auto mb-3">
+            <a
+              class="text-center d-flex flex-column align-items-center carrentalredemption redemptionoptions"
+              href="#"
+            >
+              <div
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 rounded-circle imageBox"
+              >
+                <img src="./src/assets/images/home/redemption/flight.svg" />
+              </div>
+              <p class="mt-2">Flights</p>
+            </a>
+          </div>
+          <div class="col-auto mb-3">
+            <a
+              class="text-center d-flex flex-column align-items-center carrentalredemption redemptionoptions"
+              href="#"
+            >
+              <div
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 rounded-circle imageBox"
+              >
+                <img src="./src/assets/images/home/redemption/hotel.svg" />
+              </div>
+              <p class="mt-2">Hotels</p>
+            </a>
+          </div>
+          <div class="col-auto mb-3">
+            <a
+              class="text-center d-flex flex-column align-items-center carrentalredemption redemptionoptions"
+              href="#"
+            >
+              <div
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 rounded-circle imageBox"
+              >
+                <img src="./src/assets/images/home/redemption/car.svg" />
+              </div>
+              <p class="mt-2">Car Rental</p>
+            </a>
+          </div>
+          <div class="col-auto mb-3">
+            <a
+              class="text-center d-flex flex-column align-items-center carrentalredemption redemptionoptions"
+              href="#"
+            >
+              <div
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 rounded-circle imageBox"
+              >
+                <img src="./src/assets/images/home/redemption/lounges.svg" />
+              </div>
+              <p class="mt-2">Lounges</p>
+            </a>
+          </div>
+          <div class="col-auto mb-3">
+            <a
+              class="text-center d-flex flex-column align-items-center carrentalredemption redemptionoptions"
+              href="#"
+            >
+              <div
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 rounded-circle imageBox"
+              >
+                <img src="./src/assets/images/home/redemption/shop.svg" />
+              </div>
+              <p class="mt-2">E-Shop</p>
+            </a>
+          </div>
+          <div class="col-auto mb-3">
+            <a
+              class="text-center d-flex flex-column align-items-center carrentalredemption redemptionoptions"
+              href="#"
+            >
+              <div
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 rounded-circle imageBox"
+              >
+                <img src="./src/assets/images/home/redemption/games.svg" />
+              </div>
+              <p class="mt-2">Gaming</p>
+            </a>
+          </div>
+          <div class="col-auto mb-3">
+            <a
+              class="text-center d-flex flex-column align-items-center carrentalredemption redemptionoptions"
+              href="#"
+            >
+              <div
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 rounded-circle imageBox"
+              >
+                <img src="./src/assets/images/home/redemption/streaming.svg" />
+              </div>
+              <p class="mt-2">Streaming</p>
+            </a>
+          </div>
+          <div class="col-auto mb-3">
+            <a
+              class="text-center d-flex flex-column align-items-center carrentalredemption redemptionoptions"
+              href="#"
+            >
+              <div
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 rounded-circle imageBox"
+              >
+                <img src="./src/assets/images/home/redemption/music.svg " />
+              </div>
+              <p class="mt-2">Music</p>
+            </a>
+          </div>
+          <div class="col-auto mb-3">
+            <a
+              class="text-center d-flex flex-column align-items-center carrentalredemption redemptionoptions"
+              href="#"
+            >
+              <div
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 rounded-circle imageBox"
+              >
+                <img src="./src/assets/images/home/redemption/recharge.svg" />
+              </div>
+              <p class="mt-2">Recharge</p>
+            </a>
+          </div>
+          <div class="col-auto mb-3">
+            <a
+              class="text-center d-flex flex-column align-items-center carrentalredemption redemptionoptions"
+              href="#"
+            >
+              <div
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 rounded-circle imageBox"
+              >
+                <img src="./src/assets/images/home/redemption/voucher.svg" />
+              </div>
+              <p class="mt-2">Voucher</p>
+            </a>
+          </div>
+
+          <div class="col-auto mb-3">
+            <a
+              class="text-center d-flex flex-column align-items-center carrentalredemption redemptionoptions"
+              href="#"
+            >
+              <div
+                class="d-flex flex-column align-items-center justify-content-center p-2 p-lg-2 p-xl-4 rounded-circle imageBox"
+              >
+                <img src="./src/assets/images/home/redemption/tools.svg" />
+              </div>
+              <p class="mt-2">Tools</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Redemption Menu Option -->
+    <div class="dvFlightSerach"></div>
+
+    <!--footer start here-->
+    <div class="dvFooter shadow-lg position-fixed z-index-2 w-100">
+      <div class="bg-colour6">
+        <div class="container-xl py-2">
+          <div class="row align-items-center">
+            <div class="col text-center">
+              <a href="/">
+                <!-- <i class="fa-solid fa-house"></i> -->
+                <img
+                  src="./src/assets/images/icons/footer-icons/icon-home.svg"
+                />
+                <p class="h9 text-colour9 heading-medium pt-1">Home</p>
+              </a>
+            </div>
+            <div class="col text-center">
+              <a href="ViewMemberProfile.aspx">
+                <!-- <i class="fa-solid fa-user"></i> -->
+                <img
+                  src="./src/assets/images/icons/footer-icons/icon-profile.svg"
+                />
+                <p class="h9 text-colour9 heading-medium pt-1">Profile</p>
+              </a>
+            </div>
+            <div class="col text-center">
+              <a href="#">
+                <!-- <i class="fa-solid fa-bell"></i> -->
+                <img
+                  src="./src/assets/images/icons/footer-icons/icon-app.svg"
+                />
+              </a>
+            </div>
+            <div class="col text-center">
+              <a href="#">
+                <!-- <i class="fa-solid fa-bell"></i> -->
+                <img
+                  src="./src/assets/images/icons/footer-icons/icon-notification.svg"
+                />
+                <p class="h9 text-colour9 heading-medium pt-1">Notification</p>
+              </a>
+            </div>
+
+            <div class="col text-center">
+              <a href="OrderHistory.aspx">
+                <!-- <i class="fa-solid fa-bag-shopping"></i> -->
+                <img
+                  src="./src/assets/images/icons/footer-icons/icon-cart.svg"
+                />
+                <p class="h9 text-colour9 heading-medium pt-1">Cart</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/assets/js/swiper.min.js"></script>
+
+    <script>
+      const heroSlider = new Swiper(".dvHeroSlider.swiper", {
+        direction: "horizontal",
+        loop: false,
+        speed: 500,
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+        },
+        mousewheel: {
+          enabled: false,
+        },
+        keyboard: {
+          enabled: true,
+        },
+      });
+
+      const VoucherSlider = new Swiper("#voucherSwiper", {
+        direction: "horizontal",
+        loop: false,
+        speed: 500,
+        slidesPerView: 1,
+        navigation: {
+          nextEl: "#shop_swiper-button-next",
+          prevEl: "#shop_swiper-button-prev",
+        },
+        spaceBetween: 10,
+        breakpoints: {
+          0: {
+            slidesPerView: 2,
+          },
+          576: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          992: {
+            slidesPerView: 4,
+          },
+          1200: {
+            slidesPerView: 4,
+          },
+        },
+        mousewheel: {
+          enabled: false,
+        },
+        keyboard: {
+          enabled: true,
+        },
+      });
+    </script>
+  </body>
+</html>

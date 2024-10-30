@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Product Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -12,6 +12,490 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
+<body>
+    <div class="dvHeader pt-1 pb-1">
+        <div class="container-xl">
+            <div class="row justify-content-beween align-items-center">
+                <div class="col-auto order-lg-0 logo">
+                    <img class="" src="/src/assets/images/home/logo/mt-cash-logo.svg" alt="" />
+                </div>
+                <div class="col-auto ms-auto ms-lg-0 order-lg-2">
+                    <select class="form-control" name="" id="">
+                        <option value="en">EN</option>
+                        <option value="ar">AR</option>
+                        <option value="fr">FR</option>
+                    </select>
+                </div>
+                <div class="col-auto d-lg-none">
+                    <button class="btn border" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottom">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-start bg-transparent- col-lg-auto order-lg-1 ms-lg-auto px-0 px-lg-3 border-lg-top-0"
+                    tabindex="-1" id="offcanvasBottom">
+                    <!-- <div class="p-3-">
+                <div class="b-radius bg-colour6-"> -->
+                    <div class="offcanvas-header d-lg-none pb-0">
+                        <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5> -->
+                        <button type="button" class="btn border btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body pt-0 p-lg-0">
+                        <div class="row mx-lg-0 align-items-lg-center">
+                            <div class="col-12 col-lg-auto">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/profile.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Profile</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/my-order.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">My Order</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/about.svg" alt="" class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">About Program</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/faqs.svg" alt="" class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">FAQs</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/terms-and-conditions.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Terms &amp; conditions</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/booking-policy.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Booking Policy</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/privacy-policy.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Privacy Policy</span>
+                                </a>
+                            </div>
+                            <div class="col-6 offset-3 col-lg-auto offset-lg-0 text-center">
+                                <button class="btn btn-one w-100">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div>
+              </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dvShopMenu">
+        <div id="CP_divShopMenuBar" class="container-xl">
+            <nav class="navbar navbar-expand-lg navbar-light px-0 mx-n3">
+                <!-- Navbar Toggler (for mobile view) -->
+                <div class="dvNavbarToggler col-auto d-lg-none pr-0">
+                    <button class="navbar-toggler btn border" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#dvMenu" aria-controls="dvMenu" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="fa-solid fa-bars-staggered"></span>
+                    </button>
+                </div>
 
+                <!-- Search Box (visible in larger screens) -->
+                <div class="dvShopSearchBox col col-lg-3 order-lg-2 ms-auto d-none d-lg-block">
+                    <div class="dvSearch">
+                        <div class="dvTxtProductName input-group">
+                            <input class="form-control" type="search" placeholder="Search" aria-label="Search"
+                                id="txtProductName" autocomplete="off">
+                            <button id="btnSearchExperiences" type="button" class="bg-colour1 input-group-text me-3"
+                                onclick="SearchProduct()">
+                                <i class="fa-solid fa-magnifying-glass text-colour6"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Button -->
+                <a href="Cart.aspx" id="CP_aCartBtn" class="order-lg-3 ms-auto d-flex align-items-center">
+                    <img src="./src/assets/images/shoppage/icon-cart.svg" class="icon-cart" alt="Cart">
+                    <span id="CP_spanCartItems" class="bg-light border ms-2 px-2 py-1 rounded-2 text-colour7">0</span>
+                </a>
+
+                <!-- Navbar Content (Links) -->
+                <div class="collapse navbar-collapse col-lg-8 order-lg-1" id="dvMenu">
+                    <ul class="navbar-nav me-auto">
+                        <!-- Clothing Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-uppercase" href="#" id="clothingDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Clothing
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="clothingDropdown">
+                                <li><a class="dropdown-item"
+                                        href="ShopList.aspx?CategoryId=2bfecbd5-e1ab-44d1-98f5-420cd9cd07b8&ProductType=Physical">Men's
+                                        Wear</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Fashion Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-uppercase" href="#" id="fashionDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Fashion
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="fashionDropdown">
+                                <li><a class="dropdown-item"
+                                        href="ShopList.aspx?CategoryId=9b252109-8bcd-47d4-a17e-d384740fb5a3&ProductType=Physical">Accessories</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="ShopList.aspx?CategoryId=82e5cb8b-de27-4a58-b81b-346aa265e622&ProductType=Physical">Handbags</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="ShopList.aspx?CategoryId=055e9285-e792-4548-9627-6e2d004a6191&ProductType=Physical">Sunglasses</a>
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="ShopList.aspx?CategoryId=34791ef4-dc82-44ee-bb0d-62ca05028caf&ProductType=Physical">Watches</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Health & Beauty Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-uppercase" href="#" id="healthDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Health & Beauty
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="healthDropdown">
+                                <li><a class="dropdown-item"
+                                        href="ShopList.aspx?CategoryId=9a227bb9-f35d-49fc-9d14-f0d3be4dc55a&ProductType=Physical">Perfumes</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="dvProductDetail my-4 dvProductDetailShop">
+        <div class="container-xl prodDetail dvProductDetails">
+            <div class="row">
+                <!-- Image -->
+                <div class="dvThumbSwiperSlider col-lg-4 col-xl-4">
+                    <div class="border b-radius p-3">
+                        <div
+                            class="swiper dvThumbBannerSlide swiper-initialized swiper-horizontal swiper-backface-hidden">
+                            <div id="CP_CPSHOP_imgProductImageMain" class="swiper-wrapper" aria-live="polite">
+                                <div class="swiper-slide img-container swiper-slide-active" role="group"
+                                    aria-label="1 / 1" style="width: 255px; margin-right: 20px;"><img
+                                        src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/c/k/ck19702s_244.jpg">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next mr-3 swiper-button-disabled swiper-button-lock" tabindex="-1"
+                                role="button" aria-label="Next slide" aria-controls="CP_CPSHOP_imgProductImageMain"
+                                aria-disabled="true">
+                                <img src="images/icons/arrows/right-yellow-arrow-2.svg">
+                            </div>
+                            <div class="swiper-button-prev ml-3 swiper-button-disabled swiper-button-lock" tabindex="-1"
+                                role="button" aria-label="Previous slide" aria-controls="CP_CPSHOP_imgProductImageMain"
+                                aria-disabled="true">
+                                <img src="images/icons/arrows/left-yellow-arrow-2.svg">
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                        <div class="my-2"></div>
+                        <div
+                            class="swiper dvThumbSlide swiper-initialized swiper-horizontal swiper-free-mode swiper-watch-progress swiper-backface-hidden swiper-thumbs">
+                            <div id="CP_CPSHOP_divThumbnailImages" class="swiper-wrapper" aria-live="polite"
+                                style="transform: translate3d(0px, 0px, 0px);">
+                                <div class="swiper-slide img-container swiper-slide-visible swiper-slide-fully-visible swiper-slide-active swiper-slide-thumb-active"
+                                    role="group" aria-label="1 / 1" style="width: 56.75px; margin-right: 10px;"><img
+                                        src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/c/k/ck19702s_244.jpg">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next swiper-button-disabled swiper-button-lock" tabindex="-1"
+                                role="button" aria-label="Next slide" aria-controls="CP_CPSHOP_divThumbnailImages"
+                                aria-disabled="true">
+                                <img src="images/icons/arrows/right-yellow-arrow-2.svg">
+                            </div>
+                            <div class="swiper-button-prev swiper-button-disabled swiper-button-lock" tabindex="-1"
+                                role="button" aria-label="Previous slide" aria-controls="CP_CPSHOP_divThumbnailImages"
+                                aria-disabled="true">
+                                <img src="images/icons/arrows/left-yellow-arrow-2.svg">
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add to cart -->
+                <div class="dvProductInfo col-lg-8 col-xl-8">
+                    <div class="dvInfo row mb-3 mt-4 mt-lg-0">
+                        <div class=" col-12">
+                            <h2 id="CP_CPSHOP_spanProductName" class="h5 heading-bold text-colour7 mb-2"
+                                data-i18n="ABC-calvin-klein-rectangle-su">Calvin Klein Rectangle sunglasses</h2>
+                            <div id="CP_CPSHOP_ratings"></div>
+                            <h2 class="h6 heading-bold text-colour7 mb-3"><span id="CP_CPSHOP_spanPoints"
+                                    data-i18n="ABC-100,127-points">100,127 Points</span></h2>
+                        </div>
+                    </div>
+                    <div class="dvAdd row mb-4">
+                        <div class="dvAddToCart col-12">
+                            <div class="row">
+                                <div id="CP_CPSHOP_divQuantity" class="form-group col-12 col-sm-3 mb-3"
+                                    style="display:block">
+                                    <h2 class="h6 heading-regular text-colour7 mb-2" data-i18n="ABC-quantity">Quantity
+                                    </h2>
+                                    <div class="dvPlusMinusButtons">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <button type="button" class="b-radius-left btn rounded-0 border"
+                                                    data-type="minus" data-field="" onclick="quantityMinus()">
+                                                    <i class="fa fa-minus"></i>
+                                                </button>
+                                            </div>
+                                            <span id="CP_CPSHOP_qtyRealtime" style="display: none;"></span>
+                                            <input name="ctl00$ctl00$CP$CPSHOP$quantity" type="text"
+                                                id="CP_CPSHOP_quantity"
+                                                class="form-control text-center text-colour7 border bg-transparent"
+                                                strp="1" readonly="readonly" min="1" max="3" value="1"
+                                                data-i18n-value="ABC-1">
+                                            <div class="input-group-append">
+                                                <button type="button" class="b-radius-right border btn rounded-0"
+                                                    data-type="plus" data-field="" onclick="quantityPlus()">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="form-group col-12 col-sm-3">
+                                    <h2 id="CP_CPSHOP_lbldivPoints" class="h6 heading-regular text-colour7 mb-2"
+                                        data-i18n="ABC-total-points">Total Points</h2>
+                                    <div id="CP_CPSHOP_divspanpoints"
+                                        class="border b-radius h6 text-colour7 heading-bold p-2"
+                                        data-i18n="ABC-100,127">100,127</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3><span></span></h3>
+
+                                    <h2 class="price"></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dvDenominations row">
+
+
+
+
+
+                    </div>
+                    <div class="row mb-4">
+                        <div id="CP_CPSHOP_divBuy" class="dvButtons col-12">
+                            <div class="row">
+                                <div class="col-12 col-sm-4 col-xl-3 mb-3 mb-sm-0">
+                                    <a href="Shop.aspx?CategoryId=f0cf96b5-bf6a-48f1-bedf-a350328d7dc9&amp;ProductType=Physical"
+                                        id="CP_CPSHOP_btnBack" class="btn btn-two w-100 order-sm-0">
+                                        <div class="text-center" data-i18n="ABC-back">
+                                            Back
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-4 col-xl-3 mb-3 mb-sm-0">
+                                    <a href="javascript:void(0);" id="CP_CPSHOP_btnredeem"
+                                        class="btn btn-one w-100 order-sm-2" onclick="Checkout()">
+                                        <div class="text-center" data-i18n="ABC-redeem">
+                                            Redeem
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-4 col-xl-3" id="addToCartButton">
+                                    <a href="javascript:void(0);" class="btn btn-two w-100 order-sm-1"
+                                        onclick="AddItemToCart()">
+                                        <div class="text-center" data-i18n="ABC-add-to-cart">
+                                            Add To Cart
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="CP_CPSHOP_divOutOfStock" class="form-group" style="display: none;">
+                                <h2 class="h6 heading-bold text-danger" data-i18n="ABC-out-of-stock">Out Of Stock
+                                </h2>
+                            </div>
+                            <div id="CP_CPSHOP_divInsufficient" class="form-group" style="display: none;">
+                                <h2 class="h6 heading-bold text-danger" data-i18n="ABC-insufficient-points">
+                                    Insufficient
+                                    Points</h2>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="dvDetails row mb-4">
+                        <div class="dvTabs col-12">
+                            <nav>
+                                <div class="nav nav-tabs flex-nowrap scroll-hoz border-bottom-0" id="nav-tab"
+                                    role="tablist">
+                                    <button class="heading-bold nav-link text-capitalize active mr-2"
+                                        id="description-tab" data-toggle="tab" data-target="#description" type="button"
+                                        data-i18n="ABC-description"> description </button>
+                                    <button class="heading-bold nav-link text-capitalize" id="terms-conditions-tab"
+                                        data-toggle="tab" data-target="#terms-conditions" type="button"
+                                        data-i18n="ABC-terms-and-conditions">Terms And Conditions</button>
+
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active border p-3" id="description">
+                                    <div id="CP_CPSHOP_divDescription">
+                                        <p>Brand:Calvin Klein<br>Gender:Woman<br>Lense
+                                            Color:Grey<br>Frame:acetate<br>Bridge, mm:17<br>Temples, mm:140<br>Lenses
+                                            diameter, mm:55<br>protection:UV2<br>Logo:yes</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade border p-3" id="terms-conditions">
+                                    <div id="CP_CPSHOP_divTermsandCondition"></div>
+                                </div>
+                                <div class="tab-pane fade border p-3" id="specification">
+                                    <div id="CP_CPSHOP_divSpecification">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dvDescription row mt-4 d-none">
+                        <div class="col-12 col-lg-12 mb-5">
+                            <ul class="widgetTab">
+                                <li><a class="tablinks active" onclick="openCity(event, 'Description-blk')"
+                                        data-i18n="ABC-description">Description</a>
+                                </li>
+                                <li id="CP_CPSHOP_litermsandcondition" style="display: none;"><a class="tablinks"
+                                        onclick="openCity(event, 'TermsandCondition-blk')"><i
+                                            class="fa fa-edit d-none"></i>Terms And Conditions</a></li>
+                            </ul>
+                            <div id="Description-blk" class="tabcontent" style="display: block;">
+                            </div>
+                            <div id="TermsandCondition-blk" class="tabcontent">
+                            </div>
+                            <div id="Specifications-blk" class="tabcontent">
+                            </div>
+
+                            <div id="Review-blk" class="tabcontent">
+                                <div id="reviews" class="card-body">
+                                </div>
+                                <div id="writeReview" class="card-body">
+                                    <input id="productRating" type="hidden" value="" data-i18n-value="ABC-">
+                                    <span id="star1" class="fa fa-star-o checked"></span>
+                                    <span id="star2" class="fa fa-star-o checked"></span>
+                                    <span id="star3" class="fa fa-star-o checked"></span>
+                                    <span id="star4" class="fa fa-star-o checked"
+                                        onclick="rate(4);return false;"></span>
+                                    <span id="star5" class="fa fa-star-o checked"
+                                        onclick="rate(5);return false;"></span>
+                                    <div>
+                                        <div class="reviewForm">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-3">
+                                                    <label data-i18n="ABC-title:">Title:</label>
+                                                    <input id="reviewTitle" class="form-control inputHeight"
+                                                        type="text">
+                                                </div>
+                                                <div class="col-12 col-lg-7">
+                                                    <label data-i18n="ABC-review:">Review:</label>
+                                                    <textarea id="reviewText"
+                                                        class="form-control inputHeight"></textarea>
+                                                </div>
+
+                                                <div class="col-12 col-lg-2">
+                                                    <a href="javascript:void(0);" class="blue_button mt-4"
+                                                        style="width: 100%;" onclick="addReview();"
+                                                        data-i18n="ABC-submit">Submit
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dvFooter shadow-lg position-fixed z-index-2 w-100">
+        <div class="bg-colour6">
+            <div class="container-xl py-2">
+                <div class="row align-items-center">
+                    <div class="col text-center">
+                        <a href="/">
+                            <!-- <i class="fa-solid fa-house"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-home.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Home</p>
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="ViewMemberProfile.aspx">
+                            <!-- <i class="fa-solid fa-user"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-profile.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Profile</p>
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="#">
+                            <!-- <i class="fa-solid fa-bell"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-app.svg" />
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="#">
+                            <!-- <i class="fa-solid fa-bell"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-notification.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Notification</p>
+                        </a>
+                    </div>
+
+                    <div class="col text-center">
+                        <a href="OrderHistory.aspx">
+                            <!-- <i class="fa-solid fa-bag-shopping"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-cart.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Cart</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 
 </html>

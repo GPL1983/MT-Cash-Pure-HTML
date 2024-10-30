@@ -2168,33 +2168,31 @@ select.form-control:focus {
 }
  
  /* Initial style for hidden content */
- .content-container {
+ .dvRedemptionMenu .dvContentBox {
   max-height: 100px; /* Initial height */
   overflow: hidden;
   transition: max-height 0.5s ease;
 }
 
 /* Toggle the height when checkbox is checked */
-#toggle:checked ~ .content-container {
+.dvRedemptionMenu #toggle:checked ~ .dvContentBox {
   max-height: 500px; /* Large enough to show full content */
 }
 
 /* Hide the checkbox visually */
-#toggle {
+.dvRedemptionMenu #toggle {
   display: none;
 }
 
 /* Styling for the label acting as a button */
-.toggle-label {
+.dvRedemptionMenu .toggle-label {
   cursor: pointer;
-  color: white;
-  background-color: #0d6efd;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  display: inline-block;
-  margin-top: 1rem;
+  color: white; 
+  width: 100%;
+  display: inline-block; 
   font-size: 1rem;
   font-weight: 500;
+  text-align: center;
 }
 
 

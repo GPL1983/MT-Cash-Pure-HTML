@@ -2167,11 +2167,14 @@ select.form-control:focus {
   background: var(--redemptionmenu-scrollbar-thumb-bg);
 }
  
+.dvRedemptionMenu {
+  position: relative;
+}
  /* Initial style for hidden content */
  .dvRedemptionMenu .dvContentBox {
   max-height: 100px; /* Initial height */
   overflow: hidden;
-  transition: max-height 0.5s ease;
+  transition: max-height 0.5s ease; 
 }
 
 /* Toggle the height when checkbox is checked */
@@ -2188,28 +2191,29 @@ select.form-control:focus {
 .dvRedemptionMenu .toggle-label {
   cursor: pointer;
   color: white; 
-  width: 100%;
-  display: inline-block; 
+  width: 36px;
+  display:block;
   font-size: 1rem;
   font-weight: 500;
-  text-align: center;
+  text-align: center; 
+  background-color: #007dbd;
+  height: 36px;
+  border-radius: 20px;
+  line-height: 36px;
+  margin: 0 auto -35px;
 }
 
 
-/* .dvRedemptionMenu  {display: block; margin: 0 auto;border: none;text-align: center;} 
-.dvRedemptionMenu .arrow-icon {
-   transition: transform 0.3s ease-in-out;
-   position: absolute;
-   left: 0;
-   top: 0;
+/* .dvRedemptionMenu  {display: block; margin: 0 auto;border: none;text-align: center;} */
+/* .dvRedemptionMenu .arrow-icon {
+   transition: transform 0.3s ease-in-out; 
 }
-.dvRedemptionMenu .collapseBtn {
+.dvRedemptionMenu .toggle-label {
   position: relative; 
 } 
 .dvRedemptionMenu .collapsed .arrow-icon {
   transform: rotate(180deg);
-}
-.dvRedemptionMenu .card-body{min-height: 120px;} */
+}  */
 
 .dvRedemptionMenu .btn-two.focus, .btn-two:focus {border: none;}
 .dvRedemptionMenu .btn-two {border-color:unset;border: none;}

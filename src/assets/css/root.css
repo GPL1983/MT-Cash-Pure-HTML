@@ -265,30 +265,32 @@
   --fc-font-size: 0.875rem;
   --fc-text-colour: var(--colour8);
   /* form-control with dvInput.input-group */
-  --fc-border-top: 1px solid var(--fc-border-colour);
-  --fc-border-right: 1px solid var(--fc-border-colour);
-  --fc-border-bottom: 1px solid var(--fc-border-colour);
-  --fc-border-left: 1px solid var(--fc-border-colour);
+  --fc-border-top:2px solid var(--fc-border-colour);
+  --fc-border-right: 2px solid var(--fc-border-colour);
+  --fc-border-bottom: 2px solid var(--fc-border-colour);
+  --fc-border-left: 2px solid var(--fc-border-colour);
   --fc-radius-top-left: var(--b-radius);
   --fc-radius-bottom-left: var(--b-radius);
   --fc-radius-top-right: var(--b-radius);
   --fc-radius-bottom-right: var(--b-radius);
   --fc-bg-colour: #ffffff;
+  --fc-padding:.75rem .75rem;
   /* form-control with dvInputGroup.input-group */
-  --ig-fc-border-top: 1px solid var(--fc-border-colour);
-  --ig-fc-border-right: 1px solid transparent;
-  --ig-fc-border-bottom: 1px solid var(--fc-border-colour);
-  --ig-fc-border-left: 1px solid var(--fc-border-colour);
+  --ig-fc-border-top: 2px solid var(--fc-border-colour);
+  --ig-fc-border-right: 2px solid transparent;
+  --ig-fc-border-bottom: 2px solid var(--fc-border-colour);
+  --ig-fc-border-left: 2px solid var(--fc-border-colour);
   --ig-fc-radius-top-left: var(--b-radius);
   --ig-fc-radius-bottom-left: var(--b-radius);
   --ig-fc-radius-top-right: 0;
   --ig-fc-radius-bottom-right: 0;
   --ig-fc-bg-colour: #ffffff;
+  --ig-fc-padding:.75rem .75rem;
   /* input-group-text */
-  --input-group-text-border-top: 1px solid var(--fc-border-colour);
-  --input-group-text-border-right: 1px solid var(--fc-border-colour);
-  --input-group-text-border-bottom: 1px solid var(--fc-border-colour);
-  --input-group-text-border-left: 1px solid transparent;
+  --input-group-text-border-top: 2px solid var(--fc-border-colour);
+  --input-group-text-border-right: 2px solid var(--fc-border-colour);
+  --input-group-text-border-bottom: 2px solid var(--fc-border-colour);
+  --input-group-text-border-left: 2px solid transparent;
   --input-group-text-radius-top-left: 0;
   --input-group-text-radius-bottom-left: 0;
   --input-group-text-radius-top-right: var(--b-radius);
@@ -341,11 +343,13 @@
 
   /*==================[ BUTTONS ]==================*/
   --btn-family: var(--font-regular);
+  --btn-font-size: 0.875rem;
   --btn-bg: var(--colour6);
   --btn-bg-hover: var(--colour3);
-  --btn-text: var(--colour7);
+  --btn-text: var(--colour8);
   --btn-text-hover: var(--colour7);
   --btn-b-radius: var(--b-radius);
+  --btn-border-colour:2px solid var(--fc-border-colour);
   /* button disabled */
   --btn-disabled-bg: var(--colour3);
   --btn-disabled-text-colour: var(--colour6);
@@ -391,7 +395,7 @@
   --background3: var(--colour4);
 
   /*==================[ LABEL ]==================*/
-  --label-family: var(--heading-bold);
+  --label-family: var(--heading-regular);
   --label-fontsize: 0.875rem;
   --label-text-colour: var(--colour7);
   --label-margin-bottom: 0.25rem;

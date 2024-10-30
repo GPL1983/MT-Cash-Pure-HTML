@@ -92,89 +92,7 @@ p {
   color: var(--paragraph-colour);
 }
 /*=========[ COMMON PARAGRAPH ]=========*/
-
-/*=========[ B-RADIUS ]=========*/
-.b-radius {
-  border-radius: var(--b-radius) !important;
-}
-
-.b-radius-top {
-  border-top-left-radius: var(--b-radius-top) !important;
-  border-top-right-radius: var(--b-radius-top) !important;
-}
-
-.b-radius-right {
-  border-top-right-radius: var(--b-radius-right) !important;
-  border-bottom-right-radius: var(--b-radius-right) !important;
-}
-
-.b-radius-bottom {
-  border-bottom-left-radius: var(--b-radius-bottom) !important;
-  border-bottom-right-radius: var(--b-radius-bottom) !important;
-}
-
-.b-radius-left {
-  border-top-left-radius: var(--b-radius-left) !important;
-  border-bottom-left-radius: var(--b-radius-left) !important;
-}
-
-.b-radius-top-right {
-  border-top-right-radius: var(--b-radius-top-right) !important;
-}
-
-.b-radius-bottom-right {
-  border-bottom-right-radius: var(--b-radius-bottom-right) !important;
-}
-
-.b-radius-bottom-left {
-  border-bottom-left-radius: var(--b-radius-bottom-left) !important;
-}
-
-.b-radius-top-left {
-  border-top-left-radius: var(--b-radius-top-left) !important;
-}
-
-.b-radius-0 {
-  border-radius: var(--b-radius-0) !important;
-}
-
-.b-radius-top-0 {
-  border-top-left-radius: var(--b-radius-top-0) !important;
-  border-top-right-radius: var(--b-radius-top-0) !important;
-}
-
-.b-radius-right-0 {
-  border-top-right-radius: var(--b-radius-right-0) !important;
-  border-bottom-right-radius: var(--b-radius-right-0) !important;
-}
-
-.b-radius-bottom-0 {
-  border-bottom-left-radius: var(--b-radius-bottom-0) !important;
-  border-bottom-right-radius: var(--b-radius-bottom-0) !important;
-}
-
-.b-radius-left-0 {
-  border-top-left-radius: var(--b-radius-left-0) !important;
-  border-bottom-left-radius: var(--b-radius-left-0) !important;
-}
-
-.b-radius-top-right-0 {
-  border-top-right-radius: var(--b-radius-top-right-0) !important;
-}
-
-.b-radius-bottom-right-0 {
-  border-bottom-right-radius: var(--b-radius-bottom-right-0) !important;
-}
-
-.b-radius-bottom-left-0 {
-  border-bottom-left-radius: var(--b-radius-bottom-left-0) !important;
-}
-
-.b-radius-top-left-0 {
-  border-top-left-radius: var(--b-radius-top-left-0) !important;
-}
-/*=========[ B-RADIUS ]=========*/
-
+ 
 /*=========[ BORDERS ]=========*/
 .border {
   border: 1px solid var(--border-colour) !important;
@@ -943,18 +861,20 @@ p {
 }
 .btn {
   font-family: var(--btn-family);
+  font-size: var(--btn-font-size);
   background-color: var(--btn-bg);
   color: var(--btn-text);
-  border-color: var(--btn-border-colour);
+  border: var(--btn-border-colour);
   border-radius: var(--btn-b-radius);
 }
 .btn:hover,
 .btn.focus,
 .btn:focus {
   font-family: var(--btn-family);
+  font-size: var(--btn-font-size);
   background-color: var(--btn-bg);
   color: var(--btn-text);
-  border-color: var(--btn-border-colour);
+  border: var(--btn-border-colour); 
 }
 
 .btn-one {
@@ -1467,6 +1387,7 @@ textarea {
   border-top-right-radius: var(--fc-radius-top-right) !important;
   border-bottom-right-radius: var(--fc-radius-bottom-right) !important;
   background-color: var(--fc-bg-colour);
+  padding: var(--fc-padding);
 }
 /* FORM-CONTROL WITHOUT ICON END */
 
@@ -1483,6 +1404,7 @@ textarea {
   border-top-right-radius: var(--ig-fc-radius-top-right) !important;
   border-bottom-right-radius: var(--ig-fc-radius-bottom-right) !important;
   background-color: var(--ig-fc-bg-colour); /*bg colour - add transparent to display like one input*/
+  padding: var(--ig-fc-padding);
 }
 
 .dvInputGroup.input-group .input-group-text {
@@ -1629,6 +1551,91 @@ select.form-control:focus {
   cursor: pointer;
 }
 /*=========[ PLUS MINUS BUTTONS ]=========*/
+/*=========[ B-RADIUS ]=========*/
+.b-radius {
+  border-radius: var(--b-radius) !important;
+}
+
+.b-radius-top {
+  border-top-left-radius: var(--b-radius-top) !important;
+  border-top-right-radius: var(--b-radius-top) !important;
+}
+
+.b-radius-right {
+  border-top-right-radius: var(--b-radius-right) !important;
+  border-bottom-right-radius: var(--b-radius-right) !important;
+}
+
+.b-radius-bottom {
+  border-bottom-left-radius: var(--b-radius-bottom) !important;
+  border-bottom-right-radius: var(--b-radius-bottom) !important;
+}
+
+.b-radius-left {
+  border-top-left-radius: var(--b-radius-left) !important;
+  border-bottom-left-radius: var(--b-radius-left) !important;
+}
+
+.b-radius-top-right {
+  border-top-right-radius: var(--b-radius-top-right) !important;
+}
+
+.b-radius-bottom-right {
+  border-bottom-right-radius: var(--b-radius-bottom-right) !important;
+}
+
+.b-radius-bottom-left {
+  border-bottom-left-radius: var(--b-radius-bottom-left) !important;
+}
+
+.b-radius-top-left {
+  border-top-left-radius: var(--b-radius-top-left) !important;
+}
+
+.b-radius-0 {
+  border-radius: var(--b-radius-0) !important;
+}
+
+.b-radius-top-0 {
+  border-top-left-radius: var(--b-radius-top-0) !important;
+  border-top-right-radius: var(--b-radius-top-0) !important;
+}
+
+.b-radius-right-0 {
+  border-top-right-radius: var(--b-radius-right-0) !important;
+  border-bottom-right-radius: var(--b-radius-right-0) !important;
+}
+
+.b-radius-bottom-0 {
+  border-bottom-left-radius: var(--b-radius-bottom-0) !important;
+  border-bottom-right-radius: var(--b-radius-bottom-0) !important;
+}
+
+.b-radius-left-0 {
+  border-top-left-radius: var(--b-radius-left-0) !important;
+  border-bottom-left-radius: var(--b-radius-left-0) !important;
+}
+
+.b-radius-top-right-0 {
+  border-top-right-radius: var(--b-radius-top-right-0) !important;
+}
+
+.b-radius-bottom-right-0 {
+  border-bottom-right-radius: var(--b-radius-bottom-right-0) !important;
+}
+
+.b-radius-bottom-left-0 {
+  border-bottom-left-radius: var(--b-radius-bottom-left-0) !important;
+}
+
+.b-radius-top-left-0 {
+  border-top-left-radius: var(--b-radius-top-left-0) !important;
+}
+.dvInput.input-group .b-radius-top-0 { 
+  border-radius: 0px !important;
+}
+
+/*=========[ B-RADIUS ]=========*/
 
 /*=========[ BOOTSTRAP TOOLTIP ]=========*/
 /* Custom CSS for the tooltip */
@@ -2160,8 +2167,38 @@ select.form-control:focus {
   background: var(--redemptionmenu-scrollbar-thumb-bg);
 }
  
-.dvRedemptionMenu  {display: block; margin: 0 auto;border: none;text-align: center;}
-/* accordion icons */
+ /* Initial style for hidden content */
+ .content-container {
+  max-height: 100px; /* Initial height */
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+/* Toggle the height when checkbox is checked */
+#toggle:checked ~ .content-container {
+  max-height: 500px; /* Large enough to show full content */
+}
+
+/* Hide the checkbox visually */
+#toggle {
+  display: none;
+}
+
+/* Styling for the label acting as a button */
+.toggle-label {
+  cursor: pointer;
+  color: white;
+  background-color: #0d6efd;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+/* .dvRedemptionMenu  {display: block; margin: 0 auto;border: none;text-align: center;} 
 .dvRedemptionMenu .arrow-icon {
    transition: transform 0.3s ease-in-out;
    position: absolute;
@@ -2169,15 +2206,12 @@ select.form-control:focus {
    top: 0;
 }
 .dvRedemptionMenu .collapseBtn {
-  position: relative;
-  /* left: 50%; 
-  transform: translate(-50%, 0); */
-}
-/* accordion rotate icons */
+  position: relative; 
+} 
 .dvRedemptionMenu .collapsed .arrow-icon {
   transform: rotate(180deg);
-
 }
+.dvRedemptionMenu .card-body{min-height: 120px;} */
 
 .dvRedemptionMenu .btn-two.focus, .btn-two:focus {border: none;}
 .dvRedemptionMenu .btn-two {border-color:unset;border: none;}

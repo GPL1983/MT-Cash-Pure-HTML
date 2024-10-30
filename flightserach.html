@@ -353,12 +353,166 @@
                 type="text"
               />
               <input type="hidden" id="hdntrip" value="true" />
-              <div class="input-group-append">
-                <span class="input-group-text bg-colour6"
-                  ><i class="fa-solid fa-location-dot"></i
-                ></span>
+
+              <span class="input-group-text bg-colour6"
+                ><i class="fa-solid fa-location-dot"></i
+              ></span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg mb-3">
+            <label class="label">To</label>
+            <div class="dvTextBoxTo dvInputGroup input-group">
+              <input
+                class="input form-control"
+                id="textBoxTo"
+                onfocus="placeholderOnFocus(this,'Enter City or Airport');"
+                onblur="placeholderOnFocus(this,'Enter City or Airport');"
+                value="Enter City or Airport"
+                type="text"
+              />
+              <span class="input-group-text bg-colour6"
+                ><i class="fa-solid fa-location-dot"></i
+              ></span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg mb-3">
+            <label class="label">Departure</label>
+            <div class="dvTxtDepart dvInputGroup input-group">
+              <input
+                id="txtDepart"
+                class="input datePicker form-control"
+                onfocus="placeholderOnFocus(this,'Enter Date');"
+                onblur="placeholderOnFocus(this,'Enter Date');"
+                value="Enter Date"
+                type="text"
+                readonly="readonly"
+              />
+
+              <span class="input-group-text bg-colour6"
+                ><i class="fa-regular fa-calendar"></i
+              ></span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg mb-3" id="divrtn">
+            <label class="label">Return</label>
+            <div class="dvInputGroup input-group">
+              <input
+                class="input datePicker form-control cal-icon pr-5"
+                id="txtReturn"
+                onfocus="placeholderOnFocus(this,'Enter Date');"
+                onblur="placeholderOnFocus(this,'Enter Date');"
+                value="Enter Date"
+                type="text"
+                readonly="readonly"
+              />
+
+              <span class="input-group-text bg-colour6"
+                ><i class="fa-regular fa-calendar"></i
+              ></span>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 selTravel mb-3">
+            <label class="label">Travel Class</label>
+            <div class="dvInput input-group">
+              <select class="form-select form-control" id="dropDownListEconomy">
+                <option value="Economy" selected="selected">Economy</option>
+                <option value="Business">Business</option>
+                <option value="First">First</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg mb-3">
+            <label class="label">Airline Preference</label>
+            <div class="dvInput input-group">
+              <input type="hidden" id="hdnCarrier" />
+              <input
+                class="input air-icon form-control"
+                id="txtAirline"
+                onfocus="placeholderOnFocus(this, 'All Airlines');"
+                onblur="placeholderOnFocus(this, 'All Airlines');"
+                value="All Airlines"
+                type="text"
+              />
+            </div>
+          </div>
+          <div class="col-4 col-md-6 col-lg mb-3">
+            <label class="label">Adult(s)</label>
+            <div class="d-flex justify-content-center">
+              <div class="dvInput input-group">
+                <!-- Minus Button -->
+                <button class="btn" type="button" onclick="decrementValue()">
+                  -
+                </button>
+                <!-- Input Field -->
+                <input
+                  type="number"
+                  class="form-control text-center b-radius-top-0"
+                  id="quantityInput"
+                  value="0"
+                  min="0"
+                  aria-label="Quantity"
+                />
+                <!-- Plus Button -->
+                <button class="btn" type="button" onclick="incrementValue()">
+                  +
+                </button>
               </div>
             </div>
+          </div>
+          <div class="col-4 col-md-6 col-lg mb-3">
+            <label class="label">Child(s) 2+ 11Yrs</label>
+            <div class="d-flex justify-content-center">
+              <div class="dvInput input-group">
+                <!-- Minus Button -->
+                <button class="btn" type="button" onclick="decrementValue()">
+                  -
+                </button>
+                <!-- Input Field -->
+                <input
+                  type="number"
+                  class="form-control text-center b-radius-top-0"
+                  id="quantityInput"
+                  value="0"
+                  min="0"
+                  aria-label="Quantity"
+                />
+                <!-- Plus Button -->
+                <button class="btn" type="button" onclick="incrementValue()">
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 col-md-6 col-lg mb-3">
+            <label class="label">Infants(s) below 2Yrs</label>
+            <div class="d-flex justify-content-center">
+              <div class="dvInput input-group">
+                <!-- Minus Button -->
+                <button class="btn" type="button" onclick="decrementValue()">
+                  -
+                </button>
+                <!-- Input Field -->
+                <input
+                  type="number"
+                  class="form-control text-center b-radius-top-0"
+                  id="quantityInput"
+                  value="0"
+                  min="0"
+                  aria-label="Quantity"
+                />
+                <!-- Plus Button -->
+                <button class="btn" type="button" onclick="incrementValue()">
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col-12">
+            <button type="button" class="btn btn-one w-100">
+              Search Flights
+            </button>
           </div>
         </div>
       </div>
@@ -424,67 +578,19 @@
     <script src="src/assets/js/jquery-ui.js"></script>
 
     <script>
-      const heroSlider = new Swiper(".dvHeroSlider.swiper", {
-        direction: "horizontal",
-        loop: false,
-        speed: 500,
-        slidesPerView: 1,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        spaceBetween: 10,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-          },
-        },
-        mousewheel: {
-          enabled: false,
-        },
-        keyboard: {
-          enabled: true,
-        },
-      });
+      // Function to increment value
+      function incrementValue() {
+        const input = document.getElementById("quantityInput");
+        input.value = parseInt(input.value) + 1;
+      }
 
-      const VoucherSlider = new Swiper("#voucherSwiper", {
-        direction: "horizontal",
-        loop: false,
-        speed: 500,
-        slidesPerView: 1,
-        navigation: {
-          nextEl: "#shop_swiper-button-next",
-          prevEl: "#shop_swiper-button-prev",
-        },
-        spaceBetween: 10,
-        breakpoints: {
-          0: {
-            slidesPerView: 2,
-          },
-          576: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 3,
-          },
-          992: {
-            slidesPerView: 4,
-          },
-          1200: {
-            slidesPerView: 4,
-          },
-        },
-        mousewheel: {
-          enabled: false,
-        },
-        keyboard: {
-          enabled: true,
-        },
-      });
+      // Function to decrement value
+      function decrementValue() {
+        const input = document.getElementById("quantityInput");
+        if (parseInt(input.value) > 0) {
+          input.value = parseInt(input.value) - 1;
+        }
+      }
     </script>
   </body>
 </html>

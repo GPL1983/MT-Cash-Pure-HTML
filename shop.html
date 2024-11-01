@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Page</title>
@@ -10,437 +9,543 @@
     <link rel="stylesheet" href="src/assets/css/root.css" />
     <link rel="stylesheet" href="src/assets/css/global.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="dvHeader pt-1 pb-1">
-        <div class="container-xl">
-            <div class="row justify-content-beween align-items-center">
-                <div class="col-auto order-lg-0 logo">
-                    <img class="" src="/src/assets/images/home/logo/mt-cash-logo.svg" alt="" />
-                </div>
-                <div class="col-auto ms-auto ms-lg-0 order-lg-2">
-                    <select class="form-control" name="" id="">
-                        <option value="en">EN</option>
-                        <option value="ar">AR</option>
-                        <option value="fr">FR</option>
-                    </select>
-                </div>
-                <div class="col-auto d-lg-none">
-                    <button class="btn border" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasBottom">
-                        <i class="fa-solid fa-bars-staggered"></i>
-                    </button>
-                </div>
-                <div class="offcanvas offcanvas-start bg-transparent- col-lg-auto order-lg-1 ms-lg-auto px-0 px-lg-3 border-lg-top-0"
-                    tabindex="-1" id="offcanvasBottom">
-                    <!-- <div class="p-3-">
+      <div class="container-xl">
+        <div class="row justify-content-beween align-items-center">
+          <div class="col-auto order-lg-0 logo">
+            <img class="" src="/src/assets/images/home/logo/mt-cash-logo.svg" alt="" />
+          </div>
+          <div class="col-auto ms-auto ms-lg-0 order-lg-2">
+            <select class="form-control" name="" id="">
+              <option value="en">EN</option>
+              <option value="ar">AR</option>
+              <option value="fr">FR</option>
+            </select>
+          </div>
+          <div class="col-auto d-lg-none">
+            <button class="btn border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+          </div>
+          <div
+            class="offcanvas offcanvas-start bg-transparent- col-lg-auto order-lg-1 ms-lg-auto px-0 px-lg-3 border-lg-top-0"
+            tabindex="-1"
+            id="offcanvasBottom"
+          >
+            <!-- <div class="p-3-">
                 <div class="b-radius bg-colour6-"> -->
-                    <div class="offcanvas-header d-lg-none pb-0">
-                        <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5> -->
-                        <button type="button" class="btn border btn-close" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body pt-0 p-lg-0">
-                        <div class="row mx-lg-0 align-items-lg-center">
-                            <div class="col-12 col-lg-auto">
-                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
-                                    href="#">
-                                    <img src="/src/assets/images/icons/menu-icons/profile.svg" alt=""
-                                        class="d-lg-none" />
-                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Profile</span>
-                                </a>
-                            </div>
-                            <div class="col-12 col-lg-auto">
-                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
-                                    href="#">
-                                    <img src="/src/assets/images/icons/menu-icons/my-order.svg" alt=""
-                                        class="d-lg-none" />
-                                    <span class="d-lg-inline-block ps-2 ps-lg-0">My Order</span>
-                                </a>
-                            </div>
-                            <div class="col-12 col-lg-auto">
-                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
-                                    href="#">
-                                    <img src="/src/assets/images/icons/menu-icons/about.svg" alt="" class="d-lg-none" />
-                                    <span class="d-lg-inline-block ps-2 ps-lg-0">About Program</span>
-                                </a>
-                            </div>
-                            <div class="col-12 col-lg-auto d-lg-none">
-                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
-                                    href="#">
-                                    <img src="/src/assets/images/icons/menu-icons/faqs.svg" alt="" class="d-lg-none" />
-                                    <span class="d-lg-inline-block ps-2 ps-lg-0">FAQs</span>
-                                </a>
-                            </div>
-                            <div class="col-12 col-lg-auto d-lg-none">
-                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
-                                    href="#">
-                                    <img src="/src/assets/images/icons/menu-icons/terms-and-conditions.svg" alt=""
-                                        class="d-lg-none" />
-                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Terms &amp; conditions</span>
-                                </a>
-                            </div>
-                            <div class="col-12 col-lg-auto d-lg-none">
-                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
-                                    href="#">
-                                    <img src="/src/assets/images/icons/menu-icons/booking-policy.svg" alt=""
-                                        class="d-lg-none" />
-                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Booking Policy</span>
-                                </a>
-                            </div>
-                            <div class="col-12 col-lg-auto d-lg-none">
-                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0"
-                                    href="#">
-                                    <img src="/src/assets/images/icons/menu-icons/privacy-policy.svg" alt=""
-                                        class="d-lg-none" />
-                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Privacy Policy</span>
-                                </a>
-                            </div>
-                            <div class="col-6 offset-3 col-lg-auto offset-lg-0 text-center">
-                                <button class="btn btn-one w-100">Login</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- </div>
-              </div> -->
-                </div>
+            <div class="offcanvas-header d-lg-none pb-0">
+              <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5> -->
+              <button
+                type="button"
+                class="btn border btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
+            <div class="offcanvas-body pt-0 p-lg-0">
+              <div class="row mx-lg-0 align-items-lg-center">
+                <div class="col-12 col-lg-auto">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                    href="#"
+                  >
+                    <img src="/src/assets/images/icons/menu-icons/profile.svg" alt="" class="d-lg-none" />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0">Profile</span>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-auto">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                    href="#"
+                  >
+                    <img src="/src/assets/images/icons/menu-icons/my-order.svg" alt="" class="d-lg-none" />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0">My Order</span>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-auto">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                    href="#"
+                  >
+                    <img src="/src/assets/images/icons/menu-icons/about.svg" alt="" class="d-lg-none" />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0">About Program</span>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-auto d-lg-none">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                    href="#"
+                  >
+                    <img src="/src/assets/images/icons/menu-icons/faqs.svg" alt="" class="d-lg-none" />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0">FAQs</span>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-auto d-lg-none">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                    href="#"
+                  >
+                    <img src="/src/assets/images/icons/menu-icons/terms-and-conditions.svg" alt="" class="d-lg-none" />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0">Terms &amp; conditions</span>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-auto d-lg-none">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                    href="#"
+                  >
+                    <img src="/src/assets/images/icons/menu-icons/booking-policy.svg" alt="" class="d-lg-none" />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0">Booking Policy</span>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-auto d-lg-none">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0"
+                    href="#"
+                  >
+                    <img src="/src/assets/images/icons/menu-icons/privacy-policy.svg" alt="" class="d-lg-none" />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0">Privacy Policy</span>
+                  </a>
+                </div>
+                <div class="col-6 offset-3 col-lg-auto offset-lg-0 text-center">
+                  <button class="btn btn-one w-100">Login</button>
+                </div>
+              </div>
+            </div>
+            <!-- </div>
+              </div> -->
+          </div>
         </div>
+      </div>
     </div>
     <div class="dvShopMenu">
-        <div id="CP_divShopMenuBar" class="container-xl">
-            <nav class="navbar navbar-expand-lg navbar-light px-0 mx-n3">
-                <!-- Navbar Toggler (for mobile view) -->
-                <div class="dvNavbarToggler col-auto d-lg-none pr-0">
-                    <button class="navbar-toggler btn border" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#dvMenu" aria-controls="dvMenu" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="fa-solid fa-bars-staggered"></span>
-                    </button>
-                </div>
+      <div id="CP_divShopMenuBar" class="container-xl">
+        <nav class="navbar navbar-expand-lg navbar-light px-0 mx-n3">
+          <!-- Navbar Toggler (for mobile view) -->
+          <div class="dvNavbarToggler col-auto d-lg-none pr-0">
+            <button
+              class="navbar-toggler btn border"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#dvMenu"
+              aria-controls="dvMenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="fa-solid fa-bars-staggered"></span>
+            </button>
+          </div>
 
-                <!-- Search Box (visible in larger screens) -->
-                <div class="dvShopSearchBox col col-lg-3 order-lg-2 ms-auto d-none d-lg-block">
-                    <div class="dvSearch">
-                        <div class="dvTxtProductName input-group">
-                            <input class="form-control" type="search" placeholder="Search" aria-label="Search"
-                                id="txtProductName" autocomplete="off">
-                            <button id="btnSearchExperiences" type="button" class="input-group-text"
-                                onclick="SearchProduct()">
-                                <i class="fa-solid fa-magnifying-glass text-colour6"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+          <!-- Search Box (visible in larger screens) -->
+          <div class="dvShopSearchBox col col-lg-3 order-lg-2 ms-auto d-none d-lg-block">
+            <div class="dvSearch">
+              <div class="dvTxtProductName input-group">
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                  id="txtProductName"
+                  autocomplete="off"
+                />
+                <button id="btnSearchExperiences" type="button" class="input-group-text" onclick="SearchProduct()">
+                  <i class="fa-solid fa-magnifying-glass text-colour6"></i>
+                </button>
+              </div>
+            </div>
+          </div>
 
-                <!-- Cart Button -->
-                <a href="Cart.aspx" id="CP_aCartBtn" class="order-lg-3 ms-auto d-flex align-items-center">
-                    <img src="./src/assets/images/shoppage/icon-cart.svg" class="icon-cart" alt="Cart">
-                    <span id="CP_spanCartItems" class="bg-light border ms-2 px-2 py-1 rounded-2 text-colour7">0</span>
+          <!-- Cart Button -->
+          <a href="Cart.aspx" id="CP_aCartBtn" class="order-lg-3 ms-auto d-flex align-items-center">
+            <img src="./src/assets/images/shoppage/icon-cart.svg" class="icon-cart" alt="Cart" />
+            <span id="CP_spanCartItems" class="bg-light border ms-2 px-2 py-1 rounded-2 text-colour7">0</span>
+          </a>
+
+          <!-- Navbar Content (Links) -->
+          <div class="collapse navbar-collapse col-lg-8 order-lg-1" id="dvMenu">
+            <ul class="navbar-nav me-auto">
+              <!-- Clothing Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-uppercase"
+                  href="#"
+                  id="clothingDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Clothing
                 </a>
+                <ul class="dropdown-menu" aria-labelledby="clothingDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="ShopList.aspx?CategoryId=2bfecbd5-e1ab-44d1-98f5-420cd9cd07b8&ProductType=Physical"
+                      >Men's Wear</a
+                    >
+                  </li>
+                </ul>
+              </li>
 
-                <!-- Navbar Content (Links) -->
-                <div class="collapse navbar-collapse col-lg-8 order-lg-1" id="dvMenu">
-                    <ul class="navbar-nav me-auto">
-                        <!-- Clothing Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-uppercase" href="#" id="clothingDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Clothing
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="clothingDropdown">
-                                <li><a class="dropdown-item"
-                                        href="ShopList.aspx?CategoryId=2bfecbd5-e1ab-44d1-98f5-420cd9cd07b8&ProductType=Physical">Men's
-                                        Wear</a></li>
-                            </ul>
-                        </li>
+              <!-- Fashion Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-uppercase"
+                  href="#"
+                  id="fashionDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Fashion
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="fashionDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="ShopList.aspx?CategoryId=9b252109-8bcd-47d4-a17e-d384740fb5a3&ProductType=Physical"
+                      >Accessories</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="ShopList.aspx?CategoryId=82e5cb8b-de27-4a58-b81b-346aa265e622&ProductType=Physical"
+                      >Handbags</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="ShopList.aspx?CategoryId=055e9285-e792-4548-9627-6e2d004a6191&ProductType=Physical"
+                      >Sunglasses</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="ShopList.aspx?CategoryId=34791ef4-dc82-44ee-bb0d-62ca05028caf&ProductType=Physical"
+                      >Watches</a
+                    >
+                  </li>
+                </ul>
+              </li>
 
-                        <!-- Fashion Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-uppercase" href="#" id="fashionDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Fashion
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="fashionDropdown">
-                                <li><a class="dropdown-item"
-                                        href="ShopList.aspx?CategoryId=9b252109-8bcd-47d4-a17e-d384740fb5a3&ProductType=Physical">Accessories</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="ShopList.aspx?CategoryId=82e5cb8b-de27-4a58-b81b-346aa265e622&ProductType=Physical">Handbags</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="ShopList.aspx?CategoryId=055e9285-e792-4548-9627-6e2d004a6191&ProductType=Physical">Sunglasses</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="ShopList.aspx?CategoryId=34791ef4-dc82-44ee-bb0d-62ca05028caf&ProductType=Physical">Watches</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <!-- Health & Beauty Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-uppercase" href="#" id="healthDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Health & Beauty
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="healthDropdown">
-                                <li><a class="dropdown-item"
-                                        href="ShopList.aspx?CategoryId=9a227bb9-f35d-49fc-9d14-f0d3be4dc55a&ProductType=Physical">Perfumes</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+              <!-- Health & Beauty Dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-uppercase"
+                  href="#"
+                  id="healthDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Health & Beauty
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="healthDropdown">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="ShopList.aspx?CategoryId=9a227bb9-f35d-49fc-9d14-f0d3be4dc55a&ProductType=Physical"
+                      >Perfumes</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
     <div class="container my-3">
-        <!-- Trending Products Section -->
-        <h3 class="my-3 text-colour7">Trending Products</h3>
-        <div class="swiper trending-products-swiper">
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                    <div class="dvProductCard">
-                        <div class="dvItem mb-2"><a class="anchor" href="ProductDetail.html">
-                                <div class="img-container"><img style="width:100%;"
-                                        src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg">
-                                </div>
-                                <div class="px-2 py-3 text-center">
-                                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
-                                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
-                                    <h6 class="points">250,000 Points</h6>
-                                </div>
-                            </a></div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="dvProductCard">
-                        <div class="dvItem mb-2"><a class="anchor"
-                                href="ProductDetails.aspx?ProductId=JL_13026&amp;ProductType=physical">
-                                <div class="img-container"><img style="width:100%;"
-                                        src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg">
-                                </div>
-                                <div class="px-2 py-3 text-center">
-                                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
-                                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
-                                    <h6 class="points">250,000 Points</h6>
-                                </div>
-                            </a></div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="dvProductCard">
-                        <div class="dvItem mb-2"><a class="anchor"
-                                href="ProductDetails.aspx?ProductId=JL_13026&amp;ProductType=physical">
-                                <div class="img-container"><img style="width:100%;"
-                                        src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg">
-                                </div>
-                                <div class="px-2 py-3 text-center">
-                                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
-                                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
-                                    <h6 class="points">250,000 Points</h6>
-                                </div>
-                            </a></div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="dvProductCard">
-                        <div class="dvItem mb-2"><a class="anchor"
-                                href="ProductDetails.aspx?ProductId=JL_13026&amp;ProductType=physical">
-                                <div class="img-container"><img style="width:100%;"
-                                        src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg">
-                                </div>
-                                <div class="px-2 py-3 text-center">
-                                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
-                                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
-                                    <h6 class="points">250,000 Points</h6>
-                                </div>
-                            </a></div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="dvProductCard">
-                        <div class="dvItem mb-2"><a class="anchor"
-                                href="ProductDetails.aspx?ProductId=JL_13026&amp;ProductType=physical">
-                                <div class="img-container"><img style="width:100%;"
-                                        src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg">
-                                </div>
-                                <div class="px-2 py-3 text-center">
-                                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
-                                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
-                                    <h6 class="points">250,000 Points</h6>
-                                </div>
-                            </a></div>
-                    </div>
-                </div>
-
+      <!-- Trending Products Section -->
+      <h3 class="my-3 text-colour7">Trending Products</h3>
+      <div class="swiper trending-products-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="dvProductCard">
+              <div class="dvItem mb-2">
+                <a class="anchor" href="ProductDetail.html">
+                  <div class="img-container">
+                    <img
+                      style="width: 100%"
+                      src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg"
+                    />
+                  </div>
+                  <div class="px-2 py-3 text-center">
+                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
+                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
+                    <h6 class="points">250,000 Points</h6>
+                  </div>
+                </a>
+              </div>
             </div>
-            <!-- Swiper navigation buttons -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-
-        <!-- Featured Products Section -->
-        <h3 class="my-3 text-colour7">Featured Products</h3>
-        <div class="swiper featured-products-swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="dvProductCard">
-                        <div class="dvItem mb-2"><a class="anchor"
-                                href="ProductDetails.aspx?ProductId=JL_13026&amp;ProductType=physical">
-                                <div class="img-container"><img style="width:100%;"
-                                        src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg">
-                                </div>
-                                <div class="px-2 py-3 text-center">
-                                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
-                                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
-                                    <h6 class="points">250,000 Points</h6>
-                                </div>
-                            </a></div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="dvProductCard">
-                        <div class="dvItem mb-2"><a class="anchor"
-                                href="ProductDetails.aspx?ProductId=JL_13026&amp;ProductType=physical">
-                                <div class="img-container"><img style="width:100%;"
-                                        src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg">
-                                </div>
-                                <div class="px-2 py-3 text-center">
-                                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
-                                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
-                                    <h6 class="points">250,000 Points</h6>
-                                </div>
-                            </a></div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="dvProductCard">
-                        <div class="dvItem mb-2"><a class="anchor"
-                                href="ProductDetails.aspx?ProductId=JL_13026&amp;ProductType=physical">
-                                <div class="img-container"><img style="width:100%;"
-                                        src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg">
-                                </div>
-                                <div class="px-2 py-3 text-center">
-                                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
-                                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
-                                    <h6 class="points">250,000 Points</h6>
-                                </div>
-                            </a></div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="dvProductCard">
-                        <div class="dvItem mb-2"><a class="anchor"
-                                href="ProductDetails.aspx?ProductId=JL_13026&amp;ProductType=physical">
-                                <div class="img-container"><img style="width:100%;"
-                                        src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg">
-                                </div>
-                                <div class="px-2 py-3 text-center">
-                                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
-                                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
-                                    <h6 class="points">250,000 Points</h6>
-                                </div>
-                            </a></div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="dvProductCard">
-                        <div class="dvItem mb-2"><a class="anchor"
-                                href="ProductDetails.aspx?ProductId=JL_13026&amp;ProductType=physical">
-                                <div class="img-container"><img style="width:100%;"
-                                        src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg">
-                                </div>
-                                <div class="px-2 py-3 text-center">
-                                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
-                                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
-                                    <h6 class="points">250,000 Points</h6>
-                                </div>
-                            </a></div>
-                    </div>
-                </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dvProductCard">
+              <div class="dvItem mb-2">
+                <a class="anchor" href="ProductDetails.aspx?ProductId=JL_13026&amp;ProductType=physical">
+                  <div class="img-container">
+                    <img
+                      style="width: 100%"
+                      src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg"
+                    />
+                  </div>
+                  <div class="px-2 py-3 text-center">
+                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
+                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
+                    <h6 class="points">250,000 Points</h6>
+                  </div>
+                </a>
+              </div>
             </div>
-            <!-- Swiper navigation buttons -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dvProductCard">
+              <div class="dvItem mb-2">
+                <a class="anchor" href="ProductDetails.aspx?ProductId=JL_13026&amp;ProductType=physical">
+                  <div class="img-container">
+                    <img
+                      style="width: 100%"
+                      src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg"
+                    />
+                  </div>
+                  <div class="px-2 py-3 text-center">
+                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
+                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
+                    <h6 class="points">250,000 Points</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dvProductCard">
+              <div class="dvItem mb-2">
+                <a class="anchor" href="ProductDetails.aspx?ProductId=JL_13026&amp;ProductType=physical">
+                  <div class="img-container">
+                    <img
+                      style="width: 100%"
+                      src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg"
+                    />
+                  </div>
+                  <div class="px-2 py-3 text-center">
+                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
+                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
+                    <h6 class="points">250,000 Points</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dvProductCard">
+              <div class="dvItem mb-2">
+                <a class="anchor" href="ProductDetails.aspx?ProductId=JL_13026&amp;ProductType=physical">
+                  <div class="img-container">
+                    <img
+                      style="width: 100%"
+                      src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg"
+                    />
+                  </div>
+                  <div class="px-2 py-3 text-center">
+                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
+                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
+                    <h6 class="points">250,000 Points</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- Swiper navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      <!-- Featured Products Section -->
+      <h3 class="my-3 text-colour7">Featured Products</h3>
+      <div class="swiper featured-products-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="dvProductCard">
+              <div class="dvItem mb-2">
+                <a class="anchor" href="ProductDetails.aspx?ProductId=JL_13026&amp;ProductType=physical">
+                  <div class="img-container">
+                    <img
+                      style="width: 100%"
+                      src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg"
+                    />
+                  </div>
+                  <div class="px-2 py-3 text-center">
+                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
+                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
+                    <h6 class="points">250,000 Points</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dvProductCard">
+              <div class="dvItem mb-2">
+                <a class="anchor" href="ProductDetails.aspx?ProductId=JL_13026&amp;ProductType=physical">
+                  <div class="img-container">
+                    <img
+                      style="width: 100%"
+                      src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg"
+                    />
+                  </div>
+                  <div class="px-2 py-3 text-center">
+                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
+                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
+                    <h6 class="points">250,000 Points</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dvProductCard">
+              <div class="dvItem mb-2">
+                <a class="anchor" href="ProductDetails.aspx?ProductId=JL_13026&amp;ProductType=physical">
+                  <div class="img-container">
+                    <img
+                      style="width: 100%"
+                      src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg"
+                    />
+                  </div>
+                  <div class="px-2 py-3 text-center">
+                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
+                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
+                    <h6 class="points">250,000 Points</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dvProductCard">
+              <div class="dvItem mb-2">
+                <a class="anchor" href="ProductDetails.aspx?ProductId=JL_13026&amp;ProductType=physical">
+                  <div class="img-container">
+                    <img
+                      style="width: 100%"
+                      src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg"
+                    />
+                  </div>
+                  <div class="px-2 py-3 text-center">
+                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
+                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
+                    <h6 class="points">250,000 Points</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="dvProductCard">
+              <div class="dvItem mb-2">
+                <a class="anchor" href="ProductDetails.aspx?ProductId=JL_13026&amp;ProductType=physical">
+                  <div class="img-container">
+                    <img
+                      style="width: 100%"
+                      src="https://justlounge.com/media/catalog/product/cache/0/image/9df78eab33525d08d6e5fb8d27136e95/a/r/ar19669159_d-1.jpg"
+                    />
+                  </div>
+                  <div class="px-2 py-3 text-center">
+                    <h2 class="">Alessandra Rich Crystal heart necklace</h2>
+                    <p class="mb-2 mt-1 text-capitalize text-colour7">physical</p>
+                    <h6 class="points">250,000 Points</h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper navigation buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
     </div>
     <div class="dvFooter shadow-lg position-fixed z-index-2 w-100">
-        <div class="bg-colour6">
-            <div class="container-xl py-2">
-                <div class="row align-items-center">
-                    <div class="col text-center">
-                        <a href="/">
-                            <!-- <i class="fa-solid fa-house"></i> -->
-                            <img src="./src/assets/images/icons/footer-icons/icon-home.svg" />
-                            <p class="h9 text-colour9 heading-medium pt-1">Home</p>
-                        </a>
-                    </div>
-                    <div class="col text-center">
-                        <a href="ViewMemberProfile.aspx">
-                            <!-- <i class="fa-solid fa-user"></i> -->
-                            <img src="./src/assets/images/icons/footer-icons/icon-profile.svg" />
-                            <p class="h9 text-colour9 heading-medium pt-1">Profile</p>
-                        </a>
-                    </div>
-                    <div class="col text-center">
-                        <a href="#">
-                            <!-- <i class="fa-solid fa-bell"></i> -->
-                            <img src="./src/assets/images/icons/footer-icons/icon-app.svg" />
-                        </a>
-                    </div>
-                    <div class="col text-center">
-                        <a href="#">
-                            <!-- <i class="fa-solid fa-bell"></i> -->
-                            <img src="./src/assets/images/icons/footer-icons/icon-notification.svg" />
-                            <p class="h9 text-colour9 heading-medium pt-1">Notification</p>
-                        </a>
-                    </div>
-
-                    <div class="col text-center">
-                        <a href="OrderHistory.aspx">
-                            <!-- <i class="fa-solid fa-bag-shopping"></i> -->
-                            <img src="./src/assets/images/icons/footer-icons/icon-cart.svg" />
-                            <p class="h9 text-colour9 heading-medium pt-1">Cart</p>
-                        </a>
-                    </div>
-                </div>
+      <div class="bg-colour6">
+        <div class="container-xl py-2">
+          <div class="row align-items-center">
+            <div class="col text-center">
+              <a href="/">
+                <!-- <i class="fa-solid fa-house"></i> -->
+                <img src="./src/assets/images/icons/footer-icons/icon-home.svg" />
+                <p class="h9 text-colour9 heading-medium pt-1">Home</p>
+              </a>
             </div>
+            <div class="col text-center">
+              <a href="ViewMemberProfile.aspx">
+                <!-- <i class="fa-solid fa-user"></i> -->
+                <img src="./src/assets/images/icons/footer-icons/icon-profile.svg" />
+                <p class="h9 text-colour9 heading-medium pt-1">Profile</p>
+              </a>
+            </div>
+            <div class="col text-center">
+              <a href="#">
+                <!-- <i class="fa-solid fa-bell"></i> -->
+                <img src="./src/assets/images/icons/footer-icons/icon-app.svg" />
+              </a>
+            </div>
+            <div class="col text-center">
+              <a href="#">
+                <!-- <i class="fa-solid fa-bell"></i> -->
+                <img src="./src/assets/images/icons/footer-icons/icon-notification.svg" />
+                <p class="h9 text-colour9 heading-medium pt-1">Notification</p>
+              </a>
+            </div>
+
+            <div class="col text-center">
+              <a href="OrderHistory.aspx">
+                <!-- <i class="fa-solid fa-bag-shopping"></i> -->
+                <img src="./src/assets/images/icons/footer-icons/icon-cart.svg" />
+                <p class="h9 text-colour9 heading-medium pt-1">Cart</p>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        // Initialize Swiper for Trending Products
-        const trendingSwiper = new Swiper('.trending-products-swiper', {
-            slidesPerView: 2,
-            spaceBetween: 10,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
-            },
-        });
+      // Initialize Swiper for Trending Products
+      const trendingSwiper = new Swiper(".trending-products-swiper", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        },
+      });
 
-        // Initialize Swiper for Featured Products
-        const featuredSwiper = new Swiper('.featured-products-swiper', {
-            slidesPerView: 2,
-            spaceBetween: 10,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
-            },
-        });
+      // Initialize Swiper for Featured Products
+      const featuredSwiper = new Swiper(".featured-products-swiper", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        },
+      });
     </script>
-</body>
-
+  </body>
 </html>

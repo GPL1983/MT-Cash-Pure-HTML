@@ -17,7 +17,9 @@ body {
   z-index: 2 !important;
 } */
 /*=========[ Z-INDEX ]=========*/
-a {text-decoration: none;}
+a {
+  text-decoration: none;
+}
 /*=========[ COMMON SCROLLBAR STYLE ]=========*/
 ::-webkit-scrollbar {
   width: var(--scrollbar-width);
@@ -92,7 +94,7 @@ p {
   color: var(--paragraph-colour);
 }
 /*=========[ COMMON PARAGRAPH ]=========*/
- 
+
 /*=========[ BORDERS ]=========*/
 .border {
   border: 1px solid var(--border-colour) !important;
@@ -536,7 +538,9 @@ p {
 .z-index-2 {
   z-index: 2 !important;
 }
-.dvFooter a {text-decoration: none;}
+.dvFooter a {
+  text-decoration: none;
+}
 /*=========[ STICKY FOOTER ]=========*/
 
 /*=========[ PERFECT CENTER WITHOUT CHANGING STICKY FOOTER CSS ]=========*/
@@ -874,7 +878,7 @@ p {
   font-size: var(--btn-font-size);
   background-color: var(--btn-bg);
   color: var(--btn-text);
-  border: var(--btn-border-colour); 
+  border: var(--btn-border-colour);
 }
 
 .btn-one {
@@ -1631,9 +1635,6 @@ select.form-control:focus {
 .b-radius-top-left-0 {
   border-top-left-radius: var(--b-radius-top-left-0) !important;
 }
-.dvInput.input-group .b-radius-top-0 { 
-  border-radius: 0px !important;
-}
 
 /*=========[ B-RADIUS ]=========*/
 
@@ -2121,7 +2122,7 @@ select.form-control:focus {
 /*==[ -|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|- FILTER MOBILE -|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|- ]==*/
 
 /*=========[ DIFFERENT CLASS NAMES FOR PRODUCTLIST PAGES & PRODUCTDETAIL PAGES ]=========*/
-  .dvListPageGiftCards .img-container img,
+.dvListPageGiftCards .img-container img,
   .dvListPageShopOffers .img-container img,
   /*.dvListPageLounges .img-container img,*/
   .dvListPageMilesExchange .img-container img,
@@ -2166,43 +2167,23 @@ select.form-control:focus {
 .dvRedemptionMenu ::-webkit-scrollbar-thumb {
   background: var(--redemptionmenu-scrollbar-thumb-bg);
 }
- 
 .dvRedemptionMenu {
   position: relative;
 }
- /* Initial style for hidden content */
- .dvRedemptionMenu .dvContentBox {
-  max-height: 100px; /* Initial height */
+.dvRedemptionMenu .collapse:not(.show) {
+  display: block;
+  height: 100px;
   overflow: hidden;
-  transition: max-height 0.5s ease; 
+  transition: all ease-in-out 0.3s;
 }
-
-/* Toggle the height when checkbox is checked */
-.dvRedemptionMenu #toggle:checked ~ .dvContentBox {
-  max-height: 500px; /* Large enough to show full content */
+.dvRedemptionMenu .collapsing {
+  height: 100px;
+  overflow: hidden;
+  transition: height 0.35s ease;
 }
-
-/* Hide the checkbox visually */
-.dvRedemptionMenu #toggle {
-  display: none;
+.dvRedemptionMenu .btn.btn-two {
+  margin-bottom: -10px;
 }
-
-/* Styling for the label acting as a button */
-.dvRedemptionMenu .toggle-label {
-  cursor: pointer;
-  color: white; 
-  width: 36px;
-  display:block;
-  font-size: 1rem;
-  font-weight: 500;
-  text-align: center; 
-  background-color: #007dbd;
-  height: 36px;
-  border-radius: 20px;
-  line-height: 36px;
-  margin: 0 auto -35px;
-}
-
 
 /* .dvRedemptionMenu  {display: block; margin: 0 auto;border: none;text-align: center;} */
 /* .dvRedemptionMenu .arrow-icon {
@@ -2215,8 +2196,14 @@ select.form-control:focus {
   transform: rotate(180deg);
 }  */
 
-.dvRedemptionMenu .btn-two.focus, .btn-two:focus {border: none;}
-.dvRedemptionMenu .btn-two {border-color:unset;border: none;}
+.dvRedemptionMenu .btn-two.focus,
+.btn-two:focus {
+  border: none;
+}
+.dvRedemptionMenu .btn-two {
+  border-color: unset;
+  border: none;
+}
 .dvRedemptionMenu a .imageBox {
   background-color: var(--redemptionmenu-imagebox-bg-colour);
   border-radius: var(--redemptionmenu-imagebox-border-radius);

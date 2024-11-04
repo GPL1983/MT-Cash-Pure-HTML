@@ -928,6 +928,16 @@ p {
   border-radius: var(--btn-two-b-radius);
   padding: var(--btn-two-padding);
 }
+.btn-two.active {
+  font-family: var(--btn-two-family);
+  background-color: var(--btn-two-bg-hover);
+  color: var(--btn-two-text-hover);
+  border-color: var(--btn-two-border-colour-hover);
+  text-transform: var(--btn-two-text-transform);
+  border-radius: var(--btn-two-b-radius);
+  padding: var(--btn-two-padding);
+}
+
 .btn-two.focus,
 .btn-two:focus {
   font-family: var(--btn-two-family);

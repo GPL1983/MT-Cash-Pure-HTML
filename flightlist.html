@@ -1,513 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="src/assets/css/root.css" />
-    <link rel="stylesheet" href="src/assets/css/global.css" />
-    <link rel="stylesheet" href="src/assets/css/flight.css" />
-    <link rel="stylesheet" href="src/assets/css/swiper.min.css" />
-    <link rel="stylesheet" href="src/assets/css/jquery-ui.css" />
-  </head>
 
-  <body>
-    <!--header start here-->
-    <div class="dvHeader pt-1 pb-1">
-      <div class="container-xl">
-        <div class="row justify-content-beween align-items-center">
-          <div class="col-auto order-lg-0 logo">
-            <img
-              class=""
-              src="/src/assets/images/home/logo/mt-cash-logo.svg"
-              alt=""
-            />
-          </div>
-          <div class="col-auto ms-auto ms-lg-0 order-lg-2">
-            <select class="form-control" name="" id="">
-              <option value="en">EN</option>
-              <option value="ar">AR</option>
-              <option value="fr">FR</option>
-            </select>
-          </div>
-          <div class="col-auto d-lg-none">
-            <button
-              class="btn border"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasBottom"
-            >
-              <i class="fa-solid fa-bars-staggered"></i>
-            </button>
-          </div>
-          <div
-            class="offcanvas offcanvas-start bg-transparent- col-lg-auto order-lg-1 ms-lg-auto px-0 px-lg-3 border-lg-top-0"
-            tabindex="-1"
-            id="offcanvasBottom"
-          >
-            <!-- <div class="p-3-">
-              <div class="b-radius bg-colour6-"> -->
-            <div class="offcanvas-header d-lg-none pb-0">
-              <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5> -->
-              <button
-                type="button"
-                class="btn border btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body pt-0 p-lg-0">
-              <div class="row mx-lg-0 align-items-lg-center">
-                <div class="col-12 col-lg-auto">
-                  <a
-                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
-                    href="#"
-                  >
-                    <img
-                      src="/src/assets/images/icons/menu-icons/profile.svg"
-                      alt=""
-                      class="d-lg-none"
-                    />
-                    <span class="d-lg-inline-block ps-2 ps-lg-0">Profile</span>
-                  </a>
-                </div>
-                <div class="col-12 col-lg-auto">
-                  <a
-                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
-                    href="#"
-                  >
-                    <img
-                      src="/src/assets/images/icons/menu-icons/my-order.svg"
-                      alt=""
-                      class="d-lg-none"
-                    />
-                    <span class="d-lg-inline-block ps-2 ps-lg-0">My Order</span>
-                  </a>
-                </div>
-                <div class="col-12 col-lg-auto">
-                  <a
-                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
-                    href="#"
-                  >
-                    <img
-                      src="/src/assets/images/icons/menu-icons/about.svg"
-                      alt=""
-                      class="d-lg-none"
-                    />
-                    <span class="d-lg-inline-block ps-2 ps-lg-0"
-                      >About Program</span
-                    >
-                  </a>
-                </div>
-                <div class="col-12 col-lg-auto d-lg-none">
-                  <a
-                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
-                    href="#"
-                  >
-                    <img
-                      src="/src/assets/images/icons/menu-icons/faqs.svg"
-                      alt=""
-                      class="d-lg-none"
-                    />
-                    <span class="d-lg-inline-block ps-2 ps-lg-0">FAQs</span>
-                  </a>
-                </div>
-                <div class="col-12 col-lg-auto d-lg-none">
-                  <a
-                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
-                    href="#"
-                  >
-                    <img
-                      src="/src/assets/images/icons/menu-icons/terms-and-conditions.svg"
-                      alt=""
-                      class="d-lg-none"
-                    />
-                    <span class="d-lg-inline-block ps-2 ps-lg-0"
-                      >Terms &amp; conditions</span
-                    >
-                  </a>
-                </div>
-                <div class="col-12 col-lg-auto d-lg-none">
-                  <a
-                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
-                    href="#"
-                  >
-                    <img
-                      src="/src/assets/images/icons/menu-icons/booking-policy.svg"
-                      alt=""
-                      class="d-lg-none"
-                    />
-                    <span class="d-lg-inline-block ps-2 ps-lg-0"
-                      >Booking Policy</span
-                    >
-                  </a>
-                </div>
-                <div class="col-12 col-lg-auto d-lg-none">
-                  <a
-                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0"
-                    href="#"
-                  >
-                    <img
-                      src="/src/assets/images/icons/menu-icons/privacy-policy.svg"
-                      alt=""
-                      class="d-lg-none"
-                    />
-                    <span class="d-lg-inline-block ps-2 ps-lg-0"
-                      >Privacy Policy</span
-                    >
-                  </a>
-                </div>
-                <div class="col-6 offset-3 col-lg-auto offset-lg-0 text-center">
-                  <button class="btn btn-one w-100">Login</button>
-                </div>
-              </div>
-            </div>
-            <!-- </div>
-            </div> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--header end here-->
-    <div class="dvBreadcrumbs bg-colour1 py-2">
-      <div class="container-xl">
-        <div class="d-flex justify-content-center">
-          <div class="me-auto">
-            <a class="text-colour6" href="#" onclick="history.go(-1)"
-              ><i class="fa-solid fa-arrow-left"></i
-            ></a>
-          </div>
-          <div class="me-auto">
-            <p class="text-colour6">Flights Search Result</p>
-          </div>
-        </div>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="src/assets/css/root.css" />
+  <link rel="stylesheet" href="src/assets/css/global.css" />
+  <link rel="stylesheet" href="src/assets/css/flight.css" />
+  <link rel="stylesheet" href="src/assets/css/swiper.min.css" />
+  <link rel="stylesheet" href="src/assets/css/jquery-ui.css" />
+</head>
 
-    <!--Flight List start here-->
+<body>
+  <!--header start here-->
+  <div class="dvHeader pt-1 pb-1">
     <div class="container-xl">
-      <div class="row">
-        <div class="seq_0 dvFlightInfo col-12 col-md-6 col-lg-12 mb-4 mt-4">
-          <div class="border b-radius px-3">
-            <div
-              class="dvAirInfo row py-2 bg-colour2 b-radius-top-right b-radius-top-left"
-            >
-              <div class="col-8 d-flex align-items-center">
-                <img
-                  src="https://ibe.infiplanets.com/Images/AirlinesLogo/SG.gif"
-                  title="Spicejet Limited"
-                />
-                <span class="ms-2">Spicejet Limited</span>
+      <div class="row justify-content-beween align-items-center">
+        <div class="col-auto order-lg-0 logo">
+          <img class="" src="/src/assets/images/home/logo/mt-cash-logo.svg" alt="" />
+        </div>
+        <div class="col-auto ms-auto ms-lg-0 order-lg-2">
+          <select class="form-control" name="" id="">
+            <option value="en">EN</option>
+            <option value="ar">AR</option>
+            <option value="fr">FR</option>
+          </select>
+        </div>
+        <div class="col-auto d-lg-none">
+          <button class="btn border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+        </div>
+        <div
+          class="offcanvas offcanvas-start bg-transparent- col-lg-auto order-lg-1 ms-lg-auto px-0 px-lg-3 border-lg-top-0"
+          tabindex="-1" id="offcanvasBottom">
+          <!-- <div class="p-3-">
+              <div class="b-radius bg-colour6-"> -->
+          <div class="offcanvas-header d-lg-none pb-0">
+            <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5> -->
+            <button type="button" class="btn border btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body pt-0 p-lg-0">
+            <div class="row mx-lg-0 align-items-lg-center">
+              <div class="col-12 col-lg-auto">
+                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                  href="#">
+                  <img src="/src/assets/images/icons/menu-icons/profile.svg" alt="" class="d-lg-none" />
+                  <span class="d-lg-inline-block ps-2 ps-lg-0">Profile</span>
+                </a>
               </div>
-              <div class="col-4 text-end">
-                <div class="text-end">
-                  <h2 class="heading6 text-colour1">
-                    <span class="CommaSeperated"> 60,649 </span>
-                    <span class="points-text">DH</span>
-                  </h2>
-                </div>
+              <div class="col-12 col-lg-auto">
+                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                  href="#">
+                  <img src="/src/assets/images/icons/menu-icons/my-order.svg" alt="" class="d-lg-none" />
+                  <span class="d-lg-inline-block ps-2 ps-lg-0">My Order</span>
+                </a>
+              </div>
+              <div class="col-12 col-lg-auto">
+                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                  href="#">
+                  <img src="/src/assets/images/icons/menu-icons/about.svg" alt="" class="d-lg-none" />
+                  <span class="d-lg-inline-block ps-2 ps-lg-0">About Program</span>
+                </a>
+              </div>
+              <div class="col-12 col-lg-auto d-lg-none">
+                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                  href="#">
+                  <img src="/src/assets/images/icons/menu-icons/faqs.svg" alt="" class="d-lg-none" />
+                  <span class="d-lg-inline-block ps-2 ps-lg-0">FAQs</span>
+                </a>
+              </div>
+              <div class="col-12 col-lg-auto d-lg-none">
+                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                  href="#">
+                  <img src="/src/assets/images/icons/menu-icons/terms-and-conditions.svg" alt="" class="d-lg-none" />
+                  <span class="d-lg-inline-block ps-2 ps-lg-0">Terms &amp; conditions</span>
+                </a>
+              </div>
+              <div class="col-12 col-lg-auto d-lg-none">
+                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                  href="#">
+                  <img src="/src/assets/images/icons/menu-icons/booking-policy.svg" alt="" class="d-lg-none" />
+                  <span class="d-lg-inline-block ps-2 ps-lg-0">Booking Policy</span>
+                </a>
+              </div>
+              <div class="col-12 col-lg-auto d-lg-none">
+                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0" href="#">
+                  <img src="/src/assets/images/icons/menu-icons/privacy-policy.svg" alt="" class="d-lg-none" />
+                  <span class="d-lg-inline-block ps-2 ps-lg-0">Privacy Policy</span>
+                </a>
+              </div>
+              <div class="col-6 offset-3 col-lg-auto offset-lg-0 text-center">
+                <button class="btn btn-one w-100">Login</button>
               </div>
             </div>
-            <div class="dvInfo row">
-              <div class="col-12 border-top">
-                <div class="row">
-                  <div
-                    class="col-6 col-lg d-lg-flex justify-content-lg-center align-items-lg-center text-lg-center border-right-lg"
-                  ></div>
+          </div>
+          <!-- </div>
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--header end here-->
+  <div class="dvBreadcrumbs bg-colour1 py-2">
+    <div class="container-xl">
+      <div class="d-flex justify-content-center">
+        <div class="me-auto">
+          <a class="text-colour6" href="#" onclick="history.go(-1)"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        <div class="me-auto">
+          <p class="text-colour6">Flights Search Result</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-                  <div class="col-12 col-lg-6 text-lg-center">
-                    <div class="row border-bottom border-top-bottom-lg-0">
-                      <div
-                        class="col-4 d-flex justify-content-center flex-column align-items-start text-center py-3 px-1"
-                      >
-                        <span class="h7 heading-regular text-colour7"
-                          >11:10 AM</span
-                        >
-                        <span class="h7 heading-regular text-colour7"
-                          >Dubai
-                          <span class="heading-bold abbreviation"
-                            >DXB</span
-                          ></span
-                        >
-                      </div>
-                      <div
-                        class="col-4 d-flex justify-content-center flex-column align-items-center text-center py-3 px-1"
-                      >
-                        <span class="h7 heading-regular text-colour7"
-                          >3 hrs 15 mins</span
-                        >
-                        <span class="h7 heading-regular text-colour7"
-                          >Non Stop
-                        </span>
-                      </div>
-                      <div
-                        class="col-4 d-flex justify-content-center flex-column align-items-end text-center border-right-lg py-3 px-1"
-                      >
-                        <span class="h7 heading-regular text-colour7"
-                          >3:55 PM</span
-                        >
-                        <span class="h7 heading-regular text-colour7"
-                          >New Delhi
-                          <span class="heading-bold abbreviation"
-                            >DEL</span
-                          ></span
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
+  <!--Flight List start here-->
+  <div class="container-xl">
+    <div class="row">
+      <div class="seq_0 dvFlightInfo col-12 col-md-6 col-lg-12 mb-4 mt-4">
+        <div class="border b-radius px-3">
+          <div class="dvAirInfo row py-2 bg-colour2 b-radius-top-right b-radius-top-left">
+            <div class="col-8 d-flex align-items-center">
+              <img src="https://ibe.infiplanets.com/Images/AirlinesLogo/SG.gif" title="Spicejet Limited" />
+              <span class="ms-2">Spicejet Limited</span>
+            </div>
+            <div class="col-4 text-end">
+              <div class="text-end">
+                <h2 class="heading6 text-colour1">
+                  <span class="CommaSeperated"> 60,649 </span>
+                  <span class="points-text">DH</span>
+                </h2>
               </div>
-              <div class="col-12">
-                <div class="row">
-                  <div
-                    class="col-6 col-lg d-lg-flex justify-content-lg-center align-items-lg-center text-end text-lg-center border-right-lg"
-                  ></div>
-                  <div class="col-12 col-lg-6 text-lg-center">
+            </div>
+          </div>
+          <div class="dvInfo row">
+            <div class="col-12 border-top">
+              <div class="row">
+                <div
+                  class="col-6 col-lg d-lg-flex justify-content-lg-center align-items-lg-center text-lg-center border-right-lg">
+                </div>
+
+                <div class="col-12 col-lg-6 text-lg-center">
+                  <div class="row border-bottom border-top-bottom-lg-0">
                     <div
-                      class="row border-top border-bottom border-top-bottom-lg-0"
-                    >
-                      <div
-                        class="col-4 d-flex justify-content-center flex-column align-items-start text-center py-3 px-1"
-                      >
-                        <span class="h7 heading-regular text-colour7"
-                          >12:05 AM</span
-                        >
-                        <span class="h7 heading-regular text-colour7"
-                          >New Delhi
-                          <span class="heading-bold abbreviation"
-                            >DEL</span
-                          ></span
-                        >
-                      </div>
-                      <div
-                        class="col-4 d-flex justify-content-center flex-column align-items-center text-center py-3 px-1"
-                      >
-                        <span class="h7 heading-regular text-colour7"
-                          >6 hrs 5 mins</span
-                        >
-                        <span class="h7 heading-regular text-colour7"
-                          >Non Stop
-                        </span>
-                      </div>
-                      <div
-                        class="col-4 d-flex justify-content-center flex-column align-items-end text-center border-right-lg py-3 px-1"
-                      >
-                        <span class="h7 heading-regular text-colour7"
-                          >4:40 AM</span
-                        >
-                        <span class="h7 heading-regular text-colour7"
-                          >Dubai
-                          <span class="heading-bold abbreviation"
-                            >DXB</span
-                          ></span
-                        >
-                      </div>
+                      class="col-4 d-flex justify-content-center flex-column align-items-start text-center py-3 px-1">
+                      <span class="h7 heading-regular text-colour7">11:10 AM</span>
+                      <span class="h7 heading-regular text-colour7">Dubai
+                        <span class="heading-bold abbreviation">DXB</span></span>
+                    </div>
+                    <div
+                      class="col-4 d-flex justify-content-center flex-column align-items-center text-center py-3 px-1">
+                      <span class="h7 heading-regular text-colour7">3 hrs 15 mins</span>
+                      <span class="h7 heading-regular text-colour7">Non Stop
+                      </span>
+                    </div>
+                    <div
+                      class="col-4 d-flex justify-content-center flex-column align-items-end text-center border-right-lg py-3 px-1">
+                      <span class="h7 heading-regular text-colour7">3:55 PM</span>
+                      <span class="h7 heading-regular text-colour7">New Delhi
+                        <span class="heading-bold abbreviation">DEL</span></span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="dvSeeDetails row border-top">
-              <div
-                class="col-12 d-flex justify-content-between align-items-center py-2"
-              >
-                <a
-                  href="#details_seq_0"
-                  id="flight_details"
-                  data-toggle="collapse"
-                  data-target="#dvDetails0"
-                  class="heading6 arrowBtn col-auto d-flex collapsed"
-                  aria-expanded="false"
-                  ><span class="d-inline-block">Flight Details</span>
-                  <span class="arrow-icon ml-2">
-                    <i class="fa fa-caret-up"></i> </span
-                ></a>
-                <div class="searchBtnl">
-                  <button
-                    class="btn btn-one"
-                    onclick="var retvalue = BookNowClick('0'); event.returnValue= retvalue;event.preventDefault(); return retvalue;"
-                    style="cursor: pointer"
-                  >
-                    Book Now
-                  </button>
+            <div class="col-12">
+              <div class="row">
+                <div
+                  class="col-6 col-lg d-lg-flex justify-content-lg-center align-items-lg-center text-end text-lg-center border-right-lg">
+                </div>
+                <div class="col-12 col-lg-6 text-lg-center">
+                  <div class="row border-top border-bottom border-top-bottom-lg-0">
+                    <div
+                      class="col-4 d-flex justify-content-center flex-column align-items-start text-center py-3 px-1">
+                      <span class="h7 heading-regular text-colour7">12:05 AM</span>
+                      <span class="h7 heading-regular text-colour7">New Delhi
+                        <span class="heading-bold abbreviation">DEL</span></span>
+                    </div>
+                    <div
+                      class="col-4 d-flex justify-content-center flex-column align-items-center text-center py-3 px-1">
+                      <span class="h7 heading-regular text-colour7">6 hrs 5 mins</span>
+                      <span class="h7 heading-regular text-colour7">Non Stop
+                      </span>
+                    </div>
+                    <div
+                      class="col-4 d-flex justify-content-center flex-column align-items-end text-center border-right-lg py-3 px-1">
+                      <span class="h7 heading-regular text-colour7">4:40 AM</span>
+                      <span class="h7 heading-regular text-colour7">Dubai
+                        <span class="heading-bold abbreviation">DXB</span></span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div
-              id="dvDetails0"
-              class="dvVcData col-12 collapse bg-light2 border mb-3"
-            >
-              <div class="dvDeparture row" id="details_seq_0" style="">
-                <div class="col-12 bg-colour6 py-2 mb-2">
-                  <div class="row align-items-center">
-                    <div class="col-auto col-sm-6">
-                      <span class="h6 heading-regular text-colour7"
-                        ><span>Departure</span> <i class="fa fa-arrow-right"></i
-                      ></span>
-                    </div>
-                    <div class="col-auto col-sm-6 text-sm-right">
-                      <span class="h6 heading-regular text-colour7">
-                        <i class="fa-regular fa-clock"></i>
-                        <span>Total Duration</span>: 03 hrs 15 mins
+          </div>
+          <div class="dvSeeDetails row border-top">
+            <div class="col-12 d-flex justify-content-between align-items-center py-2">
+              <a href="#details_seq_0" id="flight_details" data-toggle="collapse" data-target="#dvDetails0"
+                class="heading6 arrowBtn col-auto d-flex collapsed" aria-expanded="false"><span
+                  class="d-inline-block">Flight Details</span>
+                <span class="arrow-icon ml-2">
+                  <i class="fa fa-caret-up"></i> </span></a>
+              <div class="searchBtnl">
+                <button class="btn btn-one"
+                  onclick="var retvalue = BookNowClick('0'); event.returnValue= retvalue;event.preventDefault(); return retvalue;"
+                  style="cursor: pointer">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="dvDetails0" class="dvVcData col-12 collapse bg-light2 border mb-3">
+            <div class="dvDeparture row" id="details_seq_0" style="">
+              <div class="col-12 bg-colour6 py-2 mb-2">
+                <div class="row align-items-center">
+                  <div class="col-auto col-sm-6">
+                    <span class="h6 heading-regular text-colour7"><span>Departure</span> <i
+                        class="fa fa-arrow-right"></i></span>
+                  </div>
+                  <div class="col-auto col-sm-6 text-sm-right">
+                    <span class="h6 heading-regular text-colour7">
+                      <i class="fa-regular fa-clock"></i>
+                      <span>Total Duration</span>: 03 hrs 15 mins
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 py-2 mb-2">
+                <div class="row">
+                  <div class="col-12 col-sm-4 d-flex align-items-center mb-3">
+                    <img src="https://ibe.infiplanets.com/Images/AirlinesLogo/SG.gif" />
+                    <span class="h6 heading-regular text-colour7 ml-2">
+                      Spicejet Limited (6)</span>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <p>
+                      <span class="d-block heading-bold h7 heading-regular text-colour7"><strong>Dubai (DXB)
+                        </strong></span>
+                      <span class="d-block h7 heading-regular text-colour7">Dubai International</span>
+                      <span class="d-block heading-bold h7 heading-regular text-colour7">
+                        Departure Date:</span>
+                      <span class="d-block h7 heading-regular text-colour7">20-11-2024</span>
+                      <span class="d-block heading-bold h7 heading-regular text-colour7">Departure Time:</span>
+                      <span class="d-block h7 heading-regular text-colour7">11:10</span>
+                    </p>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <p>
+                      <span class="d-block heading-bold h7 heading-regular text-colour7"><strong>New Delhi (DEL)
+                        </strong></span>
+                      <span class="d-block h7 heading-regular text-colour7">Indira Gandhi International</span>
+                      <span class="d-block h7 heading-regular text-colour7"><strong>Arrival Date:</strong></span>
+                      <span class="d-block h7 heading-regular text-colour7">20-11-2024</span>
+                      <span class="d-block h7 heading-regular text-colour7">
+                        <strong>Arrival Time:</strong>
                       </span>
-                    </div>
+                      <span class="d-block h7 heading-regular text-colour7">15:55</span>
+                      <span class="fOption h7 heading-regular text-colour7"><span class="baggage"><i
+                            class="fa fa-suitcase"></i>
+                          <span>Baggage Allowance</span> - 25 KG
+                        </span></span>
+                    </p>
                   </div>
                 </div>
-                <div class="col-12 py-2 mb-2">
-                  <div class="row">
-                    <div class="col-12 col-sm-4 d-flex align-items-center mb-3">
-                      <img
-                        src="https://ibe.infiplanets.com/Images/AirlinesLogo/SG.gif"
-                      />
-                      <span class="h6 heading-regular text-colour7 ml-2">
-                        Spicejet Limited (6)</span
-                      >
-                    </div>
-                    <div class="col-6 col-sm-4">
-                      <p>
-                        <span
-                          class="d-block heading-bold h7 heading-regular text-colour7"
-                          ><strong>Dubai (DXB) </strong></span
-                        >
-                        <span class="d-block h7 heading-regular text-colour7"
-                          >Dubai International</span
-                        >
-                        <span
-                          class="d-block heading-bold h7 heading-regular text-colour7"
-                        >
-                          Departure Date:</span
-                        >
-                        <span class="d-block h7 heading-regular text-colour7"
-                          >20-11-2024</span
-                        >
-                        <span
-                          class="d-block heading-bold h7 heading-regular text-colour7"
-                          >Departure Time:</span
-                        >
-                        <span class="d-block h7 heading-regular text-colour7"
-                          >11:10</span
-                        >
-                      </p>
-                    </div>
-                    <div class="col-6 col-sm-4">
-                      <p>
-                        <span
-                          class="d-block heading-bold h7 heading-regular text-colour7"
-                          ><strong>New Delhi (DEL) </strong></span
-                        >
-                        <span class="d-block h7 heading-regular text-colour7"
-                          >Indira Gandhi International</span
-                        >
-                        <span class="d-block h7 heading-regular text-colour7"
-                          ><strong>Arrival Date:</strong></span
-                        >
-                        <span class="d-block h7 heading-regular text-colour7"
-                          >20-11-2024</span
-                        >
-                        <span class="d-block h7 heading-regular text-colour7">
-                          <strong>Arrival Time:</strong>
-                        </span>
-                        <span class="d-block h7 heading-regular text-colour7"
-                          >15:55</span
-                        >
-                        <span class="fOption h7 heading-regular text-colour7"
-                          ><span class="baggage"
-                            ><i class="fa fa-suitcase"></i>
-                            <span>Baggage Allowance</span> - 25 KG
-                          </span></span
-                        >
-                      </p>
-                    </div>
+              </div>
+              <div class="col-12 bg-colour6 py-2 mb-2">
+                <div class="row align-items-center">
+                  <div class="col-auto col-sm-6">
+                    <span class="h6 heading-regular text-colour7"><span>Return</span> <i
+                        class="fa fa-arrow-right"></i></span>
+                  </div>
+                  <div class="col-auto col-sm-6 text-sm-right">
+                    <span class="h6 heading-regular text-colour7">
+                      <i class="fa-regular fa-clock"></i>
+                      <span>Total Duration</span>: 06 hrs 05 mins
+                    </span>
                   </div>
                 </div>
-                <div class="col-12 bg-colour6 py-2 mb-2">
-                  <div class="row align-items-center">
-                    <div class="col-auto col-sm-6">
-                      <span class="h6 heading-regular text-colour7"
-                        ><span>Return</span> <i class="fa fa-arrow-right"></i
-                      ></span>
-                    </div>
-                    <div class="col-auto col-sm-6 text-sm-right">
-                      <span class="h6 heading-regular text-colour7">
-                        <i class="fa-regular fa-clock"></i>
-                        <span>Total Duration</span>: 06 hrs 05 mins
+              </div>
+              <div class="col-12 py-2 mb-2">
+                <div class="row">
+                  <div class="col-12 col-sm-4 d-flex align-items-center mb-3">
+                    <img src="https://ibe.infiplanets.com/Images/AirlinesLogo/SG.gif" />
+                    <span class="h6 heading-regular text-colour7 ml-2">
+                      Spicejet Limited (5)</span>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <p>
+                      <span class="d-block heading-bold h7 heading-regular text-colour7"><strong>New Delhi (DEL)
+                        </strong></span>
+                      <span class="d-block h7 heading-regular text-colour7">Indira Gandhi International</span>
+                      <span class="d-block heading-bold h7 heading-regular text-colour7">
+                        Departure Date:</span>
+                      <span class="d-block h7 heading-regular text-colour7">21-11-2024</span>
+                      <span class="d-block heading-bold h7 heading-regular text-colour7">Departure Time:</span>
+                      <span class="d-block h7 heading-regular text-colour7">00:05</span>
+                    </p>
+                  </div>
+                  <div class="col-6 col-sm-4">
+                    <p>
+                      <span class="d-block heading-bold h7 heading-regular text-colour7"><strong>Dubai (DXB)
+                        </strong></span>
+                      <span class="d-block h7 heading-regular text-colour7">Dubai International</span>
+                      <span class="d-block h7 heading-regular text-colour7"><strong>Arrival Date:</strong></span>
+                      <span class="d-block h7 heading-regular text-colour7">21-11-2024</span>
+                      <span class="d-block h7 heading-regular text-colour7">
+                        <strong>Arrival Time:</strong>
                       </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 py-2 mb-2">
-                  <div class="row">
-                    <div class="col-12 col-sm-4 d-flex align-items-center mb-3">
-                      <img
-                        src="https://ibe.infiplanets.com/Images/AirlinesLogo/SG.gif"
-                      />
-                      <span class="h6 heading-regular text-colour7 ml-2">
-                        Spicejet Limited (5)</span
-                      >
-                    </div>
-                    <div class="col-6 col-sm-4">
-                      <p>
-                        <span
-                          class="d-block heading-bold h7 heading-regular text-colour7"
-                          ><strong>New Delhi (DEL) </strong></span
-                        >
-                        <span class="d-block h7 heading-regular text-colour7"
-                          >Indira Gandhi International</span
-                        >
-                        <span
-                          class="d-block heading-bold h7 heading-regular text-colour7"
-                        >
-                          Departure Date:</span
-                        >
-                        <span class="d-block h7 heading-regular text-colour7"
-                          >21-11-2024</span
-                        >
-                        <span
-                          class="d-block heading-bold h7 heading-regular text-colour7"
-                          >Departure Time:</span
-                        >
-                        <span class="d-block h7 heading-regular text-colour7"
-                          >00:05</span
-                        >
-                      </p>
-                    </div>
-                    <div class="col-6 col-sm-4">
-                      <p>
-                        <span
-                          class="d-block heading-bold h7 heading-regular text-colour7"
-                          ><strong>Dubai (DXB) </strong></span
-                        >
-                        <span class="d-block h7 heading-regular text-colour7"
-                          >Dubai International</span
-                        >
-                        <span class="d-block h7 heading-regular text-colour7"
-                          ><strong>Arrival Date:</strong></span
-                        >
-                        <span class="d-block h7 heading-regular text-colour7"
-                          >21-11-2024</span
-                        >
-                        <span class="d-block h7 heading-regular text-colour7">
-                          <strong>Arrival Time:</strong>
-                        </span>
-                        <span class="d-block h7 heading-regular text-colour7"
-                          >04:40</span
-                        >
-                        <span class="fOption h7 heading-regular text-colour7"
-                          ><span class="baggage"
-                            ><i class="fa fa-suitcase"></i>
-                            <span>Baggage Allowance</span> - 30 KG
-                          </span></span
-                        >
-                      </p>
-                    </div>
+                      <span class="d-block h7 heading-regular text-colour7">04:40</span>
+                      <span class="fOption h7 heading-regular text-colour7"><span class="baggage"><i
+                            class="fa fa-suitcase"></i>
+                          <span>Baggage Allowance</span> - 30 KG
+                        </span></span>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -516,82 +325,74 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <!--Flight List end here-->
+  <!--Flight List end here-->
 
-    <!--footer start here-->
-    <div class="dvFooter shadow-lg position-fixed z-index-2 w-100">
-      <div class="bg-colour6">
-        <div class="container-xl py-2">
-          <div class="row align-items-center">
-            <div class="col text-center">
-              <a href="/">
-                <!-- <i class="fa-solid fa-house"></i> -->
-                <img
-                  src="./src/assets/images/icons/footer-icons/icon-home.svg"
-                />
-                <p class="h9 text-colour9 heading-medium pt-1">Home</p>
-              </a>
-            </div>
-            <div class="col text-center">
-              <a href="ViewMemberProfile.aspx">
-                <!-- <i class="fa-solid fa-user"></i> -->
-                <img
-                  src="./src/assets/images/icons/footer-icons/icon-profile.svg"
-                />
-                <p class="h9 text-colour9 heading-medium pt-1">Profile</p>
-              </a>
-            </div>
-            <div class="col text-center">
-              <a href="#">
-                <!-- <i class="fa-solid fa-bell"></i> -->
-                <img
-                  src="./src/assets/images/icons/footer-icons/icon-app.svg"
-                />
-              </a>
-            </div>
-            <div class="col text-center">
-              <a href="#">
-                <!-- <i class="fa-solid fa-bell"></i> -->
-                <img
-                  src="./src/assets/images/icons/footer-icons/icon-notification.svg"
-                />
-                <p class="h9 text-colour9 heading-medium pt-1">Notification</p>
-              </a>
-            </div>
+  <!--footer start here-->
+  <div class="dvFooter shadow-lg position-fixed z-index-2 w-100">
+    <div class="bg-colour6">
+      <div class="container-xl py-2">
+        <div class="row align-items-center">
+          <div class="col text-center">
+            <a href="/">
+              <!-- <i class="fa-solid fa-house"></i> -->
+              <img src="./src/assets/images/icons/footer-icons/icon-home.svg" />
+              <p class="h9 text-colour9 heading-medium pt-1">Home</p>
+            </a>
+          </div>
+          <div class="col text-center">
+            <a href="ViewMemberProfile.aspx">
+              <!-- <i class="fa-solid fa-user"></i> -->
+              <img src="./src/assets/images/icons/footer-icons/icon-profile.svg" />
+              <p class="h9 text-colour9 heading-medium pt-1">Profile</p>
+            </a>
+          </div>
+          <div class="col text-center">
+            <a href="#">
+              <!-- <i class="fa-solid fa-bell"></i> -->
+              <img src="./src/assets/images/icons/footer-icons/icon-app.svg" />
+            </a>
+          </div>
+          <div class="col text-center">
+            <a href="#">
+              <!-- <i class="fa-solid fa-bell"></i> -->
+              <img src="./src/assets/images/icons/footer-icons/icon-notification.svg" />
+              <p class="h9 text-colour9 heading-medium pt-1">Notification</p>
+            </a>
+          </div>
 
-            <div class="col text-center">
-              <a href="OrderHistory.aspx">
-                <!-- <i class="fa-solid fa-bag-shopping"></i> -->
-                <img
-                  src="./src/assets/images/icons/footer-icons/icon-cart.svg"
-                />
-                <p class="h9 text-colour9 heading-medium pt-1">Cart</p>
-              </a>
-            </div>
+          <div class="col text-center">
+            <a href="OrderHistory.aspx">
+              <!-- <i class="fa-solid fa-bag-shopping"></i> -->
+              <img src="./src/assets/images/icons/footer-icons/icon-cart.svg" />
+              <p class="h9 text-colour9 heading-medium pt-1">Cart</p>
+            </a>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="src/assets/js/swiper.min.js"></script>
-    <script src="src/assets/js/jquery-ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="src/assets/js/swiper.min.js"></script>
+  <script src="src/assets/js/jquery-ui.js"></script>
 
-    <script>
-      // Function to increment value
-      function incrementValue() {
-        const input = document.getElementById("quantityInput");
-        input.value = parseInt(input.value) + 1;
+  <script>
+    // Function to increment value
+    function incrementValue() {
+      const input = document.getElementById("quantityInput");
+      input.value = parseInt(input.value) + 1;
+    }
+
+    // Function to decrement value
+    function decrementValue() {
+      const input = document.getElementById("quantityInput");
+      if (parseInt(input.value) > 0) {
+        input.value = parseInt(input.value) - 1;
       }
+    }
+  </script>
+</body>
 
-      // Function to decrement value
-      function decrementValue() {
-        const input = document.getElementById("quantityInput");
-        if (parseInt(input.value) > 0) {
-          input.value = parseInt(input.value) - 1;
-        }
-      }
-    </script>
-  </body>
 </html>

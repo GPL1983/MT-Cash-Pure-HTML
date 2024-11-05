@@ -1377,7 +1377,7 @@ li li.show>.dropdown-toggle:after {
 /* When the checkbox is checked */
 .dvLabel .checkbox-container input:checked~.checkmark {
   background-color: #2196f3;
-  background: url("/images/icons/arrows/checkmark.png") no-repeat center center var(--colour1);
+  background: url("/src/assets/images/icons/arrows/checkmark.png") no-repeat center center var(--colour1);
   background-size: contain;
 }
 

@@ -1,3 +1,6 @@
 .dvFlightSearch .dvInput.input-group .b-radius-0 {
   border-radius: 0px !important;
 }
+.dvFlightDetails .fa {
+  transform: scale(0.8);
+}

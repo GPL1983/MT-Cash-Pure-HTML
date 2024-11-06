@@ -108,96 +108,112 @@
             </div>
         </div>
     </div>
+    <div class="dvBreadcrumbs bg-colour1 py-2">
+        <div class="container-xl">
+            <div class="d-flex justify-content-center">
+                <div class="me-auto">
+                    <a class="text-colour6" href="#" onclick="history.go(-1)"><i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+                <div class="me-auto">
+                    <p class="text-colour6">Product Detail</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="dvShopMenu">
         <div id="CP_divShopMenuBar" class="container-xl">
             <nav class="navbar navbar-expand-lg navbar-light px-0 mx-n3">
-                <!-- Navbar Toggler (for mobile view) -->
-                <div class="dvNavbarToggler col-auto d-lg-none pr-0">
-                    <button class="navbar-toggler btn border" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#dvMenu" aria-controls="dvMenu" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="fa-solid fa-bars-staggered"></span>
-                    </button>
-                </div>
-
-                <!-- Search Box (visible in larger screens) -->
-                <div class="dvShopSearchBox col col-lg-3 order-lg-2 ms-auto d-none d-lg-block">
-                    <div class="dvSearch">
-                        <div class="dvTxtProductName input-group">
-                            <input class="form-control" type="search" placeholder="Search" aria-label="Search"
-                                id="txtProductName" autocomplete="off">
-                            <button id="btnSearchExperiences" type="button" class="bg-colour1 input-group-text me-3"
-                                onclick="SearchProduct()">
-                                <i class="fa-solid fa-magnifying-glass text-colour6"></i>
-                            </button>
+                <div class="d-flex w-100 justify-content-between align-items-start">
+                    <!-- Accordion (left section) -->
+                    <div class="accordion col-lg-6 col-md-8" id="accordionExample">
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button custom-accordion p-2 collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                    aria-controls="collapseOne">
+                                    Select By Category
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse bg-colour2"
+                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body px-0 py-0">
+                                    <!-- Accordion content -->
+                                    <div id="dvMenu">
+                                        <ul class="navbar-nav">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle text-uppercase" href="#"
+                                                    id="clothingDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    Clothing
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="clothingDropdown">
+                                                    <li><a class="dropdown-item" href="#">Men's Wear</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle text-uppercase" href="#"
+                                                    id="clothingDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    Clothing
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="clothingDropdown">
+                                                    <li><a class="dropdown-item" href="#">Men's Wear</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle text-uppercase" href="#"
+                                                    id="clothingDropdown" role="button" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    Clothing
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="clothingDropdown">
+                                                    <li><a class="dropdown-item" href="#">Men's Wear</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- Additional dropdowns can be added similarly -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Cart Button -->
-                <a href="Cart.aspx" id="CP_aCartBtn" class="order-lg-3 ms-auto d-flex align-items-center">
-                    <img src="./src/assets/images/shoppage/icon-cart.svg" class="icon-cart" alt="Cart">
-                    <span id="CP_spanCartItems" class="bg-light border ms-2 px-2 py-1 rounded-2 text-colour7">0</span>
-                </a>
+                    <!-- Search box (center section) -->
+                    <div class="col-lg-3 col-md-2 ms-2 d-none d-lg-block">
+                        <div class="dvSearch">
+                            <div class="dvTxtProductName input-group">
+                                <input class="form-control" type="search" placeholder="Search" aria-label="Search"
+                                    id="txtProductName" autocomplete="off">
+                                <button id="btnSearchExperiences" type="button" class="input-group-text"
+                                    onclick="SearchProduct()">
+                                    <i class="fa-solid fa-magnifying-glass text-colour6"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
-                <!-- Navbar Content (Links) -->
-                <div class="collapse navbar-collapse col-lg-8 order-lg-1" id="dvMenu">
-                    <ul class="navbar-nav me-auto">
-                        <!-- Clothing Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-uppercase" href="#" id="clothingDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Clothing
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="clothingDropdown">
-                                <li><a class="dropdown-item"
-                                        href="ShopList.aspx?CategoryId=2bfecbd5-e1ab-44d1-98f5-420cd9cd07b8&ProductType=Physical">Men's
-                                        Wear</a></li>
-                            </ul>
-                        </li>
-
-                        <!-- Fashion Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-uppercase" href="#" id="fashionDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Fashion
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="fashionDropdown">
-                                <li><a class="dropdown-item"
-                                        href="ShopList.aspx?CategoryId=9b252109-8bcd-47d4-a17e-d384740fb5a3&ProductType=Physical">Accessories</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="ShopList.aspx?CategoryId=82e5cb8b-de27-4a58-b81b-346aa265e622&ProductType=Physical">Handbags</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="ShopList.aspx?CategoryId=055e9285-e792-4548-9627-6e2d004a6191&ProductType=Physical">Sunglasses</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="ShopList.aspx?CategoryId=34791ef4-dc82-44ee-bb0d-62ca05028caf&ProductType=Physical">Watches</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <!-- Health & Beauty Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-uppercase" href="#" id="healthDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Health & Beauty
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="healthDropdown">
-                                <li><a class="dropdown-item"
-                                        href="ShopList.aspx?CategoryId=9a227bb9-f35d-49fc-9d14-f0d3be4dc55a&ProductType=Physical">Perfumes</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <!-- Cart button (right section) -->
+                    <a href="Cart.aspx" id="CP_aCartBtn" class="order-lg-3 d-flex align-items-center ms-2">
+                        <img src="./src/assets/images/shoppage/icon-cart.svg" class="icon-cart" alt="Cart">
+                        <span id="CP_spanCartItems"
+                            class="bg-light border ms-2 px-2 py-1 rounded-2 text-colour7">0</span>
+                    </a>
                 </div>
             </nav>
+
         </div>
     </div>
     <div class="dvProductDetail my-4 dvProductDetailShop">
         <div class="container-xl prodDetail dvProductDetails">
             <div class="row">
+                <div class="dvInfo row mb-3 mt-lg-0">
+                    <div class=" col-12">
+                        <h2 id="CP_CPSHOP_spanProductName" class="h5 heading-bold text-colour7 mb-2"
+                            data-i18n="ABC-calvin-klein-rectangle-su">Calvin Klein Rectangle sunglasses</h2>
+                        <div id="CP_CPSHOP_ratings"></div>
+
+                    </div>
+                </div>
                 <!-- Image -->
                 <div class="dvThumbSwiperSlider col-lg-4 col-xl-4">
                     <div class="border b-radius p-3">
@@ -248,21 +264,13 @@
 
                 <!-- Add to cart -->
                 <div class="dvProductInfo col-lg-8 col-xl-8">
-                    <div class="dvInfo row mb-3 mt-4 mt-lg-0">
-                        <div class=" col-12">
-                            <h2 id="CP_CPSHOP_spanProductName" class="h5 heading-bold text-colour7 mb-2"
-                                data-i18n="ABC-calvin-klein-rectangle-su">Calvin Klein Rectangle sunglasses</h2>
-                            <div id="CP_CPSHOP_ratings"></div>
-                            <h2 class="h6 heading-bold text-colour7 mb-3"><span id="CP_CPSHOP_spanPoints"
-                                    data-i18n="ABC-100,127-points">100,127 Points</span></h2>
-                        </div>
-                    </div>
-                    <div class="dvAdd row mb-4">
+
+                    <div class="dvAdd row my-4">
                         <div class="dvAddToCart col-12">
                             <div class="row">
-                                <div id="CP_CPSHOP_divQuantity" class="form-group col-12 col-sm-3 mb-3"
+                                <div id="CP_CPSHOP_divQuantity" class="form-group col-6 col-sm-3 mb-3"
                                     style="display:block">
-                                    <h2 class="h6 heading-regular text-colour7 mb-2" data-i18n="ABC-quantity">Quantity
+                                    <h2 class="label" data-i18n="ABC-quantity">Quantity
                                     </h2>
                                     <div class="dvPlusMinusButtons">
                                         <div class="input-group">
@@ -288,9 +296,9 @@
                                     </div>
 
                                 </div>
-                                <div class="form-group col-12 col-sm-3">
-                                    <h2 id="CP_CPSHOP_lbldivPoints" class="h6 heading-regular text-colour7 mb-2"
-                                        data-i18n="ABC-total-points">Total Points</h2>
+                                <div class="form-group col-6 col-sm-3">
+                                    <h2 id="CP_CPSHOP_lbldivPoints" class="label" data-i18n="ABC-total-points">Total
+                                        Points</h2>
                                     <div id="CP_CPSHOP_divspanpoints"
                                         class="border b-radius h6 text-colour7 heading-bold p-2"
                                         data-i18n="ABC-100,127">100,127</div>
@@ -319,7 +327,7 @@
                     <div class="row mb-4">
                         <div id="CP_CPSHOP_divBuy" class="dvButtons col-12">
                             <div class="row">
-                                <div class="col-12 col-sm-4 col-xl-3 mb-3 mb-sm-0">
+                                <div class="col-4 col-sm-4 col-xl-3 mb-3 mb-sm-0 d-none">
                                     <a href="Shop.aspx?CategoryId=f0cf96b5-bf6a-48f1-bedf-a350328d7dc9&amp;ProductType=Physical"
                                         id="CP_CPSHOP_btnBack" class="btn btn-three w-100 order-sm-0">
                                         <div class="text-center" data-i18n="ABC-back">
@@ -327,15 +335,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-12 col-sm-4 col-xl-3 mb-3 mb-sm-0">
-                                    <a href="javascript:void(0);" id="CP_CPSHOP_btnredeem"
-                                        class="btn btn-one w-100 order-sm-2" onclick="Checkout()">
-                                        <div class="text-center" data-i18n="ABC-redeem">
-                                            Redeem
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-12 col-sm-4 col-xl-3" id="addToCartButton">
+                                <div class="col-6 col-sm-4 col-xl-3" id="addToCartButton">
                                     <a href="javascript:void(0);" class="btn btn-three w-100 order-sm-1"
                                         onclick="AddItemToCart()">
                                         <div class="text-center" data-i18n="ABC-add-to-cart">
@@ -343,6 +343,15 @@
                                         </div>
                                     </a>
                                 </div>
+                                <div class="col-6 col-sm-4 col-xl-3 mb-3 mb-sm-0">
+                                    <a href="javascript:void(0);" id="CP_CPSHOP_btnredeem"
+                                        class="btn btn-one w-100 order-sm-2" onclick="Checkout()">
+                                        <div class="text-center" data-i18n="ABC-redeem">
+                                            Buy Now
+                                        </div>
+                                    </a>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -375,7 +384,7 @@
                                 </div>
                             </nav>
                             <div class="tab-content" id="nav-tabContent">
-                                <div class="tab-pane fade show active border p-3" id="description">
+                                <div class="tab-pane fade show active border p-3 b-radius-bottom" id="description">
                                     <div id="CP_CPSHOP_divDescription">
                                         <p>Brand:Calvin Klein<br>Gender:Woman<br>Lense
                                             Color:Grey<br>Frame:acetate<br>Bridge, mm:17<br>Temples, mm:140<br>Lenses

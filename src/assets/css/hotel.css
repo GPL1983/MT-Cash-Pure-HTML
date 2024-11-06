@@ -1,3 +1,7 @@
-.dvHotelSearch .b-radius-0 {
+.dvInput.input-group .form-control.b-radius-0 {
     border-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
 }

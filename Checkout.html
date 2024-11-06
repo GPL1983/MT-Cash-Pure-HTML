@@ -108,112 +108,24 @@
             </div>
         </div>
     </div>
-    <div class="dvShopMenu">
-        <div id="CP_divShopMenuBar" class="container-xl">
-            <nav class="navbar navbar-expand-lg navbar-light px-0 mx-n3">
-                <!-- Navbar Toggler (for mobile view) -->
-                <div class="dvNavbarToggler col-auto d-lg-none pr-0">
-                    <button class="navbar-toggler btn border" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#dvMenu" aria-controls="dvMenu" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="fa-solid fa-bars-staggered"></span>
-                    </button>
+    <div class="dvBreadcrumbs bg-colour1 py-2">
+        <div class="container-xl">
+            <div class="d-flex justify-content-center">
+                <div class="me-auto">
+                    <a class="text-colour6" href="#" onclick="history.go(-1)"><i class="fa-solid fa-arrow-left"></i></a>
                 </div>
-
-                <!-- Search Box (visible in larger screens) -->
-                <div class="dvShopSearchBox col col-lg-3 order-lg-2 ms-auto d-none d-lg-block">
-                    <div class="dvSearch">
-                        <div class="dvTxtProductName input-group">
-                            <input class="form-control" type="search" placeholder="Search" aria-label="Search"
-                                id="txtProductName" autocomplete="off">
-                            <button id="btnSearchExperiences" type="button" class="input-group-text"
-                                onclick="SearchProduct()">
-                                <i class="fa-solid fa-magnifying-glass text-colour6"></i>
-                            </button>
-                        </div>
-                    </div>
+                <div class="me-auto">
+                    <p class="text-colour6">Checkout</p>
                 </div>
-
-                <!-- Cart Button -->
-                <a href="Cart.aspx" id="CP_aCartBtn" class="order-lg-3 ms-auto d-flex align-items-center">
-                    <img src="./src/assets/images/shoppage/icon-cart.svg" class="icon-cart" alt="Cart">
-                    <span id="CP_spanCartItems" class="bg-light border ms-2 px-2 py-1 rounded-2 text-colour7">0</span>
-                </a>
-
-                <!-- Navbar Content (Links) -->
-                <div class="collapse navbar-collapse col-lg-8 order-lg-1" id="dvMenu">
-                    <ul class="navbar-nav me-auto">
-                        <!-- Clothing Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-uppercase" href="#" id="clothingDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Clothing
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="clothingDropdown">
-                                <li><a class="dropdown-item"
-                                        href="ShopList.aspx?CategoryId=2bfecbd5-e1ab-44d1-98f5-420cd9cd07b8&ProductType=Physical">Men's
-                                        Wear</a></li>
-                            </ul>
-                        </li>
-
-                        <!-- Fashion Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-uppercase" href="#" id="fashionDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Fashion
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="fashionDropdown">
-                                <li><a class="dropdown-item"
-                                        href="ShopList.aspx?CategoryId=9b252109-8bcd-47d4-a17e-d384740fb5a3&ProductType=Physical">Accessories</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="ShopList.aspx?CategoryId=82e5cb8b-de27-4a58-b81b-346aa265e622&ProductType=Physical">Handbags</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="ShopList.aspx?CategoryId=055e9285-e792-4548-9627-6e2d004a6191&ProductType=Physical">Sunglasses</a>
-                                </li>
-                                <li><a class="dropdown-item"
-                                        href="ShopList.aspx?CategoryId=34791ef4-dc82-44ee-bb0d-62ca05028caf&ProductType=Physical">Watches</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <!-- Health & Beauty Dropdown -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-uppercase" href="#" id="healthDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Health & Beauty
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="healthDropdown">
-                                <li><a class="dropdown-item"
-                                        href="ShopList.aspx?CategoryId=9a227bb9-f35d-49fc-9d14-f0d3be4dc55a&ProductType=Physical">Perfumes</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            </div>
         </div>
     </div>
     <div>
         <div class="card mb-4 border-0 bg-colour2">
-            <div class="dvBreadcrumbs bg-colour1 py-2">
-                <div class="container-xl">
-                    <div class="d-flex justify-content-center">
-                        <div class="me-auto">
-                            <a class="text-colour6" href="#" onclick="history.go(-1)"><i
-                                    class="fa-solid fa-arrow-left"></i></a>
-                        </div>
-                        <div class="me-auto">
-                            <p class="text-colour6">Checkout</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="card-body">
                 <div class="dvProductInfo col-lg-8 col-xl-8">
                     <div class="dvInfo row mb-3 mt-lg-0">
-                        <h5 class="h5 heading-bold text-colour7 mb-2">Order Summary</h5>
+                        <h5 class="h5 heading-bold text-colour7 mb-3">Order Summary</h5>
                         <div class=" col-12">
                             <h6 id="CP_CPSHOP_spanProductName" class="h6 heading-bold text-colour7 mb-2"
                                 data-i18n="ABC-calvin-klein-rectangle-su">Calvin Klein Rectangle sunglasses</h6>
@@ -284,8 +196,9 @@
                 <!-- Delivery Address Section -->
                 <div class="accordion-item rounded mb-3 border">
                     <h2 class="accordion-header " id="headingOne">
-                        <button class="accordion-button rounded bg-colour2" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button rounded bg-colour2 heading-bold" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
                             1. Delivery Address
                         </button>
                     </h2>
@@ -303,7 +216,7 @@
                 <!-- Payment Method Section -->
                 <div class="accordion-item rounded mb-3 border">
                     <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button rounded collapsed bg-colour2" type="button"
+                        <button class="accordion-button rounded collapsed bg-colour2 heading-bold" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                             aria-controls="collapseTwo">
                             2. Select a Payment Method
@@ -350,7 +263,7 @@
                 <!-- Review Items and Delivery Section -->
                 <div class="accordion-item rounded mb-3 border">
                     <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button rounded collapsed bg-colour2" type="button"
+                        <button class="accordion-button rounded collapsed bg-colour2 heading-bold" type="button"
                             data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                             aria-controls="collapseThree">
                             3. Review Items and Delivery

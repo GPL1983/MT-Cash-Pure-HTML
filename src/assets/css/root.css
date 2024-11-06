@@ -545,7 +545,7 @@
   --filter-mobile-modal-content-overflow: hidden;
   /* apply when you need b-radius */
   --filter-mobile-modal-body-padding: 0 1rem 0 1rem;
-  --filter-mobile-modal-header-bg: var(--colour5);
+  --filter-mobile-modal-header-bg: var(--colour1);
   --filter-mobile-modal-header-padding: 0.5rem 1rem;
   /* modal title */
   --filter-mobile-modal-title-family: var(--font-bold);
@@ -557,7 +557,7 @@
   --filter-mobile-modal-close-text-colour: var(--colour1);
   --filter-mobile-modal-close-opacity: 1;
   /* modal close btn icon */
-  --filter-mobile-modal-close-icon-text-colour: var(--colour1);
+  --filter-mobile-modal-close-icon-text-colour: var(--colour6);
 
   /*==================[ FILTER ACCORDION MOBILE ]==================*/
   --filter-mobile-accordion-border: 1px solid transparent;

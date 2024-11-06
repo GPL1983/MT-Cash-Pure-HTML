@@ -2941,6 +2941,11 @@ select.form-control:focus {
   .heading4 {
     font-size: var(--heading4-font-size-desktop);
   }
+  
+  .dvFilter .modal-content {
+    border: 1px solid var(--border-colour) !important;
+  
+  }
 }
 
 @media (min-width: 1200px) {

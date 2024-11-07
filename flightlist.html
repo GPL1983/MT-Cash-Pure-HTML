@@ -1,542 +1,830 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/assets/css/root.css" />
+    <link rel="stylesheet" href="src/assets/css/global.css" />
+    <link rel="stylesheet" href="src/assets/css/flight.css" />
+    <link rel="stylesheet" href="src/assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="src/assets/css/jquery-ui.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="src/assets/css/root.css" />
-  <link rel="stylesheet" href="src/assets/css/global.css" />
-  <link rel="stylesheet" href="src/assets/css/flight.css" />
-  <link rel="stylesheet" href="src/assets/css/swiper.min.css" />
-  <link rel="stylesheet" href="src/assets/css/jquery-ui.css" />
-</head>
-
-<body>
-  <!--header start here-->
-  <div class="dvHeader pt-1 pb-1">
-    <div class="container-xl">
-      <div class="row justify-content-beween align-items-center">
-        <div class="col-auto order-lg-0 logo">
-          <img class="" src="/src/assets/images/home/logo/mt-cash-logo.svg" alt="" />
-        </div>
-        <div class="col-auto ms-auto ms-lg-0 order-lg-2">
-          <select class="form-control" name="" id="">
-            <option value="en">EN</option>
-            <option value="ar">AR</option>
-            <option value="fr">FR</option>
-          </select>
-        </div>
-        <div class="col-auto d-lg-none">
-          <button class="btn border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom">
-            <i class="fa-solid fa-bars-staggered"></i>
-          </button>
-        </div>
-        <div
-          class="offcanvas offcanvas-start bg-transparent- col-lg-auto order-lg-1 ms-lg-auto px-0 px-lg-3 border-lg-top-0"
-          tabindex="-1" id="offcanvasBottom">
-          <!-- <div class="p-3-">
-              <div class="b-radius bg-colour6-"> -->
-          <div class="offcanvas-header d-lg-none pb-0">
-            <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5> -->
-            <button type="button" class="btn border btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <body>
+    <!--header start here-->
+    <div class="dvHeader pt-1 pb-1">
+      <div class="container-xl">
+        <div class="row justify-content-beween align-items-center">
+          <div class="col-auto order-lg-0 logo">
+            <img
+              class=""
+              src="/src/assets/images/home/logo/mt-cash-logo.svg"
+              alt=""
+            />
           </div>
-          <div class="offcanvas-body pt-0 p-lg-0">
-            <div class="row mx-lg-0 align-items-lg-center">
-              <div class="col-12 col-lg-auto">
-                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
-                  href="#">
-                  <img src="/src/assets/images/icons/menu-icons/profile.svg" alt="" class="d-lg-none" />
-                  <span class="d-lg-inline-block ps-2 ps-lg-0">Profile</span>
-                </a>
-              </div>
-              <div class="col-12 col-lg-auto">
-                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
-                  href="#">
-                  <img src="/src/assets/images/icons/menu-icons/my-order.svg" alt="" class="d-lg-none" />
-                  <span class="d-lg-inline-block ps-2 ps-lg-0">My Order</span>
-                </a>
-              </div>
-              <div class="col-12 col-lg-auto">
-                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
-                  href="#">
-                  <img src="/src/assets/images/icons/menu-icons/about.svg" alt="" class="d-lg-none" />
-                  <span class="d-lg-inline-block ps-2 ps-lg-0">About Program</span>
-                </a>
-              </div>
-              <div class="col-12 col-lg-auto d-lg-none">
-                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
-                  href="#">
-                  <img src="/src/assets/images/icons/menu-icons/faqs.svg" alt="" class="d-lg-none" />
-                  <span class="d-lg-inline-block ps-2 ps-lg-0">FAQs</span>
-                </a>
-              </div>
-              <div class="col-12 col-lg-auto d-lg-none">
-                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
-                  href="#">
-                  <img src="/src/assets/images/icons/menu-icons/terms-and-conditions.svg" alt="" class="d-lg-none" />
-                  <span class="d-lg-inline-block ps-2 ps-lg-0">Terms &amp; conditions</span>
-                </a>
-              </div>
-              <div class="col-12 col-lg-auto d-lg-none">
-                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
-                  href="#">
-                  <img src="/src/assets/images/icons/menu-icons/booking-policy.svg" alt="" class="d-lg-none" />
-                  <span class="d-lg-inline-block ps-2 ps-lg-0">Booking Policy</span>
-                </a>
-              </div>
-              <div class="col-12 col-lg-auto d-lg-none">
-                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0" href="#">
-                  <img src="/src/assets/images/icons/menu-icons/privacy-policy.svg" alt="" class="d-lg-none" />
-                  <span class="d-lg-inline-block ps-2 ps-lg-0">Privacy Policy</span>
-                </a>
-              </div>
-              <div class="col-6 offset-3 col-lg-auto offset-lg-0 text-center">
-                <button class="btn btn-one w-100">Login</button>
+          <div class="col-auto ms-auto ms-lg-0 order-lg-2">
+            <select class="form-control" name="" id="">
+              <option value="en">EN</option>
+              <option value="ar">AR</option>
+              <option value="fr">FR</option>
+            </select>
+          </div>
+          <div class="col-auto d-lg-none">
+            <button
+              class="btn border"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasBottom"
+            >
+              <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+          </div>
+          <div
+            class="offcanvas offcanvas-start bg-transparent- col-lg-auto order-lg-1 ms-lg-auto px-0 px-lg-3 border-lg-top-0"
+            tabindex="-1"
+            id="offcanvasBottom"
+          >
+            <!-- <div class="p-3-">
+              <div class="b-radius bg-colour6-"> -->
+            <div class="offcanvas-header d-lg-none pb-0">
+              <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5> -->
+              <button
+                type="button"
+                class="btn border btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body pt-0 p-lg-0">
+              <div class="row mx-lg-0 align-items-lg-center">
+                <div class="col-12 col-lg-auto">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                    href="#"
+                  >
+                    <img
+                      src="/src/assets/images/icons/menu-icons/profile.svg"
+                      alt=""
+                      class="d-lg-none"
+                    />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0">Profile</span>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-auto">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                    href="#"
+                  >
+                    <img
+                      src="/src/assets/images/icons/menu-icons/my-order.svg"
+                      alt=""
+                      class="d-lg-none"
+                    />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0">My Order</span>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-auto">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                    href="#"
+                  >
+                    <img
+                      src="/src/assets/images/icons/menu-icons/about.svg"
+                      alt=""
+                      class="d-lg-none"
+                    />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0"
+                      >About Program</span
+                    >
+                  </a>
+                </div>
+                <div class="col-12 col-lg-auto d-lg-none">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                    href="#"
+                  >
+                    <img
+                      src="/src/assets/images/icons/menu-icons/faqs.svg"
+                      alt=""
+                      class="d-lg-none"
+                    />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0">FAQs</span>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-auto d-lg-none">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                    href="#"
+                  >
+                    <img
+                      src="/src/assets/images/icons/menu-icons/terms-and-conditions.svg"
+                      alt=""
+                      class="d-lg-none"
+                    />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0"
+                      >Terms &amp; conditions</span
+                    >
+                  </a>
+                </div>
+                <div class="col-12 col-lg-auto d-lg-none">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                    href="#"
+                  >
+                    <img
+                      src="/src/assets/images/icons/menu-icons/booking-policy.svg"
+                      alt=""
+                      class="d-lg-none"
+                    />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0"
+                      >Booking Policy</span
+                    >
+                  </a>
+                </div>
+                <div class="col-12 col-lg-auto d-lg-none">
+                  <a
+                    class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0"
+                    href="#"
+                  >
+                    <img
+                      src="/src/assets/images/icons/menu-icons/privacy-policy.svg"
+                      alt=""
+                      class="d-lg-none"
+                    />
+                    <span class="d-lg-inline-block ps-2 ps-lg-0"
+                      >Privacy Policy</span
+                    >
+                  </a>
+                </div>
+                <div class="col-6 offset-3 col-lg-auto offset-lg-0 text-center">
+                  <button class="btn btn-one w-100">Login</button>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- </div>
+            <!-- </div>
             </div> -->
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--header end here-->
-  <div class="dvBreadcrumbs bg-colour1 py-2">
-    <div class="container-xl">
-      <div class="d-flex justify-content-center">
-        <div class="me-auto">
-          <a class="text-colour6" href="#" onclick="history.go(-1)"><i class="fa-solid fa-arrow-left"></i></a>
-        </div>
-        <div class="me-auto">
-          <p class="text-colour6">Flights Search Result</p>
+    <!--header end here-->
+    <div class="dvBreadcrumbs bg-colour1 py-2">
+      <div class="container-xl">
+        <div class="d-flex justify-content-center">
+          <div class="me-auto">
+            <a class="text-colour6" href="#" onclick="history.go(-1)"
+              ><i class="fa-solid fa-arrow-left"></i
+            ></a>
+          </div>
+          <div class="me-auto">
+            <p class="text-colour6">Flights Search Result</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="dvFlightDetails bg-colour2 py-2">
+    <div class="dvFlightDetails bg-colour2 py-2">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-9">
+            <span class="h7">Dubai</span>
+            <i class="fa fa-arrow-right"></i>
+            <span class="h7">Delhi</span>
+            <span class="h7">&#40;Round Trip&#41;</span>
+            <p class="heading-light text-colour8">MON 25 DEC - TUE 2 JAN</p>
+          </div>
+          <div class="col-3 m-auto">
+            <button
+              type="button"
+              class="border-0 bg-colour2 float-end d-lg-none"
+              data-bs-toggle="modal"
+              data-bs-target="#filterModal"
+            >
+              <img
+                src="/src/assets/images/icons/others/filter-bars.svg"
+                alt=""
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Flight List start here-->
     <div class="container-xl">
       <div class="row">
-        <div class="col-9">
-          <span class="h7">Dubai</span>
-          <i class="fa fa-arrow-right"></i>
-          <span class="h7">Delhi</span>
-          <span class="h7">&#40;Round Trip&#41;</span>
-          <p class="heading-light text-colour8">MON 25 DEC - TUE 2 JAN</p>
-        </div>
-        <div class="col-3 m-auto">
-          <button type="button" class="border-0 bg-colour2 float-end d-lg-none" data-bs-toggle="modal"
-            data-bs-target="#filterModal">
-            <img src="/src/assets/images/icons/others/filter-bars.svg" alt="">
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--Flight List start here-->
-  <div class="container-xl">
-    <div class="row">
-
-      <!-- Modal Start -->
-      <div class="dvFilter modal fade col-lg-3 px-0 px-lg-3 mb-lg-4 mt-lg-4" id="filterModal" tabindex="-1"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content">
-            <div class="modal-header border-0 d-lg-block justify-content-between p-0">
-              <div class="modal-title dvTotalRecords border-0 p-3">
-                <p class="heading6 text-colour6">
-                  <span>Total Flights Found</span><span class="filter-text ms-2">200</span>
-                </p>
+        <!-- Modal Start -->
+        <div
+          class="dvFilter modal fade col-lg-3 px-0 px-lg-3 mb-lg-4 mt-lg-4"
+          id="filterModal"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+          >
+            <div class="modal-content">
+              <div
+                class="modal-header border-0 d-lg-block justify-content-between p-0"
+              >
+                <div class="modal-title dvTotalRecords border-0 p-3">
+                  <p class="heading6 text-colour6">
+                    <span>Total Flights Found</span
+                    ><span class="filter-text ms-2">200</span>
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  class="close d-lg-none border-0 bg-colour1 px-3"
+                  data-bs-dismiss="modal"
+                >
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
               </div>
-              <button type="button" class="close d-lg-none border-0 bg-colour1 px-3" data-bs-dismiss="modal">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="accordion border-0" id="filter-accordion">
-                <div class="card my-3">
-                  <div class="card-header p-0">
-                    <h2 class="mb-0">
-                      <button class="btn btn-block text-left heading-semibold" type="button" data-bs-toggle="collapse-"
-                        data-bs-target="#collapseFilter"><span class="heading6 mb-2 text-capitalize">Stops</span>
-                        <span class="arrow-icon"><i class="fa fa-caret-up-"></i></span>
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseFilter" class="collapse- show" data-parent="#filter-accordion">
-                    <div class="card-body scroll-ver- px-0 pt-1 pb-2">
-                      <div class="">
-                        <div class="dvLabel divStops airList">
-                          <label class="checkbox-container d-flex heading-regular" id="Airstop">
-                            <span class="d-inline-block ms-2"><input type="checkbox" checked="true">Select All
-                              <span class="checkmark"></span>
-                            </span>
-                          </label>
-                          <label class="checkbox-container d-flex heading-regular" id="Airstop">
-                            <span class="d-inline-block ms-2"><input type="checkbox" checked="true">0 Stop
-                              <span class="checkmark"></span>
-                            </span>
-                          </label>
-                          <label class="checkbox-container d-flex heading-regular" id="Airstop">
-                            <span class="d-inline-block ms-2"><input type="checkbox" checked="">1 Stop
-                              <span class="checkmark"></span>
-                            </span>
-                          </label>
-                        </div>
-                      </div>
+              <div class="modal-body">
+                <div class="accordion border-0" id="filter-accordion">
+                  <div class="card my-3">
+                    <div class="card-header p-0">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-block text-left heading-semibold"
+                          type="button"
+                          data-bs-toggle="collapse-"
+                          data-bs-target="#collapseFilter"
+                        >
+                          <span class="heading6 mb-2 text-capitalize"
+                            >Stops</span
+                          >
+                          <span class="arrow-icon"
+                            ><i class="fa fa-caret-up-"></i
+                          ></span>
+                        </button>
+                      </h2>
                     </div>
-                  </div>
-                </div>
-                <div class="dvBorderBottom">
-                  <div class="">
-                    <div class="border-bottom my-3"></div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header p-0">
-                    <h2 class="mb-0">
-                      <button class="btn btn-block text-left collapsed heading-semibold" type="button"
-                        data-bs-toggle="collapse-" data-bs-target="#collapse1"><span
-                          class="heading6 mb-2 text-capitalize">Total Price</span>
-                        <span class="arrow-icon"><i class="fa fa-caret-up-"></i></span>
-                      </button>
-                    </h2>
-                  </div>
-
-                  <div id="collapse1" class="collapse- show" data-parent="#filter-accordion">
-                    <div class="card-body scroll-ver- px-0 pt-1 pb-2">
-                      <div class="dvRangeSlider">
-                        <div id="priceSlider"
-                          class="PriceSlider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
-                          <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;">
-                          </div>
-                          <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"
-                            style="left: 0%;"></span>
-                          <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"
-                            style="left: 100%;"></span>
-                        </div>
-                        <div class="row mt-2">
-                          <div class="col-6">
-                            <div class="text-start">5000</div>
-                          </div>
-                          <div class="col-6">
-                            <div class="text-end">50000</div>
+                    <div
+                      id="collapseFilter"
+                      class="collapse- show"
+                      data-parent="#filter-accordion"
+                    >
+                      <div class="card-body scroll-ver- px-0 pt-1 pb-2">
+                        <div class="">
+                          <div class="dvLabel divStops airList">
+                            <label
+                              class="checkbox-container d-flex heading-regular"
+                              id="Airstop"
+                            >
+                              <span class="d-inline-block ms-2"
+                                ><input type="checkbox" checked="true" />Select
+                                All
+                                <span class="checkmark"></span>
+                              </span>
+                            </label>
+                            <label
+                              class="checkbox-container d-flex heading-regular"
+                              id="Airstop"
+                            >
+                              <span class="d-inline-block ms-2"
+                                ><input type="checkbox" checked="true" />0 Stop
+                                <span class="checkmark"></span>
+                              </span>
+                            </label>
+                            <label
+                              class="checkbox-container d-flex heading-regular"
+                              id="Airstop"
+                            >
+                              <span class="d-inline-block ms-2"
+                                ><input type="checkbox" checked="" />1 Stop
+                                <span class="checkmark"></span>
+                              </span>
+                            </label>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="dvBorderBottom">
-                  <div class="">
-                    <div class="border-bottom my-3"></div>
+                  <div class="dvBorderBottom">
+                    <div class="">
+                      <div class="border-bottom my-3"></div>
+                    </div>
                   </div>
-                </div>
-                <div class="card">
-                  <div class="card-header p-0">
-                    <h2 class="mb-0">
-                      <button class="btn btn-block text-left collapsed heading-semibold" type="button"
-                        data-bs-toggle="collapse-" data-bs-target="#collapse3"><span
-                          class="heading6 mb-2 text-capitalize">Airlines</span> <span class="arrow-icon"><i
-                            class="fa fa-caret-up-"></i></span></button>
-                    </h2>
-                  </div>
-                  <div id="collapse3" class="collapse-" data-parent="#filter-accordion">
-                    <div class="card-body scroll-ver- px-0 pt-1 pb-2">
-                      <div class="dvLabel airList">
-                        <label class="checkbox-container d-flex heading-regular">
-                          <span class="d-inline-block ms-1 heading-regular">
-                            <input type="checkbox" checked>
-                            <span class="checkmark"></span>
-                            <span>Select All</span>
-                          </span>
-                        </label>
+                  <div class="card">
+                    <div class="card-header p-0">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-block text-left collapsed heading-semibold"
+                          type="button"
+                          data-bs-toggle="collapse-"
+                          data-bs-target="#collapse1"
+                        >
+                          <span class="heading6 mb-2 text-capitalize"
+                            >Total Price</span
+                          >
+                          <span class="arrow-icon"
+                            ><i class="fa fa-caret-up-"></i
+                          ></span>
+                        </button>
+                      </h2>
+                    </div>
 
-                        <label class="checkbox-container d-flex heading-regular">
-                          <span class="d-inline-block ms-1 heading-regular">
-                            <input type="checkbox" checked>
-                            <span class="checkmark"></span>
-                            <span>Air India</span>
-                          </span>
-                        </label>
-
-                        <label class="checkbox-container d-flex heading-regular">
-                          <span class="d-inline-block ms-1 heading-regular">
-                            <input type="checkbox" checked>
-                            <span class="checkmark"></span>
-                            <span>KLM Royal Dutch Airlines</span>
-                          </span>
-                        </label>
-
-                        <label class="checkbox-container d-flex heading-regular">
-                          <span class="d-inline-block ms-1 heading-regular">
-                            <input type="checkbox" checked>
-                            <span class="checkmark"></span>
-                            <span>Etihad Airways</span>
-                          </span>
-                        </label>
-
-                        <label class="checkbox-container d-flex heading-regular">
-                          <span class="d-inline-block ms-1 heading-regular">
-                            <input type="checkbox" checked>
-                            <span class="checkmark"></span>
-                            <span>Saudi Airlines</span>
-                          </span>
-                        </label>
-
-                        <label class="checkbox-container d-flex heading-regular">
-                          <span class="d-inline-block ms-1 heading-regular">
-                            <input type="checkbox" checked>
-                            <span class="checkmark"></span>
-                            <span>Turkish Airlines</span>
-                          </span>
-                        </label>
-
-                        <label class="checkbox-container d-flex heading-regular">
-                          <span class="d-inline-block ms-1 heading-regular">
-                            <input type="checkbox" checked>
-                            <span class="checkmark"></span>
-                            <span>Fly Dubai</span>
-                          </span>
-                        </label>
-
-                        <label class="checkbox-container d-flex heading-regular">
-                          <span class="d-inline-block ms-1 heading-regular">
-                            <input type="checkbox" checked>
-                            <span class="checkmark"></span>
-                            <span>British Airways</span>
-                          </span>
-                        </label>
-
-                        <label class="checkbox-container d-flex heading-regular">
-                          <span class="d-inline-block ms-1 heading-regular">
-                            <input type="checkbox" checked>
-                            <span class="checkmark"></span>
-                            <span>Emirates</span>
-                          </span>
-                        </label>
-
-                        <label class="checkbox-container d-flex heading-regular">
-                          <span class="d-inline-block ms-1 heading-regular">
-                            <input type="checkbox" checked>
-                            <span class="checkmark"></span>
-                            <span>SpiceJet Airways</span>
-                          </span>
-                        </label>
-
+                    <div
+                      id="collapse1"
+                      class="collapse- show"
+                      data-parent="#filter-accordion"
+                    >
+                      <div class="card-body scroll-ver- px-0 pt-1 pb-2">
+                        <div class="dvRangeSlider">
+                          <div
+                            id="priceSlider"
+                            class="PriceSlider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
+                          >
+                            <div
+                              class="ui-slider-range ui-corner-all ui-widget-header"
+                              style="left: 0%; width: 100%"
+                            ></div>
+                            <span
+                              tabindex="0"
+                              class="ui-slider-handle ui-corner-all ui-state-default"
+                              style="left: 0%"
+                            ></span>
+                            <span
+                              tabindex="0"
+                              class="ui-slider-handle ui-corner-all ui-state-default"
+                              style="left: 100%"
+                            ></span>
+                          </div>
+                          <div class="row mt-2">
+                            <div class="col-6">
+                              <div class="text-start">5000</div>
+                            </div>
+                            <div class="col-6">
+                              <div class="text-end">50000</div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <!-- <div class="card">
+                  <div class="dvBorderBottom">
+                    <div class="">
+                      <div class="border-bottom my-3"></div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header p-0">
+                      <h2 class="mb-0">
+                        <button
+                          class="btn btn-block text-left collapsed heading-semibold"
+                          type="button"
+                          data-bs-toggle="collapse-"
+                          data-bs-target="#collapse3"
+                        >
+                          <span class="heading6 mb-2 text-capitalize"
+                            >Airlines</span
+                          >
+                          <span class="arrow-icon"
+                            ><i class="fa fa-caret-up-"></i
+                          ></span>
+                        </button>
+                      </h2>
+                    </div>
+                    <div
+                      id="collapse3"
+                      class="collapse-"
+                      data-parent="#filter-accordion"
+                    >
+                      <div class="card-body scroll-ver- px-0 pt-1 pb-2">
+                        <div class="dvLabel airList">
+                          <label
+                            class="checkbox-container d-flex heading-regular"
+                          >
+                            <span class="d-inline-block ms-1 heading-regular">
+                              <input type="checkbox" checked />
+                              <span class="checkmark"></span>
+                              <span>Select All</span>
+                            </span>
+                          </label>
+
+                          <label
+                            class="checkbox-container d-flex heading-regular"
+                          >
+                            <span class="d-inline-block ms-1 heading-regular">
+                              <input type="checkbox" checked />
+                              <span class="checkmark"></span>
+                              <span>Air India</span>
+                            </span>
+                          </label>
+
+                          <label
+                            class="checkbox-container d-flex heading-regular"
+                          >
+                            <span class="d-inline-block ms-1 heading-regular">
+                              <input type="checkbox" checked />
+                              <span class="checkmark"></span>
+                              <span>KLM Royal Dutch Airlines</span>
+                            </span>
+                          </label>
+
+                          <label
+                            class="checkbox-container d-flex heading-regular"
+                          >
+                            <span class="d-inline-block ms-1 heading-regular">
+                              <input type="checkbox" checked />
+                              <span class="checkmark"></span>
+                              <span>Etihad Airways</span>
+                            </span>
+                          </label>
+
+                          <label
+                            class="checkbox-container d-flex heading-regular"
+                          >
+                            <span class="d-inline-block ms-1 heading-regular">
+                              <input type="checkbox" checked />
+                              <span class="checkmark"></span>
+                              <span>Saudi Airlines</span>
+                            </span>
+                          </label>
+
+                          <label
+                            class="checkbox-container d-flex heading-regular"
+                          >
+                            <span class="d-inline-block ms-1 heading-regular">
+                              <input type="checkbox" checked />
+                              <span class="checkmark"></span>
+                              <span>Turkish Airlines</span>
+                            </span>
+                          </label>
+
+                          <label
+                            class="checkbox-container d-flex heading-regular"
+                          >
+                            <span class="d-inline-block ms-1 heading-regular">
+                              <input type="checkbox" checked />
+                              <span class="checkmark"></span>
+                              <span>Fly Dubai</span>
+                            </span>
+                          </label>
+
+                          <label
+                            class="checkbox-container d-flex heading-regular"
+                          >
+                            <span class="d-inline-block ms-1 heading-regular">
+                              <input type="checkbox" checked />
+                              <span class="checkmark"></span>
+                              <span>British Airways</span>
+                            </span>
+                          </label>
+
+                          <label
+                            class="checkbox-container d-flex heading-regular"
+                          >
+                            <span class="d-inline-block ms-1 heading-regular">
+                              <input type="checkbox" checked />
+                              <span class="checkmark"></span>
+                              <span>Emirates</span>
+                            </span>
+                          </label>
+
+                          <label
+                            class="checkbox-container d-flex heading-regular"
+                          >
+                            <span class="d-inline-block ms-1 heading-regular">
+                              <input type="checkbox" checked />
+                              <span class="checkmark"></span>
+                              <span>SpiceJet Airways</span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="card">
                               <div class="applyBtn" style="display: none;">
                                 <button type="button" id="btnClosePopup" class="btn btn-one" value="Apply">Apply</button>
                               </div>
                             </div> -->
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Modal End -->
+        <!-- Modal End -->
 
-      <div class="seq_0 dvFlightInfo col-lg mb-4 mt-4">
-        <div class="shadow b-radius px-3">
-          <div class="dvAirInfo row py-2 bg-colour2 b-radius-top-right b-radius-top-left" style="
-            margin: 0 -1rem;
-        ">
-            <div class="col-8 d-flex align-items-center">
-              <img src="
-        https://ibe.infiplanets.com/Images/AirlinesLogo/SG.gif" title="Spicejet Limited">
-              <span class="ms-2">Spicejet Limited</span>
-            </div>
-            <div class="col-4 text-end">
-              <div class="text-end">
-                <h2 class="heading6 text-colour1">
-                  <span class="CommaSeperated"> 60,649 </span>
-                  <span class="points-text">DH</span>
-                </h2>
+        <div class="seq_0 dvFlightInfo col-lg mb-4 mt-4">
+          <div class="shadow b-radius px-3">
+            <div
+              class="dvAirInfo row py-3 bg-colour2 b-radius-top-right b-radius-top-left"
+              style="margin: 0 -1rem"
+            >
+              <div class="col-8 d-flex align-items-center">
+                <img
+                  src="
+        https://ibe.infiplanets.com/Images/AirlinesLogo/SG.gif"
+                  title="Spicejet Limited"
+                />
+                <span class="ms-2">Spicejet Limited</span>
+              </div>
+              <div class="col-4 text-end">
+                <div class="text-end">
+                  <h2 class="heading6 text-colour1">
+                    <span class="CommaSeperated"> 60,649 </span>
+                    <span class="points-text">DH</span>
+                  </h2>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="dvInfo row">
-            <div class="col-12 border-top">
-              <div class="row">
-                <div class="col-12 text-lg-center">
-                  <div class="row border-bottom border-top-bottom-lg-0">
-                    <div
-                      class="col-4 d-flex justify-content-center flex-column align-items-start text-center py-3 px-1">
-                      <span class="h7 heading-regular text-colour7">11:10 AM</span>
-                      <span class="h7 heading-regular text-colour7">Dubai
-                        <span class="heading-bold abbreviation">DXB</span></span>
+            <div class="dvInfo row">
+              <div class="col-12">
+                <div class="row" style="margin: 0 -1rem">
+                  <div class="col-12 text-lg-center">
+                    <div class="row border-bottom border-top-bottom-lg-0 px-2">
+                      <div
+                        class="col-4 d-flex justify-content-center flex-column align-items-start text-center py-3 px-1"
+                      >
+                        <span class="h7 heading-regular text-colour7"
+                          >11:10 AM</span
+                        >
+                        <span class="h7 heading-regular text-colour7"
+                          >Dubai
+                          <span class="heading-bold abbreviation"
+                            >DXB</span
+                          ></span
+                        >
+                      </div>
+                      <div
+                        class="col-4 d-flex justify-content-center flex-column align-items-center text-center py-3 px-1"
+                      >
+                        <span class="h7 heading-regular text-colour7"
+                          >3 hrs 15 mins</span
+                        >
+                        <span class="h7 heading-regular text-colour7"
+                          >Non Stop
+                        </span>
+                      </div>
+                      <div
+                        class="col-4 d-flex justify-content-center flex-column align-items-end text-center border-right-lg py-3 px-1"
+                      >
+                        <span class="h7 heading-regular text-colour7"
+                          >3:55 PM</span
+                        >
+                        <span class="h7 heading-regular text-colour7"
+                          >New Delhi
+                          <span class="heading-bold abbreviation"
+                            >DEL</span
+                          ></span
+                        >
+                      </div>
                     </div>
-                    <div
-                      class="col-4 d-flex justify-content-center flex-column align-items-center text-center py-3 px-1">
-                      <span class="h7 heading-regular text-colour7">3 hrs 15 mins</span>
-                      <span class="h7 heading-regular text-colour7">Non Stop
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row" style="margin: 0 -1rem">
+                  <div class="col-12 text-lg-center">
+                    <div class="row border-top-bottom-lg-0 px-2">
+                      <div
+                        class="col-4 d-flex justify-content-center flex-column align-items-start text-center py-3 px-1"
+                      >
+                        <span class="h7 heading-regular text-colour7"
+                          >12:05 AM</span
+                        >
+                        <span class="h7 heading-regular text-colour7"
+                          >New Delhi
+                          <span class="heading-bold abbreviation"
+                            >DEL</span
+                          ></span
+                        >
+                      </div>
+                      <div
+                        class="col-4 d-flex justify-content-center flex-column align-items-center text-center py-3 px-1"
+                      >
+                        <span class="h7 heading-regular text-colour7"
+                          >6 hrs 5 mins</span
+                        >
+                        <span class="h7 heading-regular text-colour7"
+                          >Non Stop
+                        </span>
+                      </div>
+                      <div
+                        class="col-4 d-flex justify-content-center flex-column align-items-end text-center border-right-lg py-3 px-1"
+                      >
+                        <span class="h7 heading-regular text-colour7"
+                          >4:40 AM</span
+                        >
+                        <span class="h7 heading-regular text-colour7"
+                          >Dubai
+                          <span class="heading-bold abbreviation"
+                            >DXB</span
+                          ></span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dvSeeDetails row border-top" style="margin: 0 -1rem">
+              <div
+                class="col-12 d-flex justify-content-between align-items-center py-2"
+              >
+                <a
+                  href="#dvDetails0"
+                  id="flight_details"
+                  data-bs-toggle="collapse"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                  class="heading6 arrowBtn col-auto d-flex collapsed"
+                  ><span class="d-inline-block">Flight Details</span>
+                  <span class="arrow-icon ms-2">
+                    <i class="fa fa-caret-up"></i> </span
+                ></a>
+                <div class="searchBtnl">
+                  <button
+                    class="btn btn-one"
+                    onclick="var retvalue = BookNowClick('0'); event.returnValue= retvalue;event.preventDefault(); return retvalue;"
+                    style="cursor: pointer"
+                  >
+                    Book Now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              id="dvDetails0"
+              class="dvVcData col-12 collapse bg-light2 collapse mb-3"
+            >
+              <div class="dvDeparture row" id="details_seq_0">
+                <div class="col-12 bg-colour6 border-top py-2 mb-2">
+                  <div class="row align-items-center">
+                    <div class="col-auto col-sm-6">
+                      <span class="h6 heading-regular text-colour7"
+                        ><span>Departure</span> <i class="fa fa-arrow-right"></i
+                      ></span>
+                    </div>
+                    <div class="col-auto col-sm-6 text-sm-right">
+                      <span class="h6 heading-regular text-colour7">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Total Duration</span>: 03 hrs 15 mins
                       </span>
                     </div>
-                    <div
-                      class="col-4 d-flex justify-content-center flex-column align-items-end text-center border-right-lg py-3 px-1">
-                      <span class="h7 heading-regular text-colour7">3:55 PM</span>
-                      <span class="h7 heading-regular text-colour7">New Delhi
-                        <span class="heading-bold abbreviation">DEL</span></span>
+                  </div>
+                </div>
+                <div class="col-12 py-2 mb-2">
+                  <div class="row">
+                    <div class="col-12 col-sm-4 d-flex align-items-center mb-3">
+                      <img
+                        src="https://ibe.infiplanets.com/Images/AirlinesLogo/SG.gif"
+                      />
+                      <span class="h6 heading-regular text-colour7 ms-2">
+                        Spicejet Limited (6)</span
+                      >
+                    </div>
+                    <div class="col-6 col-sm-4">
+                      <p>
+                        <span
+                          class="d-block heading-bold h7 heading-regular text-colour7"
+                          ><strong>Dubai (DXB) </strong></span
+                        >
+                        <span class="d-block h7 heading-regular text-colour7"
+                          >Dubai International</span
+                        >
+                        <span
+                          class="d-block heading-bold h7 heading-regular text-colour7"
+                        >
+                          Departure Date:</span
+                        >
+                        <span class="d-block h7 heading-regular text-colour7"
+                          >20-11-2024</span
+                        >
+                        <span
+                          class="d-block heading-bold h7 heading-regular text-colour7"
+                          >Departure Time:</span
+                        >
+                        <span class="d-block h7 heading-regular text-colour7"
+                          >11:10</span
+                        >
+                      </p>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                      <p>
+                        <span
+                          class="d-block heading-bold h7 heading-regular text-colour7"
+                          ><strong>New Delhi (DEL) </strong></span
+                        >
+                        <span class="d-block h7 heading-regular text-colour7"
+                          >Indira Gandhi International</span
+                        >
+                        <span class="d-block h7 heading-regular text-colour7"
+                          ><strong>Arrival Date:</strong></span
+                        >
+                        <span class="d-block h7 heading-regular text-colour7"
+                          >20-11-2024</span
+                        >
+                        <span class="d-block h7 heading-regular text-colour7">
+                          <strong>Arrival Time:</strong>
+                        </span>
+                        <span class="d-block h7 heading-regular text-colour7"
+                          >15:55</span
+                        >
+                        <span class="fOption h7 heading-regular text-colour7"
+                          ><span class="baggage"
+                            ><i class="fa fa-suitcase"></i>
+                            <span>Baggage Allowance</span> - 25 KG
+                          </span></span
+                        >
+                      </p>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="row">
-                <div class="col-12 text-lg-center">
-                  <div class="row border-top border-bottom border-top-bottom-lg-0">
-                    <div
-                      class="col-4 d-flex justify-content-center flex-column align-items-start text-center py-3 px-1">
-                      <span class="h7 heading-regular text-colour7">12:05 AM</span>
-                      <span class="h7 heading-regular text-colour7">New Delhi
-                        <span class="heading-bold abbreviation">DEL</span></span>
+                <div class="col-12 bg-colour6 border-top py-2 mb-2">
+                  <div class="row align-items-center">
+                    <div class="col-auto col-sm-6">
+                      <span class="h6 heading-regular text-colour7"
+                        ><span>Return</span> <i class="fa fa-arrow-right"></i
+                      ></span>
                     </div>
-                    <div
-                      class="col-4 d-flex justify-content-center flex-column align-items-center text-center py-3 px-1">
-                      <span class="h7 heading-regular text-colour7">6 hrs 5 mins</span>
-                      <span class="h7 heading-regular text-colour7">Non Stop
+                    <div class="col-auto col-sm-6 text-sm-right">
+                      <span class="h6 heading-regular text-colour7">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Total Duration</span>: 06 hrs 05 mins
                       </span>
                     </div>
-                    <div
-                      class="col-4 d-flex justify-content-center flex-column align-items-end text-center border-right-lg py-3 px-1">
-                      <span class="h7 heading-regular text-colour7">4:40 AM</span>
-                      <span class="h7 heading-regular text-colour7">Dubai
-                        <span class="heading-bold abbreviation">DXB</span></span>
+                  </div>
+                </div>
+                <div class="col-12 py-2 mb-2">
+                  <div class="row">
+                    <div class="col-12 col-sm-4 d-flex align-items-center mb-3">
+                      <img
+                        src="https://ibe.infiplanets.com/Images/AirlinesLogo/SG.gif"
+                      />
+                      <span class="h6 heading-regular text-colour7 ms-2">
+                        Spicejet Limited (5)</span
+                      >
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="dvSeeDetails row border-top">
-            <div class="col-12 d-flex justify-content-between align-items-center py-2">
-              <a href="#dvDetails0" id="flight_details" data-bs-toggle="collapse" role="button" aria-expanded="false"
-                aria-controls="collapseExample" class="heading6 arrowBtn col-auto d-flex collapsed"><span
-                  class="d-inline-block">Flight Details</span>
-                <span class="arrow-icon ms-2">
-                  <i class="fa fa-caret-up"></i> </span></a>
-              <div class="searchBtnl">
-                <button class="btn btn-one"
-                  onclick="var retvalue = BookNowClick('0'); event.returnValue= retvalue;event.preventDefault(); return retvalue;"
-                  style="cursor: pointer">
-                  Book Now
-                </button>
-              </div>
-            </div>
-          </div>
-          <div id="dvDetails0" class="dvVcData col-12 collapse bg-light2 collapse mb-3">
-            <div class="dvDeparture row" id="details_seq_0">
-              <div class="col-12 bg-colour6 border-top py-2 mb-2">
-                <div class="row align-items-center">
-                  <div class="col-auto col-sm-6">
-                    <span class="h6 heading-regular text-colour7"><span>Departure</span> <i
-                        class="fa fa-arrow-right"></i></span>
-                  </div>
-                  <div class="col-auto col-sm-6 text-sm-right">
-                    <span class="h6 heading-regular text-colour7">
-                      <i class="fa-regular fa-clock"></i>
-                      <span>Total Duration</span>: 03 hrs 15 mins
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 py-2 mb-2">
-                <div class="row">
-                  <div class="col-12 col-sm-4 d-flex align-items-center mb-3">
-                    <img src="https://ibe.infiplanets.com/Images/AirlinesLogo/SG.gif" />
-                    <span class="h6 heading-regular text-colour7 ms-2">
-                      Spicejet Limited (6)</span>
-                  </div>
-                  <div class="col-6 col-sm-4">
-                    <p>
-                      <span class="d-block heading-bold h7 heading-regular text-colour7"><strong>Dubai (DXB)
-                        </strong></span>
-                      <span class="d-block h7 heading-regular text-colour7">Dubai International</span>
-                      <span class="d-block heading-bold h7 heading-regular text-colour7">
-                        Departure Date:</span>
-                      <span class="d-block h7 heading-regular text-colour7">20-11-2024</span>
-                      <span class="d-block heading-bold h7 heading-regular text-colour7">Departure Time:</span>
-                      <span class="d-block h7 heading-regular text-colour7">11:10</span>
-                    </p>
-                  </div>
-                  <div class="col-6 col-sm-4">
-                    <p>
-                      <span class="d-block heading-bold h7 heading-regular text-colour7"><strong>New Delhi (DEL)
-                        </strong></span>
-                      <span class="d-block h7 heading-regular text-colour7">Indira Gandhi International</span>
-                      <span class="d-block h7 heading-regular text-colour7"><strong>Arrival Date:</strong></span>
-                      <span class="d-block h7 heading-regular text-colour7">20-11-2024</span>
-                      <span class="d-block h7 heading-regular text-colour7">
-                        <strong>Arrival Time:</strong>
-                      </span>
-                      <span class="d-block h7 heading-regular text-colour7">15:55</span>
-                      <span class="fOption h7 heading-regular text-colour7"><span class="baggage"><i
-                            class="fa fa-suitcase"></i>
-                          <span>Baggage Allowance</span> - 25 KG
-                        </span></span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 bg-colour6 border-top py-2 mb-2">
-                <div class="row align-items-center">
-                  <div class="col-auto col-sm-6">
-                    <span class="h6 heading-regular text-colour7"><span>Return</span> <i
-                        class="fa fa-arrow-right"></i></span>
-                  </div>
-                  <div class="col-auto col-sm-6 text-sm-right">
-                    <span class="h6 heading-regular text-colour7">
-                      <i class="fa-regular fa-clock"></i>
-                      <span>Total Duration</span>: 06 hrs 05 mins
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 py-2 mb-2">
-                <div class="row">
-                  <div class="col-12 col-sm-4 d-flex align-items-center mb-3">
-                    <img src="https://ibe.infiplanets.com/Images/AirlinesLogo/SG.gif" />
-                    <span class="h6 heading-regular text-colour7 ms-2">
-                      Spicejet Limited (5)</span>
-                  </div>
-                  <div class="col-6 col-sm-4">
-                    <p>
-                      <span class="d-block heading-bold h7 heading-regular text-colour7"><strong>New Delhi (DEL)
-                        </strong></span>
-                      <span class="d-block h7 heading-regular text-colour7">Indira Gandhi International</span>
-                      <span class="d-block heading-bold h7 heading-regular text-colour7">
-                        Departure Date:</span>
-                      <span class="d-block h7 heading-regular text-colour7">21-11-2024</span>
-                      <span class="d-block heading-bold h7 heading-regular text-colour7">Departure Time:</span>
-                      <span class="d-block h7 heading-regular text-colour7">00:05</span>
-                    </p>
-                  </div>
-                  <div class="col-6 col-sm-4">
-                    <p>
-                      <span class="d-block heading-bold h7 heading-regular text-colour7"><strong>Dubai (DXB)
-                        </strong></span>
-                      <span class="d-block h7 heading-regular text-colour7">Dubai International</span>
-                      <span class="d-block h7 heading-regular text-colour7"><strong>Arrival Date:</strong></span>
-                      <span class="d-block h7 heading-regular text-colour7">21-11-2024</span>
-                      <span class="d-block h7 heading-regular text-colour7">
-                        <strong>Arrival Time:</strong>
-                      </span>
-                      <span class="d-block h7 heading-regular text-colour7">04:40</span>
-                      <span class="fOption h7 heading-regular text-colour7"><span class="baggage"><i
-                            class="fa fa-suitcase"></i>
-                          <span>Baggage Allowance</span> - 30 KG
-                        </span></span>
-                    </p>
+                    <div class="col-6 col-sm-4">
+                      <p>
+                        <span
+                          class="d-block heading-bold h7 heading-regular text-colour7"
+                          ><strong>New Delhi (DEL) </strong></span
+                        >
+                        <span class="d-block h7 heading-regular text-colour7"
+                          >Indira Gandhi International</span
+                        >
+                        <span
+                          class="d-block heading-bold h7 heading-regular text-colour7"
+                        >
+                          Departure Date:</span
+                        >
+                        <span class="d-block h7 heading-regular text-colour7"
+                          >21-11-2024</span
+                        >
+                        <span
+                          class="d-block heading-bold h7 heading-regular text-colour7"
+                          >Departure Time:</span
+                        >
+                        <span class="d-block h7 heading-regular text-colour7"
+                          >00:05</span
+                        >
+                      </p>
+                    </div>
+                    <div class="col-6 col-sm-4">
+                      <p>
+                        <span
+                          class="d-block heading-bold h7 heading-regular text-colour7"
+                          ><strong>Dubai (DXB) </strong></span
+                        >
+                        <span class="d-block h7 heading-regular text-colour7"
+                          >Dubai International</span
+                        >
+                        <span class="d-block h7 heading-regular text-colour7"
+                          ><strong>Arrival Date:</strong></span
+                        >
+                        <span class="d-block h7 heading-regular text-colour7"
+                          >21-11-2024</span
+                        >
+                        <span class="d-block h7 heading-regular text-colour7">
+                          <strong>Arrival Time:</strong>
+                        </span>
+                        <span class="d-block h7 heading-regular text-colour7"
+                          >04:40</span
+                        >
+                        <span class="fOption h7 heading-regular text-colour7"
+                          ><span class="baggage"
+                            ><i class="fa fa-suitcase"></i>
+                            <span>Baggage Allowance</span> - 30 KG
+                          </span></span
+                        >
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -545,74 +833,82 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <!--Flight List end here-->
+    <!--Flight List end here-->
 
-  <!--footer start here-->
-  <div class="dvFooter shadow-lg position-fixed z-index-2 w-100">
-    <div class="bg-colour6">
-      <div class="container-xl py-2">
-        <div class="row align-items-center">
-          <div class="col text-center">
-            <a href="/">
-              <!-- <i class="fa-solid fa-house"></i> -->
-              <img src="./src/assets/images/icons/footer-icons/icon-home.svg" />
-              <p class="h9 text-colour9 heading-medium pt-1">Home</p>
-            </a>
-          </div>
-          <div class="col text-center">
-            <a href="ViewMemberProfile.aspx">
-              <!-- <i class="fa-solid fa-user"></i> -->
-              <img src="./src/assets/images/icons/footer-icons/icon-profile.svg" />
-              <p class="h9 text-colour9 heading-medium pt-1">Profile</p>
-            </a>
-          </div>
-          <div class="col text-center">
-            <a href="#">
-              <!-- <i class="fa-solid fa-bell"></i> -->
-              <img src="./src/assets/images/icons/footer-icons/icon-app.svg" />
-            </a>
-          </div>
-          <div class="col text-center">
-            <a href="#">
-              <!-- <i class="fa-solid fa-bell"></i> -->
-              <img src="./src/assets/images/icons/footer-icons/icon-notification.svg" />
-              <p class="h9 text-colour9 heading-medium pt-1">Notification</p>
-            </a>
-          </div>
+    <!--footer start here-->
+    <div class="dvFooter shadow-lg position-fixed z-index-2 w-100">
+      <div class="bg-colour6">
+        <div class="container-xl py-2">
+          <div class="row align-items-center">
+            <div class="col text-center">
+              <a href="/">
+                <!-- <i class="fa-solid fa-house"></i> -->
+                <img
+                  src="./src/assets/images/icons/footer-icons/icon-home.svg"
+                />
+                <p class="h9 text-colour9 heading-medium pt-1">Home</p>
+              </a>
+            </div>
+            <div class="col text-center">
+              <a href="ViewMemberProfile.aspx">
+                <!-- <i class="fa-solid fa-user"></i> -->
+                <img
+                  src="./src/assets/images/icons/footer-icons/icon-profile.svg"
+                />
+                <p class="h9 text-colour9 heading-medium pt-1">Profile</p>
+              </a>
+            </div>
+            <div class="col text-center">
+              <a href="#">
+                <!-- <i class="fa-solid fa-bell"></i> -->
+                <img
+                  src="./src/assets/images/icons/footer-icons/icon-app.svg"
+                />
+              </a>
+            </div>
+            <div class="col text-center">
+              <a href="#">
+                <!-- <i class="fa-solid fa-bell"></i> -->
+                <img
+                  src="./src/assets/images/icons/footer-icons/icon-notification.svg"
+                />
+                <p class="h9 text-colour9 heading-medium pt-1">Notification</p>
+              </a>
+            </div>
 
-          <div class="col text-center">
-            <a href="OrderHistory.aspx">
-              <!-- <i class="fa-solid fa-bag-shopping"></i> -->
-              <img src="./src/assets/images/icons/footer-icons/icon-cart.svg" />
-              <p class="h9 text-colour9 heading-medium pt-1">Cart</p>
-            </a>
+            <div class="col text-center">
+              <a href="OrderHistory.aspx">
+                <!-- <i class="fa-solid fa-bag-shopping"></i> -->
+                <img
+                  src="./src/assets/images/icons/footer-icons/icon-cart.svg"
+                />
+                <p class="h9 text-colour9 heading-medium pt-1">Cart</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="src/assets/js/swiper.min.js"></script>
-  <script src="src/assets/js/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/assets/js/swiper.min.js"></script>
+    <script src="src/assets/js/jquery-ui.js"></script>
 
-  <script>
-    // Function to increment value
-    function incrementValue() {
-      const input = document.getElementById("quantityInput");
-      input.value = parseInt(input.value) + 1;
-    }
-
-    // Function to decrement value
-    function decrementValue() {
-      const input = document.getElementById("quantityInput");
-      if (parseInt(input.value) > 0) {
-        input.value = parseInt(input.value) - 1;
+    <script>
+      // Function to increment value
+      function incrementValue() {
+        const input = document.getElementById("quantityInput");
+        input.value = parseInt(input.value) + 1;
       }
-    }
-  </script>
-</body>
 
+      // Function to decrement value
+      function decrementValue() {
+        const input = document.getElementById("quantityInput");
+        if (parseInt(input.value) > 0) {
+          input.value = parseInt(input.value) - 1;
+        }
+      }
+    </script>
+  </body>
 </html>

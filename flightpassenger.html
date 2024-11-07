@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/assets/css/root.css" />
+    <link rel="stylesheet" href="src/assets/css/global.css" />
+    <link rel="stylesheet" href="src/assets/css/flight.css" />
+    <link rel="stylesheet" href="src/assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="src/assets/css/jquery-ui.css" />
+</head>
+
+<body>
+    <!--header start here-->
+    <div class="dvHeader pt-1 pb-1">
+        <div class="container-xl">
+            <div class="row justify-content-beween align-items-center">
+                <div class="col-auto order-lg-0 logo">
+                    <img class="" src="/src/assets/images/home/logo/mt-cash-logo.svg" alt="" />
+                </div>
+                <div class="col-auto ms-auto ms-lg-0 order-lg-2">
+                    <select class="form-control" name="" id="">
+                        <option value="en">EN</option>
+                        <option value="ar">AR</option>
+                        <option value="fr">FR</option>
+                    </select>
+                </div>
+                <div class="col-auto d-lg-none">
+                    <button class="btn border" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottom">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-start bg-transparent- col-lg-auto order-lg-1 ms-lg-auto px-0 px-lg-3 border-lg-top-0"
+                    tabindex="-1" id="offcanvasBottom">
+                    <!-- <div class="p-3-">
+              <div class="b-radius bg-colour6-"> -->
+                    <div class="offcanvas-header d-lg-none pb-0">
+                        <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5> -->
+                        <button type="button" class="btn border btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body pt-0 p-lg-0">
+                        <div class="row mx-lg-0 align-items-lg-center">
+                            <div class="col-12 col-lg-auto">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/profile.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Profile</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/my-order.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">My Order</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/about.svg" alt="" class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">About Program</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/faqs.svg" alt="" class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">FAQs</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/terms-and-conditions.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Terms &amp; conditions</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/booking-policy.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Booking Policy</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/privacy-policy.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Privacy Policy</span>
+                                </a>
+                            </div>
+                            <div class="col-6 offset-3 col-lg-auto offset-lg-0 text-center">
+                                <button class="btn btn-one w-100">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div>
+            </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header end here-->
+    <div class="dvBreadcrumbs bg-colour1 py-2">
+        <div class="container-xl">
+            <div class="d-flex justify-content-center">
+                <div class="me-auto">
+                    <a class="text-colour6" href="#" onclick="history.go(-1)"><i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+                <div class="me-auto">
+                    <p class="text-colour6">Flight Passenger Details</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dvFlightPassenger pb-5 mt-lg-4">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-12">
+
+                </div>
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="b-radius-top-right heading6 py-3">Passenger
+                                Details</h2>
+                        </div>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12 mb-2">
+                                    <div id="CP_AdultInfo">
+
+                                        <h2 class="h7 heading-bold mb-2"><span>Adult: 1</span></h2>
+                                        <div>
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="label">Title</label>
+                                                    <div class="dvInput input-group select_box">
+                                                        <select
+                                                            name="ctl00$CP$rptAdultControl$ctl00$adultdetails$ddlTitle"
+                                                            id="CP_rptAdultControl_adultdetails_0_ddlTitle_0"
+                                                            class="form-control form-select">
+                                                            <option selected="selected" value="Male">
+                                                                Mr</option>
+                                                            <option value="Female">Ms</option>
+                                                            <option value="Female">Mrs</option>
+
+                                                        </select>
+                                                    </div>
+                                                    <span id="CP_rptAdultControl_adultdetails_0_rfvTitle_0"
+                                                        class="rptErrorMassage text-danger" style="display:none;">Enter Title</span>
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="label">First Name</label>
+                                                    <div class="dvInput input-group">
+                                                        <input
+                                                            name="ctl00$CP$rptAdultControl$ctl00$adultdetails$txtFirstName"
+                                                            type="text" maxlength="27"
+                                                            id="CP_rptAdultControl_adultdetails_0_txtFirstName_0"
+                                                            class="form-control" autocomplete="off">
+                                                    </div>
+                                                    <span id="CP_rptAdultControl_adultdetails_0_rfvAdultFirstName_0"
+                                                        class="rptErrorMassage text-danger" style="display:none;">Enter First Name
+                                                    </span>
+                                                    <span id="CP_rptAdultControl_adultdetails_0_revAdultFirstName_0"
+                                                        class="rptErrorMassage text-danger" style="display:none;">Please Enter valid
+                                                        First Name.
+                                                    </span>
+
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="label">Last Name</label>
+                                                    <div class="dvInput input-group">
+                                                        <input
+                                                            name="ctl00$CP$rptAdultControl$ctl00$adultdetails$txtLastName"
+                                                            type="text" maxlength="27"
+                                                            id="CP_rptAdultControl_adultdetails_0_txtLastName_0"
+                                                            class="form-control" autocomplete="off">
+                                                    </div>
+                                                    <span id="CP_rptAdultControl_adultdetails_0_rfvAdultLastName_0"
+                                                        class="rptErrorMassage text-danger" style="display:none;">
+                                                        Enter Last Name
+                                                    </span>
+                                                    <span id="CP_rptAdultControl_adultdetails_0_revAdultLastName_0"
+                                                        class="rptErrorMassage text-danger" style="display:none;">
+                                                        Please Enter valid Last Name.
+                                                    </span>
+
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="label">Date of Birth</label>
+                                                    <div class="dvInputGroup dvTxtDOBAdult input-group">
+
+                                                        <div class="dvInputGroup input-group">
+                                                            <input class="input datePicker form-control cal-icon pr-5"
+                                                                type="text" readonly="readonly"
+                                                                class="form-control icnDate hasDatepicker"
+                                                                autocomplete="off" />
+                                                            <span class="input-group-text bg-colour6"><i
+                                                                    class="fa-regular fa-calendar"></i></span>
+                                                        </div>
+                                                    </div>
+                                                    <span id="CP_rptAdultControl_adultdetails_0_rfvAdultDOB_0"
+                                                        class="rptErrorMassage text-danger" style="display:none;">Enter Date of
+                                                        Birth</span>
+                                                    <span
+                                                        id="CP_rptAdultControl_adultdetails_0_CustomValidatorAdultDOB_0"
+                                                        class="rptErrorMassage text-danger" style="display:none;">Adults (12+ yrs)</span>
+
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="label">Passport Number</label>
+                                                    <div class="dvInput input-group">
+                                                        <input
+                                                            name="ctl00$CP$rptAdultControl$ctl00$adultdetails$txtPassportNo"
+                                                            type="text" maxlength="15"
+                                                            id="CP_rptAdultControl_adultdetails_0_txtPassportNo_0"
+                                                            class="form-control" autocomplete="off">
+                                                    </div>
+                                                    <span
+                                                        id="CP_rptAdultControl_adultdetails_0_RequiredFieldValidator4_0"
+                                                        class="rptErrorMassage text-danger" style="display:none;">
+                                                        Enter Passport Number
+                                                    </span>
+                                                    <span
+                                                        id="CP_rptAdultControl_adultdetails_0_RegularExpressionValidator1_0"
+                                                        class="rptErrorMassage text-danger" style="display:none;">
+                                                        Please Enter correct passport no. (no blank space).
+                                                    </span>
+                                                    <span
+                                                        id="CP_rptAdultControl_adultdetails_0_RegularExpressionValidator2_0"
+                                                        class="rptErrorMassage text-danger" style="display:none;">
+                                                        Minimum 6 characters required.
+                                                    </span>
+
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label class="label">E-Mail ID</label>
+                                                    <div class="dvInput input-group">
+                                                        <input
+                                                            name="ctl00$CP$rptAdultControl$ctl00$adultdetails$txtEmailID"
+                                                            type="text"
+                                                            id="CP_rptAdultControl_adultdetails_0_txtEmailID_0"
+                                                            class="form-control" autocomplete="off">
+                                                    </div>
+                                                    <span
+                                                        id="CP_rptAdultControl_adultdetails_0_RequiredFieldValidator2_0"
+                                                        class="rptErrorMassage text-danger" style="display:none;">Enter E-mail Id</span>
+                                                    <span id="CP_rptAdultControl_adultdetails_0_revAdultEmail_0"
+                                                        class="rptErrorMassage text-danger" style="display:none;">Enter Valid E-mail
+                                                        Id</span>
+
+                                                </div>
+                                            </div>
+                                            <div id="CP_rptAdultControl_adultdetails_0_AdditionalInfo_0"
+                                                style="display:block;">
+                                                <div class="row">
+                                                    <div id="CP_rptAdultControl_adultdetails_0_divNationality_0"
+                                                        class="col-md-6 mb-3" style="display:block;">
+                                                        <label class="label">Nationality</label>
+
+                                                        <div id="CP_rptAdultControl_adultdetails_0_divNationalityData_0"
+                                                            class="dvInput input-group">
+                                                            <select
+                                                                name="ctl00$CP$rptAdultControl$ctl00$adultdetails$drpNationality"
+                                                                id="CP_rptAdultControl_adultdetails_0_drpNationality_0"
+                                                                class="form-control form-select">
+                                                                <option selected="selected" value=""
+                                                                    data-i18n="ABC-select">Select</option>
+                                                                <option value="AF" data-i18n="ABC-afghanistan">
+                                                                    Afghanistan</option>
+                                                                <option value="AL" data-i18n="ABC-albania">Albania
+                                                                </option>
+                                                                <option value="DZ" data-i18n="ABC-algeria">Algeria
+                                                                </option>
+                                                                <option value="AX" data-i18n="ABC-åland-islands">
+                                                                    Åland Islands</option>
+                                                                <option value="AS" data-i18n="ABC-american-samoa">
+                                                                    American Samoa</option>
+                                                                <option value="AD" data-i18n="ABC-andorra">Andorra
+                                                                </option>
+                                                                <option value="AO" data-i18n="ABC-angola">Angola
+                                                                </option>
+                                                                <option value="AI" data-i18n="ABC-anguilla">Anguilla
+                                                                </option>
+                                                                <option value="AQ" data-i18n="ABC-antarctica">
+                                                                    Antarctica</option>
+                                                                <option value="AG" data-i18n="ABC-antigua-and-barbuda">
+                                                                    Antigua and
+                                                                    Barbuda</option>
+                                                                <option value="AR" data-i18n="ABC-argentina">
+                                                                    Argentina</option>
+                                                                <option value="AM" data-i18n="ABC-armenia">Armenia
+                                                                </option>
+                                                                <option value="AW" data-i18n="ABC-aruba">Aruba
+                                                                </option>
+                                                                <option value="AU" data-i18n="ABC-australia">
+                                                                    Australia</option>
+                                                                <option value="AT" data-i18n="ABC-austria">Austria
+                                                                </option>
+                                                                <option value="AZ" data-i18n="ABC-azerbaijan">
+                                                                    Azerbaijan</option>
+                                                                <option value="BS" data-i18n="ABC-bahamas-(the)">
+                                                                    Bahamas (the)</option>
+                                                                <option value="BH" data-i18n="ABC-bahrain">Bahrain
+                                                                </option>
+                                                                <option value="BD" data-i18n="ABC-bangladesh">
+                                                                    Bangladesh</option>
+                                                                <option value="BB" data-i18n="ABC-barbados">Barbados
+                                                                </option>
+                                                                <option value="BY" data-i18n="ABC-belarus">Belarus
+                                                                </option>
+                                                                <option value="BE" data-i18n="ABC-belgium">Belgium
+                                                                </option>
+                                                                <option value="BZ" data-i18n="ABC-belize">Belize
+                                                                </option>
+                                                                <option value="BJ" data-i18n="ABC-benin">Benin
+                                                                </option>
+                                                                <option value="BM" data-i18n="ABC-bermuda">Bermuda
+                                                                </option>
+                                                                <option value="BT" data-i18n="ABC-bhutan">Bhutan
+                                                                </option>
+                                                                <option value="BO"
+                                                                    data-i18n="ABC-bolivia-(plurinational-st">
+                                                                    Bolivia (Plurinational State of)</option>
+                                                                <option value="BQ"
+                                                                    data-i18n="ABC-bonaire,-sint-eustatius-a">
+                                                                    Bonaire, Sint Eustatius and Saba</option>
+                                                                <option value="BA"
+                                                                    data-i18n="ABC-bosnia-and-herzegovina">Bosnia
+                                                                    and Herzegovina</option>
+                                                                <option value="BW" data-i18n="ABC-botswana">Botswana
+                                                                </option>
+                                                                <option value="BV" data-i18n="ABC-bouvet-island">
+                                                                    Bouvet Island</option>
+                                                                <option value="BR" data-i18n="ABC-brazil">Brazil
+                                                                </option>
+                                                                <option value="IO"
+                                                                    data-i18n="ABC-british-indian-ocean-terr">
+                                                                    British Indian Ocean Territory (the)</option>
+                                                                <option value="BN" data-i18n="ABC-brunei-darussalam">
+                                                                    Brunei
+                                                                    Darussalam</option>
+                                                                <option value="BG" data-i18n="ABC-bulgaria">Bulgaria
+                                                                </option>
+                                                                <option value="BF" data-i18n="ABC-burkina-faso">
+                                                                    Burkina Faso</option>
+                                                                <option value="BI" data-i18n="ABC-burundi">Burundi
+                                                                </option>
+                                                                <option value="CV" data-i18n="ABC-cabo-verde">Cabo
+                                                                    Verde</option>
+                                                                <option value="KH" data-i18n="ABC-cambodia">Cambodia
+                                                                </option>
+                                                                <option value="CM" data-i18n="ABC-cameroon">Cameroon
+                                                                </option>
+                                                                <option value="CA" data-i18n="ABC-canada">Canada
+                                                                </option>
+                                                                <option value="KY" data-i18n="ABC-cayman-islands-(the)">
+                                                                    Cayman
+                                                                    Islands (the)</option>
+                                                                <option value="CF"
+                                                                    data-i18n="ABC-central-african-republic-">
+                                                                    Central African Republic (the)</option>
+                                                                <option value="TD" data-i18n="ABC-chad">Chad
+                                                                </option>
+                                                                <option value="CL" data-i18n="ABC-chile">Chile
+                                                                </option>
+                                                                <option value="CN" data-i18n="ABC-china">China
+                                                                </option>
+                                                                <option value="CX" data-i18n="ABC-christmas-island">
+                                                                    Christmas Island</option>
+                                                                <option value="CC"
+                                                                    data-i18n="ABC-cocos-(keeling)-islands-(">Cocos
+                                                                    (Keeling) Islands (the)</option>
+                                                                <option value="CO" data-i18n="ABC-colombia">Colombia
+                                                                </option>
+                                                                <option value="KM" data-i18n="ABC-comoros-(the)">
+                                                                    Comoros (the)</option>
+                                                                <option value="CD"
+                                                                    data-i18n="ABC-congo-(the-democratic-rep">Congo
+                                                                    (the Democratic Republic of the)</option>
+                                                                <option value="CG" data-i18n="ABC-congo-(the)">Congo
+                                                                    (the)</option>
+                                                                <option value="CK" data-i18n="ABC-cook-islands-(the)">
+                                                                    Cook Islands
+                                                                    (the)</option>
+                                                                <option value="CR" data-i18n="ABC-costa-rica">Costa
+                                                                    Rica</option>
+                                                                <option value="HR" data-i18n="ABC-croatia">Croatia
+                                                                </option>
+                                                                <option value="CU" data-i18n="ABC-cuba">Cuba
+                                                                </option>
+                                                                <option value="CW" data-i18n="ABC-curaçao">Curaçao
+                                                                </option>
+                                                                <option value="CY" data-i18n="ABC-cyprus">Cyprus
+                                                                </option>
+                                                                <option value="CZ" data-i18n="ABC-czechia">Czechia
+                                                                </option>
+                                                                <option value="CI" data-i18n="ABC-côte-d'ivoire">
+                                                                    Côte d'Ivoire</option>
+                                                                <option value="DK" data-i18n="ABC-denmark">Denmark
+                                                                </option>
+                                                                <option value="DJ" data-i18n="ABC-djibouti">Djibouti
+                                                                </option>
+                                                                <option value="DM" data-i18n="ABC-dominica">Dominica
+                                                                </option>
+                                                                <option value="DO"
+                                                                    data-i18n="ABC-dominican-republic-(the)">
+                                                                    Dominican Republic (the)</option>
+                                                                <option value="EC" data-i18n="ABC-ecuador">Ecuador
+                                                                </option>
+                                                                <option value="EG" data-i18n="ABC-egypt">Egypt
+                                                                </option>
+                                                                <option value="SV" data-i18n="ABC-el-salvador">El
+                                                                    Salvador</option>
+                                                                <option value="GQ" data-i18n="ABC-equatorial-guinea">
+                                                                    Equatorial
+                                                                    Guinea</option>
+                                                                <option value="ER" data-i18n="ABC-eritrea">Eritrea
+                                                                </option>
+                                                                <option value="EE" data-i18n="ABC-estonia">Estonia
+                                                                </option>
+                                                                <option value="SZ" data-i18n="ABC-eswatini">Eswatini
+                                                                </option>
+                                                                <option value="ET" data-i18n="ABC-ethiopia">Ethiopia
+                                                                </option>
+                                                                <option value="FK"
+                                                                    data-i18n="ABC-falkland-islands-(the)-[m">
+                                                                    Falkland Islands (the) [Malvinas]</option>
+                                                                <option value="FO" data-i18n="ABC-faroe-islands-(the)">
+                                                                    Faroe
+                                                                    Islands (the)</option>
+                                                                <option value="FJ" data-i18n="ABC-fiji">Fiji
+                                                                </option>
+                                                                <option value="FI" data-i18n="ABC-finland">Finland
+                                                                </option>
+                                                                <option value="FR" data-i18n="ABC-france">France
+                                                                </option>
+                                                                <option value="GF" data-i18n="ABC-french-guiana">
+                                                                    French Guiana</option>
+                                                                <option value="PF" data-i18n="ABC-french-polynesia">
+                                                                    French Polynesia</option>
+                                                                <option value="TF"
+                                                                    data-i18n="ABC-french-southern-territori">French
+                                                                    Southern Territories (the)</option>
+                                                                <option value="GA" data-i18n="ABC-gabon">Gabon
+                                                                </option>
+                                                                <option value="GM" data-i18n="ABC-gambia-(the)">
+                                                                    Gambia (the)</option>
+                                                                <option value="GE" data-i18n="ABC-georgia">Georgia
+                                                                </option>
+                                                                <option value="DE" data-i18n="ABC-germany">Germany
+                                                                </option>
+                                                                <option value="GH" data-i18n="ABC-ghana">Ghana
+                                                                </option>
+                                                                <option value="GI" data-i18n="ABC-gibraltar">
+                                                                    Gibraltar</option>
+                                                                <option value="GR" data-i18n="ABC-greece">Greece
+                                                                </option>
+                                                                <option value="GL" data-i18n="ABC-greenland">
+                                                                    Greenland</option>
+                                                                <option value="GD" data-i18n="ABC-grenada">Grenada
+                                                                </option>
+                                                                <option value="GP" data-i18n="ABC-guadeloupe">
+                                                                    Guadeloupe</option>
+                                                                <option value="GU" data-i18n="ABC-guam">Guam
+                                                                </option>
+                                                                <option value="GT" data-i18n="ABC-guatemala">
+                                                                    Guatemala</option>
+                                                                <option value="GG" data-i18n="ABC-guernsey">Guernsey
+                                                                </option>
+                                                                <option value="GN" data-i18n="ABC-guinea">Guinea
+                                                                </option>
+                                                                <option value="GW" data-i18n="ABC-guinea-bissau">
+                                                                    Guinea-Bissau</option>
+                                                                <option value="GY" data-i18n="ABC-guyana">Guyana
+                                                                </option>
+                                                                <option value="HT" data-i18n="ABC-haiti">Haiti
+                                                                </option>
+                                                                <option value="HM"
+                                                                    data-i18n="ABC-heard-island-and-mcdonald">Heard
+                                                                    Island and McDonald Islands</option>
+                                                                <option value="VA" data-i18n="ABC-holy-see-(the)">
+                                                                    Holy See (the)</option>
+                                                                <option value="HN" data-i18n="ABC-honduras">Honduras
+                                                                </option>
+                                                                <option value="HK" data-i18n="ABC-hong-kong">Hong
+                                                                    Kong</option>
+                                                                <option value="HU" data-i18n="ABC-hungary">Hungary
+                                                                </option>
+                                                                <option value="IS" data-i18n="ABC-iceland">Iceland
+                                                                </option>
+                                                                <option value="IN" data-i18n="ABC-india">India
+                                                                </option>
+                                                                <option value="ID" data-i18n="ABC-indonesia">
+                                                                    Indonesia</option>
+                                                                <option value="IR"
+                                                                    data-i18n="ABC-iran-(islamic-republic-of">Iran
+                                                                    (Islamic Republic of)</option>
+                                                                <option value="IQ" data-i18n="ABC-iraq">Iraq
+                                                                </option>
+                                                                <option value="IE" data-i18n="ABC-ireland">Ireland
+                                                                </option>
+                                                                <option value="IM" data-i18n="ABC-isle-of-man">Isle
+                                                                    of Man</option>
+                                                                <option value="IL" data-i18n="ABC-israel">Israel
+                                                                </option>
+                                                                <option value="IT" data-i18n="ABC-italy">Italy
+                                                                </option>
+                                                                <option value="JM" data-i18n="ABC-jamaica">Jamaica
+                                                                </option>
+                                                                <option value="JP" data-i18n="ABC-japan">Japan
+                                                                </option>
+                                                                <option value="JE" data-i18n="ABC-jersey">Jersey
+                                                                </option>
+                                                                <option value="JO" data-i18n="ABC-jordan">Jordan
+                                                                </option>
+                                                                <option value="KZ" data-i18n="ABC-kazakhstan">
+                                                                    Kazakhstan</option>
+                                                                <option value="KE" data-i18n="ABC-kenya">Kenya
+                                                                </option>
+                                                                <option value="KI" data-i18n="ABC-kiribati">Kiribati
+                                                                </option>
+                                                                <option value="KP"
+                                                                    data-i18n="ABC-korea-(the-democratic-peo">Korea
+                                                                    (the Democratic People's Republic of)</option>
+                                                                <option value="KR"
+                                                                    data-i18n="ABC-korea-(the-republic-of)">Korea
+                                                                    (the Republic of)</option>
+                                                                <option value="KW" data-i18n="ABC-kuwait">Kuwait
+                                                                </option>
+                                                                <option value="KG" data-i18n="ABC-kyrgyzstan">
+                                                                    Kyrgyzstan</option>
+                                                                <option value="LA"
+                                                                    data-i18n="ABC-lao-people's-democratic-r">Lao
+                                                                    People's Democratic Republic (the)</option>
+                                                                <option value="LV" data-i18n="ABC-latvia">Latvia
+                                                                </option>
+                                                                <option value="LB" data-i18n="ABC-lebanon">Lebanon
+                                                                </option>
+                                                                <option value="LS" data-i18n="ABC-lesotho">Lesotho
+                                                                </option>
+                                                                <option value="LR" data-i18n="ABC-liberia">Liberia
+                                                                </option>
+                                                                <option value="LY" data-i18n="ABC-libya">Libya
+                                                                </option>
+                                                                <option value="LI" data-i18n="ABC-liechtenstein">
+                                                                    Liechtenstein</option>
+                                                                <option value="LT" data-i18n="ABC-lithuania">
+                                                                    Lithuania</option>
+                                                                <option value="LU" data-i18n="ABC-luxembourg">
+                                                                    Luxembourg</option>
+                                                                <option value="MO" data-i18n="ABC-macao">Macao
+                                                                </option>
+                                                                <option value="MG" data-i18n="ABC-madagascar">
+                                                                    Madagascar</option>
+                                                                <option value="MW" data-i18n="ABC-malawi">Malawi
+                                                                </option>
+                                                                <option value="MY" data-i18n="ABC-malaysia">Malaysia
+                                                                </option>
+                                                                <option value="MV" data-i18n="ABC-maldives">Maldives
+                                                                </option>
+                                                                <option value="ML" data-i18n="ABC-mali">Mali
+                                                                </option>
+                                                                <option value="MT" data-i18n="ABC-malta">Malta
+                                                                </option>
+                                                                <option value="MH"
+                                                                    data-i18n="ABC-marshall-islands-(the)">Marshall
+                                                                    Islands (the)</option>
+                                                                <option value="MQ" data-i18n="ABC-martinique">
+                                                                    Martinique</option>
+                                                                <option value="MR" data-i18n="ABC-mauritania">
+                                                                    Mauritania</option>
+                                                                <option value="MU" data-i18n="ABC-mauritius">
+                                                                    Mauritius</option>
+                                                                <option value="YT" data-i18n="ABC-mayotte">Mayotte
+                                                                </option>
+                                                                <option value="MX" data-i18n="ABC-mexico">Mexico
+                                                                </option>
+                                                                <option value="FM"
+                                                                    data-i18n="ABC-micronesia-(federated-sta">
+                                                                    Micronesia (Federated States of)</option>
+                                                                <option value="MD"
+                                                                    data-i18n="ABC-moldova-(the-republic-of)">
+                                                                    Moldova (the Republic of)</option>
+                                                                <option value="MC" data-i18n="ABC-monaco">Monaco
+                                                                </option>
+                                                                <option value="MN" data-i18n="ABC-mongolia">Mongolia
+                                                                </option>
+                                                                <option value="ME" data-i18n="ABC-montenegro">
+                                                                    Montenegro</option>
+                                                                <option value="MS" data-i18n="ABC-montserrat">
+                                                                    Montserrat</option>
+                                                                <option value="MA" data-i18n="ABC-morocco">Morocco
+                                                                </option>
+                                                                <option value="MZ" data-i18n="ABC-mozambique">
+                                                                    Mozambique</option>
+                                                                <option value="MM" data-i18n="ABC-myanmar">Myanmar
+                                                                </option>
+                                                                <option value="NA" data-i18n="ABC-namibia">Namibia
+                                                                </option>
+                                                                <option value="NR" data-i18n="ABC-nauru">Nauru
+                                                                </option>
+                                                                <option value="NP" data-i18n="ABC-nepal">Nepal
+                                                                </option>
+                                                                <option value="NL" data-i18n="ABC-netherlands-(the)">
+                                                                    Netherlands
+                                                                    (the)</option>
+                                                                <option value="NC" data-i18n="ABC-new-caledonia">New
+                                                                    Caledonia</option>
+                                                                <option value="NZ" data-i18n="ABC-new-zealand">New
+                                                                    Zealand</option>
+                                                                <option value="NI" data-i18n="ABC-nicaragua">
+                                                                    Nicaragua</option>
+                                                                <option value="NE" data-i18n="ABC-niger-(the)">Niger
+                                                                    (the)</option>
+                                                                <option value="NG" data-i18n="ABC-nigeria">Nigeria
+                                                                </option>
+                                                                <option value="NU" data-i18n="ABC-niue">Niue
+                                                                </option>
+                                                                <option value="NF" data-i18n="ABC-norfolk-island">
+                                                                    Norfolk Island</option>
+                                                                <option value="MP"
+                                                                    data-i18n="ABC-northern-mariana-islands-">
+                                                                    Northern Mariana Islands (the)</option>
+                                                                <option value="NO" data-i18n="ABC-norway">Norway
+                                                                </option>
+                                                                <option value="OM" data-i18n="ABC-oman">Oman
+                                                                </option>
+                                                                <option value="PK" data-i18n="ABC-pakistan">Pakistan
+                                                                </option>
+                                                                <option value="PW" data-i18n="ABC-palau">Palau
+                                                                </option>
+                                                                <option value="PS" data-i18n="ABC-palestine,-state-of">
+                                                                    Palestine,
+                                                                    State of</option>
+                                                                <option value="PA" data-i18n="ABC-panama">Panama
+                                                                </option>
+                                                                <option value="PG" data-i18n="ABC-papua-new-guinea">
+                                                                    Papua New Guinea</option>
+                                                                <option value="PY" data-i18n="ABC-paraguay">Paraguay
+                                                                </option>
+                                                                <option value="PE" data-i18n="ABC-peru">Peru
+                                                                </option>
+                                                                <option value="PH" data-i18n="ABC-philippines-(the)">
+                                                                    Philippines
+                                                                    (the)</option>
+                                                                <option value="PN" data-i18n="ABC-pitcairn">Pitcairn
+                                                                </option>
+                                                                <option value="PL" data-i18n="ABC-poland">Poland
+                                                                </option>
+                                                                <option value="PT" data-i18n="ABC-portugal">Portugal
+                                                                </option>
+                                                                <option value="PR" data-i18n="ABC-puerto-rico">
+                                                                    Puerto Rico</option>
+                                                                <option value="QA" data-i18n="ABC-qatar">Qatar
+                                                                </option>
+                                                                <option value="MK"
+                                                                    data-i18n="ABC-republic-of-north-macedon">
+                                                                    Republic of North Macedonia</option>
+                                                                <option value="RO" data-i18n="ABC-romania">Romania
+                                                                </option>
+                                                                <option value="RU"
+                                                                    data-i18n="ABC-russian-federation-(the)">Russian
+                                                                    Federation (the)</option>
+                                                                <option value="RW" data-i18n="ABC-rwanda">Rwanda
+                                                                </option>
+                                                                <option value="RE" data-i18n="ABC-réunion">Réunion
+                                                                </option>
+                                                                <option value="BL" data-i18n="ABC-saint-barthélemy">
+                                                                    Saint Barthélemy</option>
+                                                                <option value="SH"
+                                                                    data-i18n="ABC-saint-helena,-ascension-a">Saint
+                                                                    Helena, Ascension and Tristan da Cunha</option>
+                                                                <option value="KN"
+                                                                    data-i18n="ABC-saint-kitts-and-nevis">Saint
+                                                                    Kitts and Nevis</option>
+                                                                <option value="LC" data-i18n="ABC-saint-lucia">Saint
+                                                                    Lucia</option>
+                                                                <option value="MF"
+                                                                    data-i18n="ABC-saint-martin-(french-part">Saint
+                                                                    Martin (French part)</option>
+                                                                <option value="PM"
+                                                                    data-i18n="ABC-saint-pierre-and-miquelon">Saint
+                                                                    Pierre and Miquelon</option>
+                                                                <option value="VC"
+                                                                    data-i18n="ABC-saint-vincent-and-the-gre">Saint
+                                                                    Vincent and the Grenadines</option>
+                                                                <option value="WS" data-i18n="ABC-samoa">Samoa
+                                                                </option>
+                                                                <option value="SM" data-i18n="ABC-san-marino">San
+                                                                    Marino</option>
+                                                                <option value="ST"
+                                                                    data-i18n="ABC-sao-tome-and-principe">Sao Tome
+                                                                    and Principe</option>
+                                                                <option value="SA" data-i18n="ABC-saudi-arabia">
+                                                                    Saudi Arabia</option>
+                                                                <option value="SN" data-i18n="ABC-senegal">Senegal
+                                                                </option>
+                                                                <option value="RS" data-i18n="ABC-serbia">Serbia
+                                                                </option>
+                                                                <option value="SC" data-i18n="ABC-seychelles">
+                                                                    Seychelles</option>
+                                                                <option value="SL" data-i18n="ABC-sierra-leone">
+                                                                    Sierra Leone</option>
+                                                                <option value="SG" data-i18n="ABC-singapore">
+                                                                    Singapore</option>
+                                                                <option value="SX"
+                                                                    data-i18n="ABC-sint-maarten-(dutch-part)">Sint
+                                                                    Maarten (Dutch part)</option>
+                                                                <option value="SK" data-i18n="ABC-slovakia">Slovakia
+                                                                </option>
+                                                                <option value="SI" data-i18n="ABC-slovenia">Slovenia
+                                                                </option>
+                                                                <option value="SB" data-i18n="ABC-solomon-islands">
+                                                                    Solomon Islands</option>
+                                                                <option value="SO" data-i18n="ABC-somalia">Somalia
+                                                                </option>
+                                                                <option value="ZA" data-i18n="ABC-south-africa">
+                                                                    South Africa</option>
+                                                                <option value="GS"
+                                                                    data-i18n="ABC-south-georgia-and-the-sou">South
+                                                                    Georgia and the South Sandwich Islands</option>
+                                                                <option value="SS" data-i18n="ABC-south-sudan">South
+                                                                    Sudan</option>
+                                                                <option value="ES" data-i18n="ABC-spain">Spain
+                                                                </option>
+                                                                <option value="LK" data-i18n="ABC-sri-lanka">Sri
+                                                                    Lanka</option>
+                                                                <option value="SD" data-i18n="ABC-sudan-(the)">Sudan
+                                                                    (the)</option>
+                                                                <option value="SR" data-i18n="ABC-suriname">Suriname
+                                                                </option>
+                                                                <option value="SJ"
+                                                                    data-i18n="ABC-svalbard-and-jan-mayen">Svalbard
+                                                                    and Jan Mayen</option>
+                                                                <option value="SE" data-i18n="ABC-sweden">Sweden
+                                                                </option>
+                                                                <option value="CH" data-i18n="ABC-switzerland">
+                                                                    Switzerland</option>
+                                                                <option value="SY" data-i18n="ABC-syrian-arab-republic">
+                                                                    Syrian Arab
+                                                                    Republic</option>
+                                                                <option value="TW"
+                                                                    data-i18n="ABC-taiwan-(province-of-china">Taiwan
+                                                                    (Province of China)</option>
+                                                                <option value="TJ" data-i18n="ABC-tajikistan">
+                                                                    Tajikistan</option>
+                                                                <option value="TZ"
+                                                                    data-i18n="ABC-tanzania,-united-republic">
+                                                                    Tanzania, United Republic of</option>
+                                                                <option value="TH" data-i18n="ABC-thailand">Thailand
+                                                                </option>
+                                                                <option value="TL" data-i18n="ABC-timor-leste">
+                                                                    Timor-Leste</option>
+                                                                <option value="TG" data-i18n="ABC-togo">Togo
+                                                                </option>
+                                                                <option value="TK" data-i18n="ABC-tokelau">Tokelau
+                                                                </option>
+                                                                <option value="TO" data-i18n="ABC-tonga">Tonga
+                                                                </option>
+                                                                <option value="TT" data-i18n="ABC-trinidad-and-tobago">
+                                                                    Trinidad and
+                                                                    Tobago</option>
+                                                                <option value="TN" data-i18n="ABC-tunisia">Tunisia
+                                                                </option>
+                                                                <option value="TR" data-i18n="ABC-turkey">Turkey
+                                                                </option>
+                                                                <option value="TM" data-i18n="ABC-turkmenistan">
+                                                                    Turkmenistan</option>
+                                                                <option value="TC"
+                                                                    data-i18n="ABC-turks-and-caicos-islands-">Turks
+                                                                    and Caicos Islands (the)</option>
+                                                                <option value="TV" data-i18n="ABC-tuvalu">Tuvalu
+                                                                </option>
+                                                                <option value="UG" data-i18n="ABC-uganda">Uganda
+                                                                </option>
+                                                                <option value="UA" data-i18n="ABC-ukraine">Ukraine
+                                                                </option>
+                                                                <option value="AE"
+                                                                    data-i18n="ABC-united-arab-emirates-(the">United
+                                                                    Arab Emirates (the)</option>
+                                                                <option value="GB"
+                                                                    data-i18n="ABC-united-kingdom-of-great-b">United
+                                                                    Kingdom of Great Britain and Northern Ireland
+                                                                    (the)</option>
+                                                                <option value="UM"
+                                                                    data-i18n="ABC-united-states-minor-outly">United
+                                                                    States Minor Outlying Islands (the)</option>
+                                                                <option value="US"
+                                                                    data-i18n="ABC-united-states-of-america-">United
+                                                                    States of America (the)</option>
+                                                                <option value="UY" data-i18n="ABC-uruguay">Uruguay
+                                                                </option>
+                                                                <option value="UZ" data-i18n="ABC-uzbekistan">
+                                                                    Uzbekistan</option>
+                                                                <option value="VU" data-i18n="ABC-vanuatu">Vanuatu
+                                                                </option>
+                                                                <option value="VE"
+                                                                    data-i18n="ABC-venezuela-(bolivarian-rep">
+                                                                    Venezuela (Bolivarian Republic of)</option>
+                                                                <option value="VN" data-i18n="ABC-viet-nam">Viet Nam
+                                                                </option>
+                                                                <option value="VG"
+                                                                    data-i18n="ABC-virgin-islands-(british)">Virgin
+                                                                    Islands (British)</option>
+                                                                <option value="VI"
+                                                                    data-i18n="ABC-virgin-islands-(u.s.)">Virgin
+                                                                    Islands (U.S.)</option>
+                                                                <option value="WF" data-i18n="ABC-wallis-and-futuna">
+                                                                    Wallis and
+                                                                    Futuna</option>
+                                                                <option value="EH" data-i18n="ABC-western-sahara">
+                                                                    Western Sahara</option>
+                                                                <option value="YE" data-i18n="ABC-yemen">Yemen
+                                                                </option>
+                                                                <option value="ZM" data-i18n="ABC-zambia">Zambia
+                                                                </option>
+                                                                <option value="ZW" data-i18n="ABC-zimbabwe">Zimbabwe
+                                                                </option>
+
+                                                            </select>
+                                                        </div>
+
+                                                        <span
+                                                            id="CP_rptAdultControl_adultdetails_0_RequiredFieldValidator1_0"
+                                                            class="rptErrorMassage text-danger" style="display:none;">Enter
+                                                            Nationality</span>
+
+                                                    </div>
+                                                    <div id="CP_rptAdultControl_adultdetails_0_divPassportPlace_0"
+                                                        class="col-md-6 mb-3" style="display:block;">
+                                                        <label class="label">Passport Issue
+                                                            Place</label>
+                                                        <div class="dvInput input-group">
+                                                            <input
+                                                                name="ctl00$CP$rptAdultControl$ctl00$adultdetails$txtPassportIssueLocation"
+                                                                type="text"
+                                                                id="CP_rptAdultControl_adultdetails_0_txtPassportIssueLocation_0"
+                                                                class="form-control" autocomplete="off">
+                                                        </div>
+
+                                                        <span id="CP_rptAdultControl_adultdetails_0_rfvAdultLocation_0"
+                                                            class="rptErrorMassage text-danger" style="display:none;">Enter
+                                                            Passsport Issue Location</span>
+
+                                                        <span
+                                                            id="CP_rptAdultControl_adultdetails_0_REVtxtPassportIssueLocation_0"
+                                                            class="rptErrorMassage text-danger" style="display:none;">Please Enter
+                                                            valid Place.</span>
+
+
+
+                                                    </div>
+                                                    <div id="CP_rptAdultControl_adultdetails_0_divTelephone_0"
+                                                        class="col-md-6 mb-3">
+                                                        <label class="label">Mobile Number</label>
+                                                        <div class="dvInput input-group">
+                                                            <input
+                                                                name="ctl00$CP$rptAdultControl$ctl00$adultdetails$txtTelephone"
+                                                                type="text" maxlength="12"
+                                                                id="CP_rptAdultControl_adultdetails_0_txtTelephone_0"
+                                                                class="form-control" autocomplete="off">
+                                                        </div>
+                                                        <span id="CP_rptAdultControl_adultdetails_0_rfvAdultTelephone_0"
+                                                            class="rptErrorMassage text-danger" style="display:none;">Enter Mobile
+                                                            Number</span>
+                                                        <span id="CP_rptAdultControl_adultdetails_0_revAdulttelephone_0"
+                                                            class="rptErrorMassage text-danger" style="display:none;">Enter Valid
+                                                            Number.(max 12 digit.)
+                                                        </span>
+
+
+                                                    </div>
+
+                                                    <div id="CP_rptAdultControl_adultdetails_0_divPassportissue_0"
+                                                        class="col-md-6 mb-3" style="display:block;">
+                                                        <label class="label">Passport Issue Date</label>
+                                                        <div class="dvTxtEffectiveDateAdult dvInputGroup input-group">
+                                                            <input
+                                                                name="ctl00$CP$rptAdultControl$ctl00$adultdetails$txtEffectiveDate"
+                                                                type="text"
+                                                                id="CP_rptAdultControl_adultdetails_0_txtEffectiveDate_0"
+                                                                class="form-control hasDatepicker" autocomplete="off">
+                                                            <span class="input-group-text bg-colour6"><i
+                                                                    class="fa-regular fa-calendar"></i></span>
+                                                        </div>
+
+                                                        <span
+                                                            id="CP_rptAdultControl_adultdetails_0_rfvAdultEffectiveDate_0"
+                                                            class="rptErrorMassage text-danger" style="display:none;">Enter Date of
+                                                            Issuance</span>
+                                                        <span
+                                                            id="CP_rptAdultControl_adultdetails_0_customIssueDateValidator_0"
+                                                            class="rptErrorMassage text-danger" style="display:none;">Issue date
+                                                            must be greater than DOB</span>
+
+                                                    </div>
+                                                    <div id="CP_rptAdultControl_adultdetails_0_divPassportexpiry_0"
+                                                        class="col-md-6 mb-3" style="display:block;">
+                                                        <label class="label">Passport Expiry
+                                                            Date</label>
+                                                        <div class="dvTxtExpiryDateAdult dvInputGroup input-group">
+                                                            <input
+                                                                name="ctl00$CP$rptAdultControl$ctl00$adultdetails$txtExpiryDate"
+                                                                type="text"
+                                                                id="CP_rptAdultControl_adultdetails_0_txtExpiryDate_0"
+                                                                class="form-control hasDatepicker" autocomplete="off">
+                                                            <span class="input-group-text bg-colour6"><i
+                                                                    class="fa-regular fa-calendar"></i></span>
+                                                        </div>
+
+                                                        <span
+                                                            id="CP_rptAdultControl_adultdetails_0_rfvAdultExpiryDate_0"
+                                                            class="rptErrorMassage text-danger" style="display:none;">Enter Expiry
+                                                            Date</span>
+                                                        <span id="CP_rptAdultControl_adultdetails_0_CustomExpiryDate_0"
+                                                            class="rptErrorMassage text-danger" style="display:none;">Expiry date
+                                                            must be greater than issue date
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="searchBtn col-12 mb-2">
+                                    <input type="submit" name="ctl00$CP$btnSubmit" value="Proceed to Pay"
+                                        id="CP_btnSubmit" class="btn btn-one">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 mt-3 mt-lg-0">
+                    <div class="row">
+                        <div class="col-12">
+                            <div
+                                class="d-flex justify-content-between align-items-center">
+                                <h2 class="heading6 py-3">Itinerary</h2>
+                                <a href="FlightList.aspx?edit=1" class="btn btn-two me-2 text-decoration-none">Edit</a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="h7 heading-bold">Departure Flight</h2>
+                                </div>
+                            </div>
+                            <div class="border my-3"></div>
+                            <div class="row">
+
+                                <div class="col-12">
+                                    <div class="row align-items-center mt-md-1">
+                                        <div class="col-3 col-sm-2 mb-3 mb-sm-0 pr-lg-1">
+                                            <div class="img-container">
+                                                <img class="img-fluid"
+                                                    src="https://ibe.infiplanets.com/Images/AirlinesLogo/Air-India.png">
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-6 offset-3 offset-sm-0 col-sm-3 col-lg-3 d-flex align-items-center flex-lg-column text-lg-center mb-3 mb-sm-0 px-lg-1">
+                                            <i class="fa-regular fa-clock"></i>
+                                            <div class="ms-2 ms-lg-0 mt-lg-1">
+                                                <p class="h7 text-colour7">New Delhi
+                                                    (DEL)</p>
+                                                <p class="h7 text-colour7">29/11/2024</p>
+                                                <p class="h7 text-colour7">06:15 AM</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-6 col-sm-3 col-lg-3 col-xl-4 d-flex align-items-center flex-lg-column text-lg-center px-lg-1">
+                                            <i class="fa-regular fa-clock"></i>
+                                            <div class="ms-2 ms-lg-0 mt-lg-1">
+                                                <p class="h7 text-colour7">2 hr 45 m</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-6 col-sm-3 col-lg-3 d-flex align-items-center flex-lg-column text-lg-center pl-lg-1">
+                                            <i class="fa-regular fa-clock"></i>
+                                            <div class="ms-2 ms-lg-0 mt-lg-1">
+                                                <p class="h7 text-colour7">Bangalore
+                                                    (BLR)</p>
+                                                <p class="h7 text-colour7">29/11/2024</p>
+                                                <p class="h7 text-colour7">09:00 AM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border my-3 d-block w-100 rajesh"></div>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <span id="CP_lblarrival" class="h7 heading-bold">Arrival Flight</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+
+                                    <div class="row align-items-center mt-md-1">
+                                        <div class="col-3 col-sm-2 mb-3 mb-sm-0 pr-lg-1">
+                                            <div class="img-container">
+                                                <img class="img-fluid"
+                                                    src="https://ibe.infiplanets.com/Images/AirlinesLogo/Air-India.png">
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-6 offset-3 offset-sm-0 col-sm-3 col-lg-3 d-flex align-items-center flex-lg-column text-lg-center mb-3 mb-sm-0 px-lg-1">
+                                            <i class="fa-regular fa-clock"></i>
+                                            <div class="ms-2 ms-lg-0 mt-lg-1">
+                                                <p class="h7 text-colour7">Bangalore
+                                                    (BLR)</p>
+                                                <p class="h7 text-colour7">30/11/2024</p>
+                                                <p class="h7 text-colour7">08:00 AM</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-6 col-sm-3 col-lg-3 col-xl-4 d-flex align-items-center flex-lg-column text-lg-center px-lg-1">
+                                            <i class="fa-regular fa-clock"></i>
+                                            <div class="ms-2 ms-lg-0 mt-lg-1">
+                                                <p class="h7 text-colour7">2 hr 35 m</p>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-6 col-sm-3 col-lg-3 d-flex align-items-center flex-lg-column text-lg-center pl-lg-1">
+                                            <i class="fa-regular fa-clock"></i>
+                                            <div class="ms-2 ms-lg-0 mt-lg-1">
+                                                <p class="h7 text-colour7">New Delhi
+                                                    (DEL)</p>
+                                                <p class="h7 text-colour7">30/11/2024</p>
+                                                <p class="h7 text-colour7">10:35 AM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="border my-3 d-block w-100"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-between">
+                                    <span class="heading6 text-colour1">Total Points:
+                                    </span>
+                                    <span id="CP_lblTotalPoints" class="heading6 text-colour1">229</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer start here-->
+    <div class="dvFooter shadow-lg position-fixed z-index-2 w-100">
+        <div class="bg-colour6">
+            <div class="container-xl py-2">
+                <div class="row align-items-center">
+                    <div class="col text-center">
+                        <a href="/">
+                            <!-- <i class="fa-solid fa-house"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-home.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Home</p>
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="ViewMemberProfile.aspx">
+                            <!-- <i class="fa-solid fa-user"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-profile.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Profile</p>
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="#">
+                            <!-- <i class="fa-solid fa-bell"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-app.svg" />
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="#">
+                            <!-- <i class="fa-solid fa-bell"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-notification.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Notification</p>
+                        </a>
+                    </div>
+
+                    <div class="col text-center">
+                        <a href="OrderHistory.aspx">
+                            <!-- <i class="fa-solid fa-bag-shopping"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-cart.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Cart</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/assets/js/swiper.min.js"></script>
+    <script src="src/assets/js/jquery-ui.js"></script>
+
+</body>
+
+</html>

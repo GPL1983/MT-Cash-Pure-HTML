@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/assets/css/root.css" />
+    <link rel="stylesheet" href="src/assets/css/global.css" />
+    <link rel="stylesheet" href="src/assets/css/flight.css" />
+    <link rel="stylesheet" href="src/assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="src/assets/css/jquery-ui.css" />
+</head>
+
+<body>
+    <!--header start here-->
+    <div class="dvHeader pt-1 pb-1">
+        <div class="container-xl">
+            <div class="row justify-content-beween align-items-center">
+                <div class="col-auto order-lg-0 logo">
+                    <img class="" src="/src/assets/images/home/logo/mt-cash-logo.svg" alt="" />
+                </div>
+                <div class="col-auto ms-auto ms-lg-0 order-lg-2">
+                    <select class="form-control" name="" id="">
+                        <option value="en">EN</option>
+                        <option value="ar">AR</option>
+                        <option value="fr">FR</option>
+                    </select>
+                </div>
+                <div class="col-auto d-lg-none">
+                    <button class="btn border" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottom">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-start bg-transparent- col-lg-auto order-lg-1 ms-lg-auto px-0 px-lg-3 border-lg-top-0"
+                    tabindex="-1" id="offcanvasBottom">
+                    <!-- <div class="p-3-">
+              <div class="b-radius bg-colour6-"> -->
+                    <div class="offcanvas-header d-lg-none pb-0">
+                        <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5> -->
+                        <button type="button" class="btn border btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body pt-0 p-lg-0">
+                        <div class="row mx-lg-0 align-items-lg-center">
+                            <div class="col-12 col-lg-auto">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/profile.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Profile</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/my-order.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">My Order</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/about.svg" alt="" class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">About Program</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/faqs.svg" alt="" class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">FAQs</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/terms-and-conditions.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Terms &amp; conditions</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/booking-policy.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Booking Policy</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/privacy-policy.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Privacy Policy</span>
+                                </a>
+                            </div>
+                            <div class="col-6 offset-3 col-lg-auto offset-lg-0 text-center">
+                                <button class="btn btn-one w-100">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div>
+            </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header end here-->
+    <div class="dvBreadcrumbs bg-colour1 py-2">
+        <div class="container-xl">
+            <div class="d-flex justify-content-center">
+                <div class="me-auto">
+                    <a class="text-colour6" href="#" onclick="history.go(-1)"><i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+                <div class="me-auto">
+                    <p class="text-colour6">Air Review And Confirm</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dvFlightAirReview py-2 py-md-5 ">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-12">
+                    <div class="vouch-main border mb-5">
+                        <div class="">
+                            <h2 class="heading6 text-colour6 bg-colour1 b-radius-top p-3">Review &amp; Confirm</h2>
+                        </div>
+
+                        <div class="airBox" id="innerPageAboutUs">
+                            <div class="">
+                                <!--StepsPage-->
+                                <div class="container-xl">
+                                    <div id="CP_divError" class="dvErrors ErrorMsgContainer text-capitalise"
+                                        style="display:none;">
+                                        <span id="CP_lblError" class="text-danger"></span>
+                                    </div>
+
+                                    <div class="row mt-3 dvPassengerDetails">
+                                        <div class="col-12">
+                                            <h2 class="h7 heading-bold text-colour6 bg-colour1 p-3 border">Passenger
+                                                Details</h2>
+
+                                            <div class="px-3 border">
+                                                <div class="row">
+
+                                                    <div class="col-12 col-sm-4 col-md-2 border-right">
+                                                        <div class="row">
+                                                            <div class="col-12 bg-colour2 p-2">
+                                                                <h2 class="h7 heading-medium text-colour7">Title</h2>
+                                                            </div>
+                                                            <div class="col-12 p-2">
+                                                                <p class="h7">Mr</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-8 col-md-2 border-right">
+                                                        <div class="row">
+                                                            <div class="col-12 bg-colour2 p-2">
+                                                                <h2 class="h7 heading-medium text-colour7">Passenger Type</h2>
+                                                            </div>
+                                                            <div class="col-12 p-2">
+                                                                <p class="h7">Adult</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-4 border-right">
+                                                        <div class="row">
+                                                            <div class="col-12 bg-colour2 p-2">
+                                                                <h2 class="h7 heading-medium text-colour7"
+                                                                    data-i18n="ABC-passenger-name">Passenger Name</h2>
+                                                            </div>
+                                                            <div class="col-12 p-2">
+                                                                <p class="h7" data-i18n="ABC-creado,-aldair">
+                                                                    Creado,&nbsp;Aldair</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-2 border-right">
+                                                        <div class="row">
+                                                            <div class="col-12 bg-colour2 p-2">
+                                                                <h2 class="h7 heading-medium text-colour7"
+                                                                    data-i18n="ABC-gender">Gender</h2>
+                                                            </div>
+                                                            <div class="col-12 p-2">
+                                                                <p class="h7" data-i18n="ABC-male">Male</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-8 col-md-2">
+                                                        <div class="row">
+                                                            <div class="col-12 bg-colour2 p-2">
+                                                                <h2 class="h7 heading-medium text-colour7"
+                                                                    data-i18n="ABC-age">Age</h2>
+                                                            </div>
+                                                            <div class="col-12 p-2">
+                                                                <p class="h7" data-i18n="ABC-23">23</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-3 dvFlightInformation">
+                                        <div class="col-12">
+                                            <div class="row">
+                                                <div class="col-7 pe-0">
+                                                    <h2 class="h7 heading-bold text-colour6 bg-colour1 p-3 border">
+                                                        Departure Flight <i class="fa-solid fa-plane"></i></h2>
+                                                </div>
+                                                <div class="col-5 ps-0">
+                                                    <h2
+                                                        class="h7 heading-bold text-colour6 bg-colour1 p-3 h-100 border border-left-0 text-sm-end">
+                                                        <span id="CP_ucItinarary_LabelClass"
+                                                            data-i18n="ABC-economy">Economy</span>
+                                                    </h2>
+                                                </div>
+                                            </div>
+
+                                            <div class="px-3 border">
+                                                <div class="row">
+
+                                                    <div class="col-12 col-sm-6 col-md-3 border-right">
+                                                        <div class="row">
+                                                            <div class="col-12 bg-colour2 p-2">
+                                                                <h2 class="h7 heading-medium text-colour7"
+                                                                    data-i18n="ABC-flight">Flight</h2>
+                                                            </div>
+                                                            <div class="col-12 p-2">
+                                                                <p class="h7">
+                                                                    <img src="https://ibe.infiplanets.com/Images/AirlinesLogo/Air-India.png"
+                                                                        class="img-fluid">
+                                                                    Air India AI2811
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6 col-md-3 border-right">
+                                                        <div class="row">
+                                                            <div class="col-12 bg-colour2 p-2">
+                                                                <h2 class="h7 heading-medium text-colour7"
+                                                                    data-i18n="ABC-depart">Depart</h2>
+                                                            </div>
+                                                            <div class="col-12 p-2">
+                                                                <p class="text-break h7"
+                                                                    data-i18n="ABC-new-delhi-(del)">
+                                                                    New Delhi (DEL)
+                                                                </p>
+                                                                <p class="text-break h7"
+                                                                    data-i18n="ABC-indira-gandhi-internation">
+                                                                    Indira Gandhi International
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-2 border-right">
+                                                        <div class="row">
+                                                            <div class="col-12 bg-colour2 p-2">
+                                                                <h2 class="h7 heading-medium text-colour7"
+                                                                    data-i18n="ABC-arrive">Arrive</h2>
+                                                            </div>
+                                                            <div class="col-12 p-2">
+                                                                <p class="text-break h7"
+                                                                    data-i18n="ABC-bangalore-(blr)">
+                                                                    Bangalore (BLR)
+                                                                </p>
+                                                                <p class="text-break h7"
+                                                                    data-i18n="ABC-kempegowda-international-">
+                                                                    Kempegowda International Airport
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-2 border-right">
+                                                        <div class="row">
+                                                            <div class="col-12 bg-colour2 p-2">
+                                                                <h2 class="h7 heading-medium text-colour7"
+                                                                    data-i18n="ABC-depart-time">Depart Time</h2>
+                                                            </div>
+                                                            <div class="col-12 p-2">
+                                                                <p class="h7" data-i18n="ABC-30/11/2024">
+                                                                    30/11/2024
+                                                                </p>
+                                                                <p class="h7" data-i18n="ABC-06:15">
+                                                                    06:15
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-2 border-right">
+                                                        <div class="row">
+                                                            <div class="col-12 bg-colour2 p-2">
+                                                                <h2 class="h7 heading-medium text-colour7"
+                                                                    data-i18n="ABC-arrive-time">Arrive Time</h2>
+                                                            </div>
+                                                            <div class="col-12 p-2">
+                                                                <p class="h7" data-i18n="ABC-30/11/2024">
+                                                                    30/11/2024
+                                                                </p>
+                                                                <p class="h7" data-i18n="ABC-09:00">
+                                                                    09:00
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-2" style="display:none">
+                                                        <div class="row">
+                                                            <div class="col-12 bg-colour2 p-2">
+                                                                <h2 class="h7 heading-medium text-colour7"
+                                                                    data-i18n="ABC-aircraft-type">Aircraft Type</h2>
+                                                            </div>
+                                                            <div class="col-12 p-2">
+                                                                <p class="h7"></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-3 dvFlightArrivalInfo">
+                                        <div class="col-12">
+
+
+                                            <div class="row">
+                                                <div class="col-8 pe-0">
+                                                    <h2 id="CP_ucItinarary_rptArrival_dvReturnFlight"
+                                                        class="h7 heading-bold text-colour6 bg-colour1 py-3 px-2 border">
+                                                        Return Flights <i class="fa fa-plane" aria-hidden="true"
+                                                            style="-webkit-transform: scaleX(-1); transform: scaleX(-1);"></i>
+                                                    </h2>
+                                                </div>
+                                                <div class="col-4 ps-0">
+                                                    <h2
+                                                        class="h7 heading-bold text-colour6 bg-colour1 py-3 px-2 border border-left-0 text-end">
+                                                        <span id="CP_ucItinarary_rptArrival_lblReturnClass"
+                                                            data-i18n="ABC-economy">Economy</span>
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                            <div class="px-3 border">
+                                                <div class="row">
+
+                                                    <div class="col-12 col-sm-4 col-md-2 border-right">
+                                                        <div class="row">
+                                                            <div class="col-12 bg-colour2 p-2">
+                                                                <h2 class="h7 heading-medium text-colour7"
+                                                                    data-i18n="ABC-flight">Flight</h2>
+                                                            </div>
+                                                            <div class="col-12 p-2">
+                                                                <p class="h7">
+                                                                    <img
+                                                                        src="https://ibe.infiplanets.com/Images/AirlinesLogo/Air-India.png">
+                                                                    Air India AI2808
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-2 border-right">
+                                                        <div class="row">
+                                                            <div class="col-12 bg-colour2 p-2">
+                                                                <h2 class="h7 heading-medium text-colour7"
+                                                                    data-i18n="ABC-depart">Depart</h2>
+                                                            </div>
+                                                            <div class="col-12 p-2">
+                                                                <p class="text-break h7"
+                                                                    data-i18n="ABC-bangalore-(blr)">
+                                                                    Bangalore (BLR)
+                                                                </p>
+                                                                <p class="text-break h7"
+                                                                    data-i18n="ABC-kempegowda-international-">
+                                                                    Kempegowda International Airport
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-2 border-right">
+                                                        <div class="row">
+                                                            <div class="col-12 bg-colour2 p-2">
+                                                                <h2 class="h7 heading-medium text-colour7"
+                                                                    data-i18n="ABC-arrive">Arrive</h2>
+                                                            </div>
+                                                            <div class="col-12 p-2">
+                                                                <p class="text-break h7"
+                                                                    data-i18n="ABC-new-delhi-(del)">
+                                                                    New Delhi (DEL)
+                                                                </p>
+                                                                <p class="text-break h7"
+                                                                    data-i18n="ABC-indira-gandhi-internation">
+                                                                    Indira Gandhi International
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-2 border-right">
+                                                        <div class="row">
+                                                            <div class="col-12 bg-colour2 p-2">
+                                                                <h2 class="h7 heading-medium text-colour7"
+                                                                    data-i18n="ABC-depart-time">Depart Time</h2>
+                                                            </div>
+                                                            <div class="col-12 p-2">
+                                                                <p class="h7" data-i18n="ABC-01/12/2024">
+                                                                    01/12/2024
+                                                                </p>
+                                                                <p class="h7" data-i18n="ABC-08:00">
+                                                                    08:00
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-2 border-right">
+                                                        <div class="row">
+                                                            <div class="col-12 bg-colour2 p-2">
+                                                                <h2 class="h7 heading-medium text-colour7"
+                                                                    data-i18n="ABC-arrive-time">Arrive Time</h2>
+                                                            </div>
+                                                            <div class="col-12 p-2">
+                                                                <p class="h7" data-i18n="ABC-01/12/2024">
+                                                                    01/12/2024
+                                                                </p>
+                                                                <p class="h7" data-i18n="ABC-10:35">
+                                                                    10:35
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-4 col-md-2">
+                                                        <div class="row">
+                                                            <div class="col-12 bg-colour2 p-2">
+                                                                <h2 class="h7 heading-medium text-colour7"
+                                                                    data-i18n="ABC-aircraft-type">Aircraft Type</h2>
+                                                            </div>
+                                                            <div class="col-12 p-2">
+                                                                <p class="h7"></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="row mt-3 dvLabel">
+                                        <div class="col-12 mb-1">
+                                            <label class="checkbox-container d-flex">
+                                                <span class="d-inline-block ms-1">
+                                                    <input name="ctl00$CP$chkAcceptAgreements" type="checkbox"
+                                                        id="CP_chkAcceptAgreements" value="rewards Points">
+                                                    <span data-i18n="ABC-i-have-read-and-agree-to-">I have read and
+                                                        agree to Infinity Rewards</span> <a class="link1"
+                                                        href="TermsandConditions.aspx" target="_blank"
+                                                        data-i18n="ABC-terms-&amp;-conditions">Terms &amp; Conditions
+                                                    </a><span data-i18n="ABC-and-the">and the </span><a
+                                                        href="BookingPolicy.aspx" target="_blank"
+                                                        data-i18n="ABC-booking-&amp;-cancellation-po">Booking &amp;
+                                                        Cancellation policy</a>
+                                                    <span data-i18n="ABC-of-the-respective-service">of the respective
+                                                        service provider.</span>
+                                                    <span class="checkmark"></span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="checkbox-container d-flex">
+                                                <span class="d-inline-block ms-1">
+                                                    <input name="ctl00$CP$chkAcceptPayMiles" type="checkbox"
+                                                        id="CP_chkAcceptPayMiles" value="rewards Points">
+                                                    <span data-i18n="ABC-i-agree-to-redeem">I agree to redeem</span>
+                                                    <span id="CP_lblTotalPoints" data-i18n="ABC-229">229</span>
+                                                    <span data-i18n="ABC-points.-i-also-understand">Points. I also
+                                                        understand and accept that the redeemed Infinity Rewards Points
+                                                        cannot be refunded or credited upon Cancellation of a flight
+                                                        booking.</span>
+                                                    <span class="checkmark"></span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="text-danger h6 heading-regular" id="errorDiv" style="display: none;">
+                                    </div>
+                                    <br>
+                                    <div class="d-flex flex-row justify-content-end mb-2 text-end">
+                                        <div class="me-2">
+                                            <input type="submit" name="ctl00$CP$btnBack" value="Back"
+                                                onclick="var retvalue = redirectLocation('FlightList.aspx'); event.returnValue= retvalue;event.preventDefault(); return retvalue;"
+                                                id="CP_btnBack" class="btn btn-two" data-i18n-value="ABC-back">
+                                        </div>
+                                        <div id="lblBookNow">
+                                            <input type="submit" name="ctl00$CP$btnBookNow" value="Proceed to Pay"
+                                                onclick="return onAcceptArgument();" id="CP_btnBookNow"
+                                                class="btn btn-one" data-i18n-value="ABC-proceed-to-pay">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--StepsPage-->
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer start here-->
+    <div class="dvFooter shadow-lg position-fixed z-index-2 w-100">
+        <div class="bg-colour6">
+            <div class="container-xl py-2">
+                <div class="row align-items-center">
+                    <div class="col text-center">
+                        <a href="/">
+                            <!-- <i class="fa-solid fa-house"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-home.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Home</p>
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="ViewMemberProfile.aspx">
+                            <!-- <i class="fa-solid fa-user"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-profile.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Profile</p>
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="#">
+                            <!-- <i class="fa-solid fa-bell"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-app.svg" />
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="#">
+                            <!-- <i class="fa-solid fa-bell"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-notification.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Notification</p>
+                        </a>
+                    </div>
+
+                    <div class="col text-center">
+                        <a href="OrderHistory.aspx">
+                            <!-- <i class="fa-solid fa-bag-shopping"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-cart.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Cart</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/assets/js/swiper.min.js"></script>
+    <script src="src/assets/js/jquery-ui.js"></script>
+
+</body>
+
+</html>

@@ -2353,8 +2353,7 @@ select.form-control:focus {
 .dvProductDetailMilesExchange .img-container img,
 /*.dvProductDetailLounges .img-container img,*/
 .dvProductDetailGiftcards .img-container img,
-.dvProductDetailShop .img-container img,
-.dvProductCard .img-container img {
+.dvProductDetailShop .img-container img {
   object-fit: contain;
 }
 
@@ -2494,7 +2493,7 @@ select.form-control:focus {
   overflow: hidden;
   /*added to apply border-radius border effect*/
   box-shadow: var(--p-card-box-shadow);
-  margin: 5px 5px 10px;
+  /* margin: 5px 5px 10px; */
 }
 
 .dvProductCard .anchor {
@@ -2903,7 +2902,7 @@ select.form-control:focus {
   .dvFilter.modal {
     position: var(--filter-desktop-modal-position);
     display: var(--filter-desktop-modal-display);
-    width: var(--filter-desktop-modal-width);
+    /* width: var(--filter-desktop-modal-width); */
     height: var(--filter-desktop-modal-height);
     overflow: var(--filter-desktop-modal-overflow);
     opacity: var(--filter-desktop-modal-opacity);

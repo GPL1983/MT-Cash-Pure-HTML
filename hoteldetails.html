@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/assets/css/root.css" />
+    <link rel="stylesheet" href="src/assets/css/global.css" />
+    <link rel="stylesheet" href="src/assets/css/hotel.css" />
+    <link rel="stylesheet" href="src/assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="src/assets/css/jquery-ui.css" />
+</head>
+
+<body>
+    <!--header start here-->
+    <div class="dvHeader pt-1 pb-1">
+        <div class="container-xl">
+            <div class="row justify-content-beween align-items-center">
+                <div class="col-auto order-lg-0 logo">
+                    <img class="" src="/src/assets/images/home/logo/mt-cash-logo.svg" alt="" />
+                </div>
+                <div class="col-auto ms-auto ms-lg-0 order-lg-2">
+                    <select class="form-control" name="" id="">
+                        <option value="en">EN</option>
+                        <option value="ar">AR</option>
+                        <option value="fr">FR</option>
+                    </select>
+                </div>
+                <div class="col-auto d-lg-none">
+                    <button class="btn border" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottom">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-start bg-transparent- col-lg-auto order-lg-1 ms-lg-auto px-0 px-lg-3 border-lg-top-0"
+                    tabindex="-1" id="offcanvasBottom">
+                    <!-- <div class="p-3-">
+              <div class="b-radius bg-colour6-"> -->
+                    <div class="offcanvas-header d-lg-none pb-0">
+                        <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5> -->
+                        <button type="button" class="btn border btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body pt-0 p-lg-0">
+                        <div class="row mx-lg-0 align-items-lg-center">
+                            <div class="col-12 col-lg-auto">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/profile.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Profile</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/my-order.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">My Order</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/about.svg" alt="" class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">About Program</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/faqs.svg" alt="" class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">FAQs</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/terms-and-conditions.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Terms &amp; conditions</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/booking-policy.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Booking Policy</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/privacy-policy.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Privacy Policy</span>
+                                </a>
+                            </div>
+                            <div class="col-6 offset-3 col-lg-auto offset-lg-0 text-center">
+                                <button class="btn btn-one w-100">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div>
+            </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header end here-->
+    <div class="dvBreadcrumbs bg-colour1 py-2">
+        <div class="container-xl">
+            <div class="d-flex justify-content-center">
+                <div class="me-auto">
+                    <a class="text-colour6" href="#" onclick="history.go(-1)"><i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+                <div class="me-auto">
+                    <p class="text-colour6">Hotel Room Details</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dvHotelDetails py-4">
+        <div class="container-xl">
+            <div class="row">
+
+                <div class="dvHotelInfo dvVcData col-12 mb-3">
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <h2 id="HotelName" class="heading6">Hilton Mumbai International Airport</h2>
+                            <p id="divrating" class="pt-3">
+                                <img class="me-1" src="/src/assets/images/icons/other/star-fill.svg">
+                                <img class="me-1" src="/src/assets/images/icons/other/star-fill.svg">
+                                <img class="me-1" src="/src/assets/images/icons/other/star-fill.svg">
+                                <img class="me-1" src="/src/assets/images/icons/other/star-fill.svg">
+                                <img class="me-1" src="/src/assets/images/icons/other/star-fill.svg">
+                            </p>
+
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#dvAmenitiesModal"
+                                class="btn btn-two w-100 mt-3">
+                                View Amenities
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dvThumbSwiperSlider col-md-6 mb-3">
+                    <div class="border- b-radius- p-3-">
+                        <div class="swiper mySwiper2 swiper-initialized swiper-horizontal">
+                            <div id="BannerImage" class="swiper-wrapper" aria-live="polite">
+                                <div class="swiper-slide img-container swiper-slide-active" role="group">
+                                    <img src="/src/assets/images/hotel/hotel.svg">
+                                </div>
+                                <div class="swiper-slide img-container swiper-slide-next" role="group">
+                                    <img src="/src/assets/images/hotel/hotel.svg">
+                                </div>
+                                <div class="swiper-slide img-container swiper-slide-next" role="group">
+                                    <img src="/src/assets/images/hotel/hotel.svg">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+                                aria-controls="BannerImage" aria-disabled="false">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                            <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button"
+                                aria-label="Previous slide" aria-controls="BannerImage" aria-disabled="true">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                        <div
+                            class="swiper mySwiper swiper-initialized swiper-horizontal swiper-free-mode swiper-watch-progress swiper-thumbs">
+                            <div id="ThumbBannerImage" class="swiper-wrapper" aria-live="polite"
+                                style="transform: translate3d(0px, 0px, 0px);">
+                                <div class="swiper-slide img-container swiper-slide-visible swiper-slide-fully-visible swiper-slide-active swiper-slide-thumb-active">
+                                    <img src="/src/assets/images/hotel/hotel.svg">
+                                </div>
+                                <div class="swiper-slide img-container swiper-slide-visible swiper-slide-fully-visible swiper-slide-next">
+                                    <img src="/src/assets/images/hotel/hotel.svg">
+                                </div>
+                                <div class="swiper-slide img-container swiper-slide-visible swiper-slide-fully-visible swiper-slide-next">
+                                    <img src="/src/assets/images/hotel/hotel.svg">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+                                aria-controls="ThumbBannerImage" aria-disabled="false">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                            <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button"
+                                aria-label="Previous slide" aria-controls="ThumbBannerImage" aria-disabled="true">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dvHotelInfo dvVcData col-md-6 mb-3">
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <p>
+                                <span id="HotelAddress" data-i18n="ABC-sahar-airport-road,-andhe">Sahar Airport Road,
+                                    Andheri East, Andheri (East)MumbaiMaharashtra 400 099, Mumbai, 400099, India</span>
+                                <span id="HotelCity"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mb-3" id="contact1">
+
+                        <div class="col-6 d-flex align-items-center"><img src="images/icons/other/ico-fax.png"
+                                alt=""><span class="ms-2" data-i18n="ABC-912228380000">912228380000</span></div>
+                        <div class="col-6 d-flex align-items-center"><img src="images/icons/other/ico-weblink.png"
+                                alt=""><span class="ms-2" data-i18n="ABC-not-available">Not Available</span></div>
+                    </div>
+                    <div class="row mb-3" id="contact2">
+
+                        <div class="col-6 d-flex align-items-center"><img src="images/icons/other/ico-phone.png"
+                                alt=""><span class="ms-2" data-i18n="ABC-91-11-27052700">91-11-27052700</span></div>
+                        <div class="col-6 d-flex align-items-center"><img src="images/icons/other/ico-fax.png"
+                                alt=""><span class="ms-2" data-i18n="ABC-91-22-28380101">91-22-28380101</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" id="BasicAmenities">
+
+
+                            <div class="dvMinRate row">
+                                <div class="col-12">
+                                    <p id="minrate"><span class="h3 heading-semibold text-colour7 totalPointValue"
+                                            data-i18n="ABC-201">201</span>&nbsp;<span
+                                            class="h6 heading-regular text-colour7"
+                                            data-i18n="ABC-points">Points</span><span
+                                            class="h6 heading-regular text-colour7"
+                                            data-i18n="ABC-(for-1-night(s))">(for 1 night(s))</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="dvSelectRoom col-12">
+                    <h2 class="h4 heading-semibold text-colour7 bg-colour2 p-3" data-i18n="ABC-select-your-room">Select
+                        Your Room</h2>
+                    <div id="rptRoomDetails" class="dvVcData row mt-3">
+                        <div class="col-12">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-md-6 col-lg-5 col-xl-6 mb-2 mb-md-0">
+                                    <h2 class="h6 heading-regular text-colour7"
+                                        data-i18n="ABC-king-hilton-deluxe-guestr">KING HILTON DELUXE GUESTROOM -
+                                        BreakFast (inclusive of all taxes)</h2>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-2 col-lg-3 col-xl-2 mb-3 mb-sm-0"><span
+                                        class="d-inline-block h6 heading-semibold text-colour7 totalPointValue"
+                                        data-i18n="ABC-201-points">201 Points</span><span
+                                        class="d-inline-block h7 heading-regular text-colour7"
+                                        data-i18n="ABC-(per-room-per-night)"> (per room per night)</span></div>
+                                <div class="col-6 col-sm-4 col-md-2 mb-3 mb-sm-0"><span
+                                        class="d-inline-block h6 heading-semibold text-colour7 totalPointValue"
+                                        data-i18n="ABC-201">201</span>&nbsp;<span
+                                        class="d-inline-block h7 heading-semibold text-colour7"
+                                        data-i18n="ABC-points">Points</span>&nbsp;<span
+                                        class="d-inline-block h7 heading-regular text-colour7"
+                                        data-i18n="ABC-for-1-night(s)"> for 1 night(s)</span></div>
+                                <div class="col-12 col-sm-4 col-md-2 text-md-right"><button
+                                        class="btn btn-one w-100 totalPointValue">Book
+                                        Now</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 my-3">
+                            <div class="border-bottom"></div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-md-6 col-lg-5 col-xl-6 mb-2 mb-md-0">
+                                    <h2 class="h6 heading-regular text-colour7"
+                                        data-i18n="ABC-king-hilton-deluxe-guestr">KING HILTON DELUXE GUESTROOM -
+                                        Room_Only (inclusive of all taxes)</h2>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-2 col-lg-3 col-xl-2 mb-3 mb-sm-0"><span
+                                        class="d-inline-block h6 heading-semibold text-colour7 totalPointValue"
+                                        data-i18n="ABC-204-points">204 Points</span><span
+                                        class="d-inline-block h7 heading-regular text-colour7"
+                                        data-i18n="ABC-(per-room-per-night)"> (per room per night)</span></div>
+                                <div class="col-6 col-sm-4 col-md-2 mb-3 mb-sm-0"><span
+                                        class="d-inline-block h6 heading-semibold text-colour7 totalPointValue"
+                                        data-i18n="ABC-204">204</span>&nbsp;<span
+                                        class="d-inline-block h7 heading-semibold text-colour7"
+                                        data-i18n="ABC-points">Points</span>&nbsp;<span
+                                        class="d-inline-block h7 heading-regular text-colour7"
+                                        data-i18n="ABC-for-1-night(s)"> for 1 night(s)</span></div>
+                                <div class="col-12 col-sm-4 col-md-2 text-md-right"><button
+                                        class="btn btn-one w-100 totalPointValue">Book
+                                        Now</button></div>
+                            </div>
+                        </div>
+                        <div class="col-12 my-3">
+                            <div class="border-bottom"></div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row justify-content-between">
+                                <div class="col-12 col-md-6 col-lg-5 col-xl-6 mb-2 mb-md-0">
+                                    <h2 class="h6 heading-regular text-colour7"
+                                        data-i18n="ABC-king-hilton-deluxe-guestr">KING HILTON DELUXE GUESTROOM -
+                                        BreakFast (inclusive of all taxes)</h2>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-2 col-lg-3 col-xl-2 mb-3 mb-sm-0"><span
+                                        class="d-inline-block h6 heading-semibold text-colour7 totalPointValue"
+                                        data-i18n="ABC-211-points">211 Points</span><span
+                                        class="d-inline-block h7 heading-regular text-colour7"
+                                        data-i18n="ABC-(per-room-per-night)"> (per room per night)</span></div>
+                                <div class="col-6 col-sm-4 col-md-2 mb-3 mb-sm-0"><span
+                                        class="d-inline-block h6 heading-semibold text-colour7 totalPointValue"
+                                        data-i18n="ABC-211">211</span>&nbsp;<span
+                                        class="d-inline-block h7 heading-semibold text-colour7"
+                                        data-i18n="ABC-points">Points</span>&nbsp;<span
+                                        class="d-inline-block h7 heading-regular text-colour7"
+                                        data-i18n="ABC-for-1-night(s)"> for 1 night(s)</span></div>
+                                <div class="col-12 col-sm-4 col-md-2 text-md-right"><button
+                                        class="btn btn-one w-100 totalPointValue">Book
+                                        Now</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/assets/js/swiper.min.js"></script>
+    <script src="src/assets/js/jquery-ui.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
+</body>
+
+</html>

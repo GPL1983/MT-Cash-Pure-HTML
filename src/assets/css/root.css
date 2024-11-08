@@ -606,7 +606,7 @@
   --filter-desktop-accordion-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   --filter-desktop-accordion-b-radius: 0 0 var(--b-radius) var(--b-radius);
   --filter-desktop-accordion-overflow: hidden;
-  --filter-desktop-accordion-padding: 0.75rem 1rem;
+  --filter-desktop-accordion-padding: 0;
 
   /*==================[ COMMON MODAL ]==================*/
   /*scrollbar style*/

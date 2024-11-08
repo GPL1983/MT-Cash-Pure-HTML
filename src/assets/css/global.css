@@ -2633,6 +2633,10 @@ select.form-control:focus {
 
 /*=========[ HOTEL PRODUCT CARD ]=========*/
 
+.padd-space {
+  padding: 0 .75rem;
+}
+
 /*=========[ MEDIA QUERIES ]=========*/
 @media (min-width: 576px) {
   .border-sm {
@@ -2941,7 +2945,7 @@ select.form-control:focus {
   .heading4 {
     font-size: var(--heading4-font-size-desktop);
   }
-  
+
   .dvFilter .modal-content {
     border: 1px solid var(--border-colour) !important;
   

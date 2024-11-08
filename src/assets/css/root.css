@@ -408,7 +408,7 @@
   --btn-two-border-colour-hover: var(--colour2);
   --btn-two-text-transform: capitalize;
   --btn-two-b-radius: var(--b-radius);
-  --btn-two-padding:0.75rem 0.75rem;
+  --btn-two-padding: 0.375rem 0.75rem 0.375rem 0.75rem;
   /* button three */
   --btn-three-family: var(--font-bold);
   --btn-three-bg: var(--colour6);

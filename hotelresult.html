@@ -38,7 +38,7 @@
                 <div class="offcanvas offcanvas-start bg-transparent- col-lg-auto order-lg-1 ms-lg-auto px-0 px-lg-3 border-lg-top-0"
                     tabindex="-1" id="offcanvasBottom">
                     <!-- <div class="p-3-">
-              <div class="b-radius bg-colour6-"> -->
+                    <div class="b-radius bg-colour6-"> -->
                     <div class="offcanvas-header d-lg-none pb-0">
                         <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5> -->
                         <button type="button" class="btn border btn-close" data-bs-dismiss="offcanvas"
@@ -106,7 +106,7 @@
                         </div>
                     </div>
                     <!-- </div>
-            </div> -->
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -126,9 +126,433 @@
     </div>
 
     <!--Hotel List start here-->
+
+    <div class="dvHotelDetails bg-colour2 py-2">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-9">
+                    <span class="h7">London, England</span>
+                    <p class="heading-light text-colour8">SUN, 30 DEC - MON</p>
+                </div>
+                <div class="col-3 m-auto">
+                    <button type="button" class="border-0 bg-colour2 float-end d-lg-none" data-bs-toggle="modal"
+                        data-bs-target="#filterModal">
+                        <img src="/src/assets/images/icons/other/filter-bars.svg" alt="" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container-xl">
         <div class="row">
+            <!-- Modal Start -->
+            <div class="col-lg-3 px-0 px-lg-3 mb-lg-4 mt-lg-4">
+                <div class="dvFilter modal fade" id="filterModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header border-0 d-lg-block justify-content-between p-0">
+                                <div class="modal-title dvTotalRecords border-0 p-3">
+                                    <p class="heading6 text-colour6">
+                                        <span>Total Hotel(s) Found</span><span class="filter-text ms-2">10</span>
+                                    </p>
+                                </div>
+                                <button type="button" class="close d-lg-none border-0 bg-colour1 px-3"
+                                    data-bs-dismiss="modal">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="accordion border-0" id="filter-accordion">
+                                    <div class="card">
+                                        <div class="card-header p-0">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-block text-left collapsed heading-semibold"
+                                                    type="button" data-bs-toggle="collapse-"
+                                                    data-bs-target="#collapse1">
+                                                    <span class="heading6 mb-2 text-capitalize">Total Price</span>
+                                                    <span class="arrow-icon"><i class="fa fa-caret-up-"></i></span>
+                                                </button>
+                                            </h2>
+                                        </div>
 
+                                        <div id="collapse1" class="collapse- show" data-parent="#filter-accordion">
+                                            <div class="card-body scroll-ver- px-0 pt-1 pb-2">
+                                                <div class="dvRangeSlider">
+                                                    <div id="priceSlider"
+                                                        class="PriceSlider ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                                        <div class="ui-slider-range ui-corner-all ui-widget-header"
+                                                            style="left: 0%; width: 100%"></div>
+                                                        <span tabindex="0"
+                                                            class="ui-slider-handle ui-corner-all ui-state-default"
+                                                            style="left: 0%"></span>
+                                                        <span tabindex="0"
+                                                            class="ui-slider-handle ui-corner-all ui-state-default"
+                                                            style="left: 100%"></span>
+                                                    </div>
+                                                    <div class="row mt-2">
+                                                        <div class="col-6">
+                                                            <div class="text-start">5000</div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="text-end">50000</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dvBorderBottom">
+                                        <div class="">
+                                            <div class="border-bottom my-3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header p-0">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-block text-left collapsed heading-semibold"
+                                                    type="button" data-bs-toggle="collapse-"
+                                                    data-bs-target="#collapse3">
+                                                    <span class="heading6 mb-2 text-capitalize">Hotel Ratings</span>
+                                                    <span class="arrow-icon"><i class="fa fa-caret-up-"></i></span>
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse3" class="collapse-" data-parent="#filter-accordion">
+                                            <div class="card-body scroll-ver- px-0 pt-1 pb-2">
+                                                <div class="dvLabel airList">
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span>Select All</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star.svg" alt="">
+                                                        </span>
+                                                    </label>
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star.svg" alt="">
+                                                            <img src="/src/assets/images/icons/other/star.svg" alt="">
+                                                        </span>
+                                                    </label>
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star.svg" alt="">
+                                                            <img src="/src/assets/images/icons/other/star.svg" alt="">
+                                                            <img src="/src/assets/images/icons/other/star.svg" alt="">
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dvBorderBottom">
+                                        <div class="">
+                                            <div class="border-bottom my-3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header p-0">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-block text-left collapsed heading-semibold"
+                                                    type="button" data-bs-toggle="collapse-"
+                                                    data-bs-target="#collapse3">
+                                                    <span class="heading6 mb-2 text-capitalize">Hotel Amenities</span>
+                                                    <span class="arrow-icon"><i class="fa fa-caret-up-"></i></span>
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse3" class="collapse-" data-parent="#filter-accordion">
+                                            <div class="card-body scroll-ver- px-0 pt-1 pb-2">
+                                                <div class="dvLabel airList">
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span>Select All</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span><img src="/src/assets/images/icons/other/icon-ac.svg"
+                                                                    alt=""></span><span class="ms-2">Air Condition</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span><img src="/src/assets/images/icons/other/icon-bar.svg"
+                                                                    alt=""></span><span class="ms-2">Bar</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span><img
+                                                                    src="/src/assets/images/icons/other/icon-business-centre.svg"
+                                                                    alt=""></span><span class="ms-2">Business
+                                                                Centre</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span><img
+                                                                    src="/src/assets/images/icons/other/icon-coffee-shop.svg"
+                                                                    alt=""></span><span class="ms-2">Coffee Shop</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span><img src="/src/assets/images/icons/other/icon-gym.svg"
+                                                                    alt=""></span><span class="ms-2">Gym</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span><img
+                                                                    src="/src/assets/images/icons/other/icon-pool.svg"
+                                                                    alt=""></span><span class="ms-2">Pool</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span><img
+                                                                    src="/src/assets/images/icons/other/icon-restaurant.svg"
+                                                                    alt=""></span><span class="ms-2">Restaurant</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span><img
+                                                                    src="/src/assets/images/icons/other/icon-room-service.svg"
+                                                                    alt=""></span><span class="ms-2">Room Service</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span><img
+                                                                    src="/src/assets/images/icons/other/icon-wifi-access.svg"
+                                                                    alt=""></span><span class="ms-2">Wi-Fi Access</span>
+                                                        </span>
+                                                    </label>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="card">
+                              <div class="applyBtn" style="display: none;">
+                                <button type="button" id="btnClosePopup" class="btn btn-one" value="Apply">Apply</button>
+                              </div>
+                            </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal End -->
+
+            <div class="col-lg mb-4 mt-4">
+                <div class="dvProducts row hotels">
+                    <div class="dvProductCard col-sm-6 col-md-4 mb-3 hotelrow">
+                        <div class="dvItem">
+                            <a href="/" class="anchor" onclick="return getHotelDetails(1261212);">
+                                <div class="img-container">
+                                    <img src="https://api.tbotechnology.in/imageresource.aspx?img=9eMP+0FIICgCIk6ZClzZH9Cs+1gwAq6BFWcc22yNLMF/UJIXMdxPdU6RmZuwTZuifRyb//7vSSKQ46B5kPuXFHzuroxfD/VR1fdPYdFI4fjDVwdCSxXuqA=="
+                                        alt="Image not Available">
+                                </div>
+                                <h2 class="px-3 pt-3 pb-2">Holiday Inn Express
+                                    Dubai - Internet City</h2>
+                                <div class="d-flex flex-wrap justify-content-between px-3 pb-2">
+                                    <p class="points">
+                                        <span id="CP_rptHotelList_lblmiles_0">1,101</span>
+                                        <span id="CP_rptHotelList_Label1_0" class="">Points</span>
+                                    </p>
+                                    <p class="points d-none">Physical
+                                    </p>
+                                </div>
+                                <input type="hidden" name="ctl00$CP$rptHotelList$ctl00$hdnHotelID"
+                                    id="CP_rptHotelList_hdnHotelID_0" value="1261212">
+                                <div class="rating px-3 pb-2" rating="3">
+                                    <img class="me-1" src="src/assets/images/icons/other/star-fill.svg">
+                                    <img class="me-1" src="src/assets/images/icons/other/star-fill.svg">
+                                    <img class="me-1" src="src/assets/images/icons/other/star-fill.svg">
+                                    <img class="me-1" src="src/assets/images/icons/other/star-fill.svg">
+                                    <img class="me-1" src="src/assets/images/icons/other/star-fill.svg">
+                                </div>
+                                <div class="Amenities px-3 pb-2">
+                                    <img class="me-1" id="CP_rptHotelList_imgMeeting_0" title="Meeting Facilities"
+                                        src="/src/assets/images/icons/other/icon-business-centre.svg">
+                                    <img class="me-1" id="CP_rptHotelList_imgGym_0" title="Gym/Spa"
+                                        src="/src/assets/images/icons/other/icon-gym.svg">
+                                    <img class="me-1" id="CP_rptHotelList_imgInternet_0" title="Internet/Wi-Fi"
+                                        src="/src/assets/images/icons/other/icon-wifi-access.svg">
+                                    <img class="me-1" id="CP_rptHotelList_imgResturent_0" title="Restaurant/Coffee Shop"
+                                        src="/src/assets/images/icons/other/icon-restaurant.svg">
+                                    <img class="me-1" id="CP_rptHotelList_imgswimmingPool_0" title="Swimming Pool"
+                                        src="/src/assets/images/icons/other/icon-pool.svg">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="dvProductCard col-sm-6 col-md-4 mb-3 hotelrow">
+                        <div class="dvItem">
+                            <a href="/" class="anchor" onclick="return getHotelDetails(1261212);">
+                                <div class="img-container">
+                                    <img src="https://api.tbotechnology.in/imageresource.aspx?img=9eMP+0FIICgCIk6ZClzZH9Cs+1gwAq6BFWcc22yNLMF/UJIXMdxPdU6RmZuwTZuifRyb//7vSSKQ46B5kPuXFHzuroxfD/VR1fdPYdFI4fjDVwdCSxXuqA=="
+                                        alt="Image not Available">
+                                </div>
+                                <h2 class="px-3 pt-3 pb-2">Holiday Inn Express
+                                    Dubai - Internet City</h2>
+                                <div class="d-flex flex-wrap justify-content-between px-3 pb-2">
+                                    <p class="points">
+                                        <span id="CP_rptHotelList_lblmiles_0">1,101</span>
+                                        <span id="CP_rptHotelList_Label1_0" class="">Points</span>
+                                    </p>
+                                    <p class="points d-none">Physical
+                                    </p>
+                                </div>
+                                <input type="hidden" name="ctl00$CP$rptHotelList$ctl00$hdnHotelID"
+                                    id="CP_rptHotelList_hdnHotelID_0" value="1261212">
+                                <div class="rating px-3 pb-2" rating="3">
+                                    <img class="me-1" src="src/assets/images/icons/other/star-fill.svg">
+                                    <img class="me-1" src="src/assets/images/icons/other/star-fill.svg">
+                                    <img class="me-1" src="src/assets/images/icons/other/star-fill.svg">
+                                    <img class="me-1" src="src/assets/images/icons/other/star-fill.svg">
+                                    <img class="me-1" src="src/assets/images/icons/other/star-fill.svg">
+                                </div>
+                                <div class="Amenities px-3 pb-2">
+                                    <img class="me-1" id="CP_rptHotelList_imgMeeting_0" title="Meeting Facilities"
+                                        src="/src/assets/images/icons/other/icon-business-centre.svg">
+                                    <img class="me-1" id="CP_rptHotelList_imgGym_0" title="Gym/Spa"
+                                        src="/src/assets/images/icons/other/icon-gym.svg">
+                                    <img class="me-1" id="CP_rptHotelList_imgInternet_0" title="Internet/Wi-Fi"
+                                        src="/src/assets/images/icons/other/icon-wifi-access.svg">
+                                    <img class="me-1" id="CP_rptHotelList_imgResturent_0" title="Restaurant/Coffee Shop"
+                                        src="/src/assets/images/icons/other/icon-restaurant.svg">
+                                    <img class="me-1" id="CP_rptHotelList_imgswimmingPool_0" title="Swimming Pool"
+                                        src="/src/assets/images/icons/other/icon-pool.svg">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="dvProductCard col-sm-6 col-md-4 mb-3 hotelrow">
+                        <div class="dvItem">
+                            <a href="/" class="anchor" onclick="return getHotelDetails(1261212);">
+                                <div class="img-container">
+                                    <img src="https://api.tbotechnology.in/imageresource.aspx?img=9eMP+0FIICgCIk6ZClzZH9Cs+1gwAq6BFWcc22yNLMF/UJIXMdxPdU6RmZuwTZuifRyb//7vSSKQ46B5kPuXFHzuroxfD/VR1fdPYdFI4fjDVwdCSxXuqA=="
+                                        alt="Image not Available">
+                                </div>
+                                <h2 class="px-3 pt-3 pb-2">Holiday Inn Express
+                                    Dubai - Internet City</h2>
+                                <div class="d-flex flex-wrap justify-content-between px-3 pb-2">
+                                    <p class="points">
+                                        <span id="CP_rptHotelList_lblmiles_0">1,101</span>
+                                        <span id="CP_rptHotelList_Label1_0" class="">Points</span>
+                                    </p>
+                                    <p class="points d-none">Physical
+                                    </p>
+                                </div>
+                                <input type="hidden" name="ctl00$CP$rptHotelList$ctl00$hdnHotelID"
+                                    id="CP_rptHotelList_hdnHotelID_0" value="1261212">
+                                <div class="rating px-3 pb-2" rating="3">
+                                    <img class="me-1" src="src/assets/images/icons/other/star-fill.svg">
+                                    <img class="me-1" src="src/assets/images/icons/other/star-fill.svg">
+                                    <img class="me-1" src="src/assets/images/icons/other/star-fill.svg">
+                                    <img class="me-1" src="src/assets/images/icons/other/star-fill.svg">
+                                    <img class="me-1" src="src/assets/images/icons/other/star-fill.svg">
+                                </div>
+                                <div class="Amenities px-3 pb-2">
+                                    <img class="me-1" id="CP_rptHotelList_imgMeeting_0" title="Meeting Facilities"
+                                        src="/src/assets/images/icons/other/icon-business-centre.svg">
+                                    <img class="me-1" id="CP_rptHotelList_imgGym_0" title="Gym/Spa"
+                                        src="/src/assets/images/icons/other/icon-gym.svg">
+                                    <img class="me-1" id="CP_rptHotelList_imgInternet_0" title="Internet/Wi-Fi"
+                                        src="/src/assets/images/icons/other/icon-wifi-access.svg">
+                                    <img class="me-1" id="CP_rptHotelList_imgResturent_0" title="Restaurant/Coffee Shop"
+                                        src="/src/assets/images/icons/other/icon-restaurant.svg">
+                                    <img class="me-1" id="CP_rptHotelList_imgswimmingPool_0" title="Swimming Pool"
+                                        src="/src/assets/images/icons/other/icon-pool.svg">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -183,21 +607,6 @@
     <script src="src/assets/js/swiper.min.js"></script>
     <script src="src/assets/js/jquery-ui.js"></script>
 
-    <script>
-        // Function to increment value
-        function incrementValue() {
-            const input = document.getElementById("quantityInput");
-            input.value = parseInt(input.value) + 1;
-        }
-
-        // Function to decrement value
-        function decrementValue() {
-            const input = document.getElementById("quantityInput");
-            if (parseInt(input.value) > 0) {
-                input.value = parseInt(input.value) - 1;
-            }
-        }
-    </script>
 </body>
 
 </html>

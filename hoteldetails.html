@@ -130,9 +130,9 @@
             <div class="row">
 
                 <div class="dvHotelInfo dvVcData col-12 mb-3">
-                    <div class="row mb-3">
+                    <div class="row">
                         <div class="col-12">
-                            <h2 id="HotelName" class="heading6">Hilton Mumbai International Airport</h2>
+                            <h2 id="HotelName" class="h5 heading-bold">Hilton Mumbai International Airport</h2>
                             <p id="divrating" class="pt-3">
                                 <img class="me-1" src="/src/assets/images/icons/other/star-fill.svg">
                                 <img class="me-1" src="/src/assets/images/icons/other/star-fill.svg">
@@ -142,9 +142,26 @@
                             </p>
 
                             <button type="button" data-bs-toggle="modal" data-bs-target="#dvAmenitiesModal"
-                                class="btn btn-two w-100 mt-3">
+                                class="btn btn-two w-100 mt-3 d-none">
                                 View Amenities
                             </button>
+
+                            <p class="h7 mt-2 mb-1">Hotel Amenities</p>
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="/src/assets/images/icons/other/icon-ac.svg" alt="">
+                                    <span class="h7">Air Condition</span>
+                                </div>
+                                <div class="col-auto">
+                                    <img src="/src/assets/images/icons/other/icon-bar.svg" alt="">
+                                    <span class="h7">Bar</span>
+                                </div>
+                                <div class="col-auto">
+                                    <img src="/src/assets/images/icons/other/icon-wifi-access.svg" alt="">
+                                    <span class="h7">Wi-Fi Access</span>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -202,58 +219,67 @@
 
                 <div class="dvHotelInfo dvVcData col-md-6 mb-3">
                     <div class="row mb-3">
-                        <div class="col-12">
-                            <p>
-                                <span id="HotelAddress" data-i18n="ABC-sahar-airport-road,-andhe">Sahar Airport Road,
-                                    Andheri East, Andheri (East)MumbaiMaharashtra 400 099, Mumbai, 400099, India</span>
-                                <span id="HotelCity"></span>
-                            </p>
+                        <div class="col-auto">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="col">
+                            <span id="HotelAddress">Sahar Airport Road, Andheri East, Andheri (East)MumbaiMaharashtra 400 099, Mumbai, 400099, India</span>
+                            <span id="HotelCity"></span>
                         </div>
                     </div>
                     <div class="row mb-3" id="contact1">
+                        <div class="col-auto">
+                            <i class="fa-solid fa-fax"></i>
+                        </div>
+                        <div class="col">
+                            <span>912228380000</span>
+                        </div>
 
-                        <div class="col-6 d-flex align-items-center"><img src="images/icons/other/ico-fax.png"
-                                alt=""><span class="ms-2" data-i18n="ABC-912228380000">912228380000</span></div>
-                        <div class="col-6 d-flex align-items-center"><img src="images/icons/other/ico-weblink.png"
-                                alt=""><span class="ms-2" data-i18n="ABC-not-available">Not Available</span></div>
-                    </div>
-                    <div class="row mb-3" id="contact2">
-
-                        <div class="col-6 d-flex align-items-center"><img src="images/icons/other/ico-phone.png"
-                                alt=""><span class="ms-2" data-i18n="ABC-91-11-27052700">91-11-27052700</span></div>
-                        <div class="col-6 d-flex align-items-center"><img src="images/icons/other/ico-fax.png"
-                                alt=""><span class="ms-2" data-i18n="ABC-91-22-28380101">91-22-28380101</span></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12" id="BasicAmenities">
-
-
-                            <div class="dvMinRate row">
-                                <div class="col-12">
-                                    <p id="minrate"><span class="h3 heading-semibold text-colour7 totalPointValue"
-                                            data-i18n="ABC-201">201</span>&nbsp;<span
-                                            class="h6 heading-regular text-colour7"
-                                            data-i18n="ABC-points">Points</span><span
-                                            class="h6 heading-regular text-colour7"
-                                            data-i18n="ABC-(for-1-night(s))">(for 1 night(s))</span></p>
-                                </div>
-                            </div>
+                        <div class="col-auto">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div class="col">
+                            <span>Not Available</span>
                         </div>
                     </div>
 
+                    <div class="row mb-3" id="contact2">
+                        <div class="col-auto">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="col">
+                            <span>91-11-27052700</span>
+                        </div>
 
+                        <div class="col-auto">
+                            <i class="fa-solid fa-print"></i>
+                        </div>
+                        <div class="col">
+                            <span>91-22-28380101</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="dvSelectRoom col-12">
-                    <h2 class="h4 heading-semibold text-colour7 bg-colour2 p-3" data-i18n="ABC-select-your-room">Select
-                        Your Room</h2>
+                    <h2 class="h5 heading-bold pt-4 pb-2">Select Your Room</h2>
                     <div id="rptRoomDetails" class="dvVcData row mt-3">
                         <div class="col-12">
                             <div class="row justify-content-between">
                                 <div class="col-12 col-md-6 col-lg-5 col-xl-6 mb-2 mb-md-0">
-                                    <h2 class="h6 heading-regular text-colour7"
-                                        data-i18n="ABC-king-hilton-deluxe-guestr">KING HILTON DELUXE GUESTROOM -
-                                        BreakFast (inclusive of all taxes)</h2>
+
+                                    <div class="shadow b-radius px-3">
+                                        <div class="row py-3 bg-colour2 b-radius-top-right b-radius-top-left" style="margin: 0 -1rem">
+                                          <div class="col-12">
+                                            <h2 class="h7 heading-bold">KING HILTON DELUXE GUESTROOM - BreakFast (inclusive of all taxes)</h2>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    
                                 </div>
                                 <div class="col-6 col-sm-4 col-md-2 col-lg-3 col-xl-2 mb-3 mb-sm-0"><span
                                         class="d-inline-block h6 heading-semibold text-colour7 totalPointValue"
@@ -333,33 +359,91 @@
         </div>
     </div>
 
+    <div class="dvCommonModal modal fade" id="dvAmenitiesModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header border-0 d-lg-block justify-content-between p-0">
+                    <div class="modal-title dvTotalRecords border-0 p-3">
+                        <p class="heading6 text-colour6">
+                            <span>General</span>
+                        </p>
+                    </div>
+                    <button type="button" class="close d-lg-none border-0 bg-colour1 px-3" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body pt-0">
+                    <div id="DivAmenities" class="dvVcData row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="border-bottom py-1"> ⇒ Terrace</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border-bottom py-1"> ⇒ Concierge services</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border-bottom py-1"> ⇒ Gift shops or newsstand</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border-bottom py-1"> ⇒ Dry cleaning/laundry service</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border-bottom py-1"> ⇒ Garage</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border-bottom py-1"> ⇒ Wheelchair accessible (may have limitations)</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border-bottom py-1"> ⇒ Coworking spaces</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border-bottom py-1"> ⇒ Valet for wheelchair-equipped vehicle</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border-bottom py-1"> ⇒ Wheelchair-accessible registration desk</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border-bottom py-1"> ⇒ Free WiFi</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border-bottom py-1"> ⇒ Number of bars/lounges - 1</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border-bottom py-1"> ⇒ Wheelchair-accessible public washroom</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border-bottom py-1"> ⇒ Arcade/game room</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border-bottom py-1"> ⇒ Designated smoking areas</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border-bottom py-1"> ⇒ Braille or raised signage</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border-bottom py-1"> ⇒ Number of outdoor pools - 1</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border-bottom py-1"> ⇒ Snack bar/deli</div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="border-bottom py-1"> ⇒ Number of coffee shops/cafes - 1</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-two" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-one">Save changes</button>
+            </div> -->
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="src/assets/js/swiper.min.js"></script>
-    <script src="src/assets/js/jquery-ui.js"></script>
 
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 10,
-            slidesPerView: 4,
-            freeMode: true,
-            watchSlidesProgress: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-        var swiper2 = new Swiper(".mySwiper2", {
-            spaceBetween: 10,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            thumbs: {
-                swiper: swiper,
-            },
-        });
-    </script>
 </body>
 
 </html>

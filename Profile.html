@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/assets/css/root.css" />
+    <link rel="stylesheet" href="src/assets/css/global.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="dvHeader pt-1 pb-1">
+        <div class="container-xl">
+            <div class="row justify-content-beween align-items-center">
+                <div class="col-auto order-lg-0 logo">
+                    <img class="" src="/src/assets/images/home/logo/mt-cash-logo.svg" alt="" />
+                </div>
+                <div class="col-auto ms-auto ms-lg-0 order-lg-2">
+                    <select class="form-control" name="" id="">
+                        <option value="en">EN</option>
+                        <option value="ar">AR</option>
+                        <option value="fr">FR</option>
+                    </select>
+                </div>
+                <div class="col-auto d-lg-none">
+                    <button class="btn border" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottom">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-start bg-transparent- col-lg-auto order-lg-1 ms-lg-auto px-0 px-lg-3 border-lg-top-0"
+                    tabindex="-1" id="offcanvasBottom">
+                    <!-- <div class="p-3-">
+                <div class="b-radius bg-colour6-"> -->
+                    <div class="offcanvas-header d-lg-none pb-0">
+                        <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5> -->
+                        <button type="button" class="btn border btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body pt-0 p-lg-0">
+                        <div class="row mx-lg-0 align-items-lg-center">
+                            <div class="col-12 col-lg-auto">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/profile.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Profile</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/my-order.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">My Order</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/about.svg" alt="" class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">About Program</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/faqs.svg" alt="" class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">FAQs</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/terms-and-conditions.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Terms &amp; conditions</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/booking-policy.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Booking Policy</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/privacy-policy.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Privacy Policy</span>
+                                </a>
+                            </div>
+                            <div class="col-6 offset-3 col-lg-auto offset-lg-0 text-center">
+                                <button class="btn btn-one w-100">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div>
+              </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dvBreadcrumbs bg-colour1 py-2">
+        <div class="container-xl">
+            <div class="d-flex justify-content-center">
+                <div class="me-auto">
+                    <a class="text-colour6" href="#" onclick="history.go(-1)"><i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+                <div class="me-auto">
+                    <p class="text-colour6">Profile</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container my-4">
+            <!-- Accordion for Checkout Flow -->
+            <div class="accordion dvCommonAccordion" id="checkoutAccordion">
+
+                <!-- Delivery Address Section -->
+                <div class="accordion-item rounded mb-3 border">
+                    <h2 class="accordion-header " id="headingOne">
+                        <button class="accordion-button rounded bg-colour2 heading-bold" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Contact Details
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#checkoutAccordion">
+
+                        <div class="col-12">
+                            <div class="bg-colour6 p-3">
+                                <div class="row">
+                                    <div class="col-sm-3 mb-3">
+                                        <p class="">
+                                            <span class="h7 d-block heading-bold text-colour7"
+                                                data-i18n="ABC-name">Name</span>
+                                            <span id="CP_labelMemberNameValue" class="d-block"
+                                                data-i18n="ABC-anita-sharma">Anita Sharma</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-3 mb-3">
+                                        <p class="">
+                                            <span class="h7 d-block heading-bold text-colour7"
+                                                data-i18n="ABC-mobile-no.">Mobile No.</span>
+                                            <span id="CP_labelMobileNo" class="d-block"
+                                                data-i18n="ABC-9029300004">9029300004</span>
+                                            <input type="hidden" name="ctl00$CP$hfRelationRef" id="CP_hfRelationRef"
+                                                value="Anita Sharma" data-i18n-value="ABC-anita-sharma">
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-3 mb-3">
+                                        <p class="">
+                                            <span class="h7 d-block heading-bold text-colour7"
+                                                data-i18n="ABC-e-mail-id">E-mail ID</span>
+                                            <span id="CP_labelEmailValue" class="d-block"
+                                                data-i18n="ABC-grissna.paul@giift.com">grissna.paul@giift.com</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-3 mb-3">
+                                        <p class="">
+                                            <span class="h7 d-block heading-bold text-colour7"
+                                                data-i18n="ABC-gender">Gender</span>
+                                            <span id="CP_lblGender" class="d-block" data-i18n="ABC-female">Female</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p class="">
+                                            <span class="h7 d-block heading-bold text-colour7"
+                                                data-i18n="ABC-nationality">Nationality</span>
+                                            <span id="CP_lblNationality" class="d-block" data-i18n="ABC-na">NA</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <p class="">
+                                            <span class="h7 d-block heading-bold text-colour7"
+                                                data-i18n="ABC-address">Address</span>
+                                            <span id="CP_labelAddressValue" class="d-block"
+                                                data-i18n="ABC-mum">Mum</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Payment Method Section -->
+                <div class="accordion-item rounded mb-3 border">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button rounded collapsed bg-colour2 heading-bold" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Change Password
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#checkoutAccordion">
+                        <div class="accordion-body">
+
+                            <div class="col-12">
+                                <div class="">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="row">
+                                                <div class="col-12 position-relative fontawesome">
+                                                    <label class="label" data-i18n="ABC-current-password">Current
+                                                        Password</label>
+                                                    <div class="dvInputGroup input-group mb-3">
+                                                        <input autocomplete="off" type="password" class="form-control"
+                                                            placeholder="Enter Your Password"
+                                                            onkeypress="var retValue = ValidateOnEnter(event); event.returnValue = retValue; return retValue;"
+                                                            id="txtOldPassword"
+                                                            data-i18n-placeholder="ABC-enter-your-password">
+                                                        <div class="input-group-append">
+                                                            <span toggle="#txtOldPassword"
+                                                                class="input-group-text bg-colour6 toggle-password passwordShow fa fa-solid fa-eye-slash h-100"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 position-relative fontawesome">
+                                                    <label class="label" data-i18n="ABC-new-password">New
+                                                        Password</label>
+                                                    <div class="dvInputGroup input-group mb-3">
+                                                        <input autocomplete="off" type="password" class="form-control"
+                                                            placeholder="Enter New Password"
+                                                            onkeypress="var retValue = ValidateOnEnter(event); event.returnValue = retValue; return retValue;"
+                                                            id="txtPassword"
+                                                            data-i18n-placeholder="ABC-enter-new-password">
+                                                        <div class="input-group-append">
+                                                            <span toggle="#txtPassword"
+                                                                class="input-group-text bg-colour6 toggle-password passwordShow fa fa-solid fa-eye-slash h-100"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 position-relative fontawesome">
+                                                    <label class="label" data-i18n="ABC-confirm-password">Confirm
+                                                        Password</label>
+                                                    <div class="dvInputGroup input-group mb-3">
+                                                        <input autocomplete="off" type="password" class="form-control"
+                                                            placeholder="Enter New Password"
+                                                            onkeypress="var retValue = ValidateOnEnter(event); event.returnValue = retValue; return retValue;"
+                                                            id="txtNewPassword"
+                                                            data-i18n-placeholder="ABC-enter-new-password">
+                                                        <div class="input-group-append">
+                                                            <span toggle="#txtNewPassword"
+                                                                class="input-group-text bg-colour6 toggle-password passwordShow fa fa-solid fa-eye-slash h-100"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-8 mb-3">
+
+                                                    <input type="submit" name="ctl00$CP$Button1"
+                                                        value="Save &amp; Continue"
+                                                        onclick="var retValue = ChangePassword(); event.returnValue = retValue;return retValue;"
+                                                        id="CP_Button1" class="btn btn-one"
+                                                        data-i18n-value="ABC-save-&amp;-continue">
+                                                </div>
+                                                <div id="ChangePasswordValidation" class="pl-3 text-danger">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="pri-pol">
+                                                <h2 class="h6 heading-bold text-colour7"
+                                                    data-i18n="ABC-password-policy:">Password Policy:</h2>
+                                                <ul class="p-3">
+                                                    <li data-i18n="ABC-minimum-8-characters-in-l">Minimum 8
+                                                        characters in length</li>
+                                                    <li data-i18n="ABC-should-contain-at-least-o">Should contain
+                                                        at least one capital case character</li>
+                                                    <li data-i18n="ABC-should-contain-at-least-o">Should contain
+                                                        at least one small case character</li>
+                                                    <li data-i18n="ABC-should-contain-at-least-o">Should contain
+                                                        at least one special character (!@#$%0?)
+                                                    </li>
+                                                    <li data-i18n="ABC-should-contain-at-least-o">Should contain
+                                                        at least one numeric digit</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="dvFooter shadow-lg position-fixed z-index-2 w-100">
+        <div class="bg-colour6">
+            <div class="container-xl py-2">
+                <div class="row align-items-center">
+                    <div class="col text-center">
+                        <a href="/">
+                            <!-- <i class="fa-solid fa-house"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-home.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Home</p>
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="ViewMemberProfile.aspx">
+                            <!-- <i class="fa-solid fa-user"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-profile.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Profile</p>
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="#">
+                            <!-- <i class="fa-solid fa-bell"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-app.svg" />
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="#">
+                            <!-- <i class="fa-solid fa-bell"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-notification.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Notification</p>
+                        </a>
+                    </div>
+
+                    <div class="col text-center">
+                        <a href="OrderHistory.aspx">
+                            <!-- <i class="fa-solid fa-bag-shopping"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-cart.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Cart</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>

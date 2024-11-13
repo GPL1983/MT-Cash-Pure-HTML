@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/assets/css/root.css" />
+    <link rel="stylesheet" href="src/assets/css/global.css" />
+    <link rel="stylesheet" href="src/assets/css/hotel.css" />
+    <link rel="stylesheet" href="src/assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="src/assets/css/jquery-ui.css" />
+</head>
+
+<body>
+    <div class="dvHeader pt-1 pb-1">
+        <div class="container-xl">
+            <div class="row justify-content-beween align-items-center">
+                <div class="col-auto order-lg-0 logo">
+                    <img class="" src="/src/assets/images/home/logo/mt-cash-logo.svg" alt="" />
+                </div>
+                <div class="col-auto ms-auto ms-lg-0 order-lg-2">
+                    <select class="form-control" name="" id="">
+                        <option value="en">EN</option>
+                        <option value="ar">AR</option>
+                        <option value="fr">FR</option>
+                    </select>
+                </div>
+                <div class="col-auto d-lg-none">
+                    <button class="btn border" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottom">
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </button>
+                </div>
+                <div class="offcanvas offcanvas-start bg-transparent- col-lg-auto order-lg-1 ms-lg-auto px-0 px-lg-3 border-lg-top-0"
+                    tabindex="-1" id="offcanvasBottom">
+                    <!-- <div class="p-3-">
+              <div class="b-radius bg-colour6-"> -->
+                    <div class="offcanvas-header d-lg-none pb-0">
+                        <!-- <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5> -->
+                        <button type="button" class="btn border btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body pt-0 p-lg-0">
+                        <div class="row mx-lg-0 align-items-lg-center">
+                            <div class="col-12 col-lg-auto">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/profile.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Profile</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/my-order.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">My Order</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/about.svg" alt="" class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">About Program</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/faqs.svg" alt="" class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">FAQs</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/terms-and-conditions.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Terms &amp; conditions</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0 border-bottom border-lg-bottom-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/booking-policy.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Booking Policy</span>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-auto d-lg-none">
+                                <a class="d-flex align-items-center text-decoration-none d-block d-lg-inline-block p-3 p-lg-0"
+                                    href="#">
+                                    <img src="/src/assets/images/icons/menu-icons/privacy-policy.svg" alt=""
+                                        class="d-lg-none" />
+                                    <span class="d-lg-inline-block ps-2 ps-lg-0">Privacy Policy</span>
+                                </a>
+                            </div>
+                            <div class="col-6 offset-3 col-lg-auto offset-lg-0 text-center">
+                                <button class="btn btn-one w-100">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div>
+            </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dvBreadcrumbs bg-colour1 py-2">
+        <div class="container-xl">
+            <div class="d-flex justify-content-center">
+                <div class="me-auto">
+                    <a class="text-colour6" href="#" onclick="history.go(-1)"><i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+                <div class="me-auto">
+                    <p class="text-colour6">Personal Details</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dvHotelSearch pb-5" id="hotelscrollupAnchor">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="h6 heading-bold text-colour7 py-3" data-i18n="ABC-personal-details">Personal
+                                Details</h2>
+                        </div>
+                        <div class="col-12">
+                            <div style="display: none">
+                                <input name="ctl00$CP$txtState" type="text" id="CP_txtState" class="textBoxHotelBooking"
+                                    style="height: 1.7vw; width: 52%">
+                                <input name="ctl00$CP$txtPhoneNo" type="text" id="CP_txtPhoneNo"
+                                    class="textbox TxtBox_Width85">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class=" mb-3">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+
+                                        <label class="label" data-i18n="ABC-title*">Title*</label>
+                                        <div class="dvInput input-group">
+                                            <select name="ctl00$CP$ddlPersonalTitle" id="CP_ddlPersonalTitle"
+                                                class="form-control">
+                                                <option value="0" data-i18n="ABC-mr.">Mr.</option>
+                                                <option value="1" data-i18n="ABC-ms.">Ms.</option>
+                                                <option value="2" data-i18n="ABC-mrs.">Mrs.</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+
+                                        <label class="label" data-i18n="ABC-first-name*">First Name*</label>
+                                        <div class="dvInput input-group">
+                                            <input name="ctl00$CP$txtFirstName" type="text" id="CP_txtFirstName"
+                                                class="form-control">
+                                        </div>
+                                        <span id="CP_RequiredFieldValidator1" class="h8 heading-regular text-danger"
+                                            style="display:none;" data-i18n="ABC-enter-first-name">Enter First
+                                            Name</span>
+                                        <span id="CP_cusCustom" class="h8 heading-regular text-danger d-none"
+                                            style="visibility:hidden;" data-i18n="ABC-enter-only-alpha">Enter only
+                                            alpha</span>
+                                        <span id="CP_revAdultFirstName" class="h8 heading-regular text-danger"
+                                            style="display:none;" data-i18n="ABC-please-enter-valid-first-">Please Enter
+                                            valid First Name.</span>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+
+                                        <label class="label" data-i18n="ABC-last-name*">Last Name*</label>
+                                        <div class="dvInput input-group">
+                                            <input name="ctl00$CP$txtLastname" type="text" id="CP_txtLastname"
+                                                class="form-control">
+                                        </div>
+                                        <span id="CP_RequiredFieldValidator2" class="h8 heading-regular text-danger"
+                                            style="display:none;" data-i18n="ABC-enter-last-name">Enter Last Name</span>
+                                        <span id="CP_CustomValidatorLastName"
+                                            class="h8 heading-regular text-danger d-none" style="visibility:hidden;"
+                                            data-i18n="ABC-enter-only-alpha">Enter only alpha</span>
+                                        <span id="CP_revtxtLastname" class="h8 heading-regular text-danger"
+                                            style="display:none;" data-i18n="ABC-please-enter-valid-last-n">Please Enter
+                                            valid Last Name.</span>
+
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+
+                                        <label class="label" data-i18n="ABC-city*">City*</label>
+                                        <div class="dvInput input-group">
+                                            <input name="ctl00$CP$txtCity" type="text" id="CP_txtCity"
+                                                class="form-control">
+                                        </div>
+                                        <span id="CP_RequiredFieldValidator4" class="h8 heading-regular text-danger"
+                                            style="display:none;" data-i18n="ABC-enter-city">Enter City</span>
+                                        <span id="CP_revtxtCity" class="h8 heading-regular text-danger"
+                                            style="display:none;" data-i18n="ABC-please-enter-valid-city.">Please Enter
+                                            valid City.</span>
+
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+
+                                        <label class="label" data-i18n="ABC-country*">Country*</label>
+                                        <div class="dvInput input-group">
+                                            <input name="ctl00$CP$txtCountry" type="text" id="CP_txtCountry"
+                                                class="form-control">
+                                        </div>
+                                        <span id="CP_RequiredFieldValidator5" class="h8 heading-regular text-danger"
+                                            style="display:none;" data-i18n="ABC-enter-country">Enter Country</span>
+                                        <span id="CP_revtxtCountry" class="h8 heading-regular text-danger"
+                                            style="display:none;" data-i18n="ABC-please-enter-valid-countr">Please Enter
+                                            valid Country.</span>
+
+                                    </div>
+                                    <div class="col-md-6 d-none mb-3">
+
+                                        <label class="label" data-i18n="ABC-state">State</label>
+                                        <div class="dvInput input-group">
+                                            <input name="ctl00$CP$TextBox1" type="text" id="CP_TextBox1"
+                                                class="form-control">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6 d-none mb-3">
+
+                                        <label class="label" data-i18n="ABC-phone-number">Phone Number</label>
+                                        <div class="dvInput input-group">
+                                            <input name="ctl00$CP$TextBox2" type="text" id="CP_TextBox2"
+                                                class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+
+                                        <label class="label txt-postal-code" data-i18n="ABC-postal-code*">Postal
+                                            Code*</label>
+                                        <div class="dvInput input-group">
+                                            <input name="ctl00$CP$txtPostalCode" type="text" id="CP_txtPostalCode"
+                                                class="form-control">
+                                        </div>
+                                        <span id="CP_RequiredFieldValidator6" class="h8 heading-regular text-danger"
+                                            style="display:none;" data-i18n="ABC-enter-postal-code">Enter Postal
+                                            Code</span>
+                                        <span id="CP_RegularExpressionValidator2" class="h8 heading-regular text-danger"
+                                            style="display:none;" data-i18n="ABC-enter-only-digits">Enter Only
+                                            Digits</span>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+
+                                        <label class="label" data-i18n="ABC-mobile-no-(without-countr">Mobile No
+                                            (without country code)*</label>
+                                        <div class="dvInput input-group">
+                                            <input name="ctl00$CP$txtMobileNo" type="text" id="CP_txtMobileNo"
+                                                class="form-control">
+                                        </div>
+                                        <span id="CP_RequiredFieldValidator7" class="h8 heading-regular text-danger"
+                                            style="display:none;" data-i18n="ABC-enter-mobile-no">Enter Mobile No</span>
+                                        <span id="CP_RegularExpressionValidator1" class="h8 heading-regular text-danger"
+                                            style="display:none;" data-i18n="ABC-enter-only-digits">Enter Only
+                                            Digits</span>
+
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label class="label" data-i18n="ABC-e-mail-address*">E-Mail Address*</label>
+                                        <div class="dvInput input-group">
+                                            <input name="ctl00$CP$txtEmailID" type="text" id="CP_txtEmailID"
+                                                class="form-control">
+                                        </div>
+                                        <span id="CP_RequiredFieldValidator9" class="h8 heading-regular text-danger"
+                                            style="display:none;" data-i18n="ABC-enter-email">Enter Email</span>
+                                        <span id="CP_RegularExpressionValidator4" class="h8 heading-regular text-danger"
+                                            style="display:none;" data-i18n="ABC-email-address-not-valid">Email Address
+                                            not valid</span>
+
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label class="label" data-i18n="ABC-special-request">Special Request</label>
+                                        <div class="dvInput input-group">
+                                            <textarea name="ctl00$CP$txtSpecialRequest" rows="2" cols="20"
+                                                id="CP_txtSpecialRequest" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <div class="dvLabel">
+                                            <label class="heading-regular checkbox-container d-flex">
+                                                <span class="d-inline-block ps-2">
+                                                    <input id="CP_chkAcceptAgreements" type="checkbox"
+                                                        name="ctl00$CP$chkAcceptAgreements">
+                                                    <span class="checkmark"></span>
+                                                </span>
+                                                <span class="d-inline-block ml-2 text-colour7"><span
+                                                        data-i18n="ABC-i-have-read-and-agree-to-">I have read and agree
+                                                        to Infinity Rewards </span> <a href="TermsandConditions.aspx"
+                                                        target="_blank" data-i18n="ABC-terms-&amp;-conditions">Terms
+                                                        &amp; Conditions</a> <span data-i18n="ABC-and-the">and
+                                                        the</span> <a href="BookingPolicy.aspx" target="_blank"
+                                                        data-i18n="ABC-booking-&amp;-cancellation-po">Booking &amp;
+                                                        Cancellation Policy</a> <span
+                                                        data-i18n="ABC-of-the-respective-service">of the respective
+                                                        service provider.</span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2">
+                                        <div class="dvLabel">
+                                            <label class="heading-regular text-colour7 checkbox-container d-flex">
+                                                <span class="d-inline-block ps-2">
+                                                    <input id="CP_chkCancellationPolicy" type="checkbox"
+                                                        name="ctl00$CP$chkCancellationPolicy">
+                                                    <span class="checkmark"></span>
+                                                </span>
+                                                <span class="d-inline-block ml-2 text-colour7"><span
+                                                        data-i18n="ABC-i-agree-to-redeem">I agree to redeem</span>
+                                                    <span id="CP_lblTotalCharge"></span><span
+                                                        data-i18n="ABC-.-i-also-understand-and-a">. I also understand
+                                                        and accept that.the redeemed Points cannot be refunded or
+                                                        credited upon cancellation of a hotel booking.</span></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-2">
+                                        <div id="CP_ErrorMsgContainer" class="dvErrors h8 heading-regular text-danger">
+                                            <div id="LoginValidation"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div id="CP_Bookbtn" class="text-center">
+                                            <label class="">
+                                                <input type="submit" name="ctl00$CP$btnBook" value="BOOK NOW"
+                                                    id="CP_btnBook" class="btn btn-one" data-i18n-value="ABC-book-now">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer start here-->
+    <div class="dvFooter shadow-lg position-fixed z-index-2 w-100">
+        <div class="bg-colour6">
+            <div class="container-xl py-2">
+                <div class="row align-items-center">
+                    <div class="col text-center">
+                        <a href="/">
+                            <!-- <i class="fa-solid fa-house"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-home.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Home</p>
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="ViewMemberProfile.aspx">
+                            <!-- <i class="fa-solid fa-user"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-profile.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Profile</p>
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="#">
+                            <!-- <i class="fa-solid fa-bell"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-app.svg" />
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <a href="#">
+                            <!-- <i class="fa-solid fa-bell"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-notification.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Notification</p>
+                        </a>
+                    </div>
+
+                    <div class="col text-center">
+                        <a href="OrderHistory.aspx">
+                            <!-- <i class="fa-solid fa-bag-shopping"></i> -->
+                            <img src="./src/assets/images/icons/footer-icons/icon-cart.svg" />
+                            <p class="h9 text-colour9 heading-medium pt-1">Cart</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="src/assets/js/swiper.min.js"></script>
+    <script src="src/assets/js/jquery-ui.js"></script>
+
+    <script>
+        // Function to increment value
+        function incrementValue() {
+            const input = document.getElementById("quantityInput");
+            input.value = parseInt(input.value) + 1;
+        }
+
+        // Function to decrement value
+        function decrementValue() {
+            const input = document.getElementById("quantityInput");
+            if (parseInt(input.value) > 0) {
+                input.value = parseInt(input.value) - 1;
+            }
+        }
+    </script>
+</body>
+
+</html>

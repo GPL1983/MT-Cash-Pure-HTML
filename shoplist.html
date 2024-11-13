@@ -117,11 +117,251 @@
                 <div class="me-auto">
                     <p class="text-colour6">Shop</p>
                 </div>
-                <button type="button" class="border-0 bg-colour2 float-end d-lg-none" data-bs-toggle="modal"
+                <button type="button" class="border-0 bg-transparent float-end d-lg-none" data-bs-toggle="modal"
                     data-bs-target="#filterModal">
-                    <img src="/src/assets/images/icons/other/filter-bars.svg" alt="" />
+                    <img src="/src/assets/images/icons/other/filter.svg" alt="" />
                 </button>
             </div>
+        </div>
+    </div>
+    <div class="container-xl">
+        <div class="row">
+            <!-- Modal Start -->
+            <div class="col-lg-3 px-0 px-lg-3 mb-lg-4 mt-lg-4">
+                <div class="dvFilter modal fade" id="filterModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header border-0 d-lg-block justify-content-between p-0">
+                                <div class="modal-title dvTotalRecords border-0 p-3">
+                                    <p class="heading6 text-colour6">
+                                        <span>Total Product(s) Found</span><span class="filter-text ms-2">10</span>
+                                    </p>
+                                </div>
+                                <button type="button" class="close d-lg-none border-0 bg-colour1 px-3"
+                                    data-bs-dismiss="modal">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="accordion border-0" id="filter-accordion">
+
+                                    <div class="card">
+                                        <div class="card-header p-0">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-block text-left collapsed heading-semibold"
+                                                    type="button" data-bs-toggle="collapse-"
+                                                    data-bs-target="#collapse3">
+                                                    <span class="heading6 mb-2 text-capitalize">Hotel Ratings</span>
+                                                    <span class="arrow-icon"><i class="fa fa-caret-up-"></i></span>
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse3" class="collapse-" data-parent="#filter-accordion">
+                                            <div class="card-body scroll-ver- px-0 pt-1 pb-2">
+                                                <div class="dvLabel airList">
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span>Select All</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star.svg" alt="">
+                                                        </span>
+                                                    </label>
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star.svg" alt="">
+                                                            <img src="/src/assets/images/icons/other/star.svg" alt="">
+                                                        </span>
+                                                    </label>
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star-fill.svg"
+                                                                alt="">
+                                                            <img src="/src/assets/images/icons/other/star.svg" alt="">
+                                                            <img src="/src/assets/images/icons/other/star.svg" alt="">
+                                                            <img src="/src/assets/images/icons/other/star.svg" alt="">
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dvBorderBottom">
+                                        <div class="">
+                                            <div class="border-bottom my-3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header p-0">
+                                            <h2 class="mb-0">
+                                                <button class="btn btn-block text-left collapsed heading-semibold"
+                                                    type="button" data-bs-toggle="collapse-"
+                                                    data-bs-target="#collapse3">
+                                                    <span class="heading6 mb-2 text-capitalize">Hotel Amenities</span>
+                                                    <span class="arrow-icon"><i class="fa fa-caret-up-"></i></span>
+                                                </button>
+                                            </h2>
+                                        </div>
+                                        <div id="collapse3" class="collapse-" data-parent="#filter-accordion">
+                                            <div class="card-body scroll-ver- px-0 pt-1 pb-2">
+                                                <div class="dvLabel airList">
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span>Select All</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span><img src="/src/assets/images/icons/other/icon-ac.svg"
+                                                                    alt=""></span><span class="ms-2">Air
+                                                                Condition</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span><img src="/src/assets/images/icons/other/icon-bar.svg"
+                                                                    alt=""></span><span class="ms-2">Bar</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span><img
+                                                                    src="/src/assets/images/icons/other/icon-business-centre.svg"
+                                                                    alt=""></span><span class="ms-2">Business
+                                                                Centre</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span><img
+                                                                    src="/src/assets/images/icons/other/icon-coffee-shop.svg"
+                                                                    alt=""></span><span class="ms-2">Coffee Shop</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span><img src="/src/assets/images/icons/other/icon-gym.svg"
+                                                                    alt=""></span><span class="ms-2">Gym</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span><img
+                                                                    src="/src/assets/images/icons/other/icon-pool.svg"
+                                                                    alt=""></span><span class="ms-2">Pool</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span><img
+                                                                    src="/src/assets/images/icons/other/icon-restaurant.svg"
+                                                                    alt=""></span><span class="ms-2">Restaurant</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span><img
+                                                                    src="/src/assets/images/icons/other/icon-room-service.svg"
+                                                                    alt=""></span><span class="ms-2">Room Service</span>
+                                                        </span>
+                                                    </label>
+
+                                                    <label class="checkbox-container d-flex heading-regular">
+                                                        <span class="d-inline-block ms-1 heading-regular">
+                                                            <input type="checkbox" checked />
+                                                            <span class="checkmark"></span>
+                                                            <span><img
+                                                                    src="/src/assets/images/icons/other/icon-wifi-access.svg"
+                                                                    alt=""></span><span class="ms-2">Wi-Fi Access</span>
+                                                        </span>
+                                                    </label>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="card">
+                              <div class="applyBtn" style="display: none;">
+                                <button type="button" id="btnClosePopup" class="btn btn-one" value="Apply">Apply</button>
+                              </div>
+                            </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal End -->
         </div>
     </div>
     <div class="dvShopMenu">
